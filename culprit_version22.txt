@@ -1,0 +1,2117 @@
+==========
+Actuarial_Mathematics
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Actuarial_Mathematics/Preliminaries.thy")
+*** At command "by" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Actuarial_Mathematics/Preliminaries.thy")
+
+==========
+Affine_Arithmetic
+*** Failed to finish proof (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. ∀x. bit x 0 = odd x
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+Akra_Bazzi
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Akra_Bazzi/Master_Theorem.thy")
+*** At command "by" (line 18 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Akra_Bazzi/Master_Theorem.thy")
+
+==========
+Amicable_Numbers
+*** Failed to load theory "Amicable_Numbers.Amicable_Numbers" (unresolved "Polynomial_Factorization.Prime_Factorization")
+*** Undefined constant: "Divides.divmod_nat" (line 42 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+*** At command "partial_function" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+
+==========
+BNF_CC
+*** Failed to finish proof (line 566 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Subtypes.thy"):
+*** goal (1 subgoal):
+***  1. ⋀a b. ⟦pred_H (Domainp (λa b. a ∈ set_H z)) z'; (a, b) ∈ set_H z'⟧
+***           ⟹ (a, b) ∈ set_H z
+*** At command "by" (line 566 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Subtypes.thy")
+*** Failed to apply proof method (line 301 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Subtypes.thy"):
+*** goal (1 subgoal):
+***  1. regularCard bd_G
+*** At command "apply" (line 301 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Subtypes.thy")
+*** Failed to finish proof (line 670 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Axiomatised_BNF_CC.thy"):
+*** goal (7 subgoals):
+***  1. regularCard bd_G
+***  2. ⋀x. |set1_G x| <o bd_G
+***  3. ⋀x. |set2_G x| <o bd_G
+***  4. ⋀R1 R2 S1 S2.
+***        rell_G R1 R2 OO rell_G S1 S2 ≤ rell_G (R1 OO S1) (R2 OO S2)
+***  5. ⋀R1 R2.
+***        rell_G R1 R2 =
+***        (λx y. ∃z. (set1_G z ⊆ {(x, y). R1 x y} ∧
+***                    set2_G z ⊆ {(x, y). R2 x y}) ∧
+***                   mapl_G fst fst z = x ∧ mapl_G snd snd z = y)
+***  6. ⋀b1 z2. b1 ∈ set1_G (wit_G z2) ⟹ False
+***  7. ⋀b2 z2. b2 ∈ set2_G (wit_G z2) ⟹ b2 = z2
+*** At command "by" (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Axiomatised_BNF_CC.thy")
+*** Failed to finish proof (line 325 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Axiomatised_BNF_CC.thy"):
+*** goal (6 subgoals):
+***  1. regularCard bd_F
+***  2. ⋀x. |set1_F x| <o bd_F
+***  3. ⋀x. |set2_F x| <o bd_F
+***  4. ⋀x. |set3_F x| <o bd_F
+***  5. ⋀R1 R2 R3 S1 S2 S3.
+***        rell_F R1 R2 R3 OO rell_F S1 S2 S3
+***        ≤ rell_F (R1 OO S1) (R2 OO S2) (R3 OO S3)
+***  6. ⋀R1 R2 R3.
+***        rell_F R1 R2 R3 =
+***        (λx y. ∃z. (set1_F z ⊆ {(x, y). R1 x y} ∧
+***                    set2_F z ⊆ {(x, y). R2 x y} ∧
+***                    set3_F z ⊆ {(x, y). R3 x y}) ∧
+***                   mapl_F fst fst fst z = x ∧ mapl_F snd snd snd z = y)
+*** At command "by" (line 323 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_CC/Axiomatised_BNF_CC.thy")
+
+==========
+BNF_Operations
+*** Failed to apply proof method (line 3207 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (5 subgoals):
+***  1. regularCard IFbd
+***  2. ⋀x. |IF2set x| <o IFbd
+***  3. ⋀R S. IF2rel R OO IF2rel S ≤ IF2rel (R OO S)
+***  4. ⋀R. IF2rel R =
+***         (λx y. ∃z. IF2set z ⊆ {(x, y). R x y} ∧
+***                    IF2map fst z = x ∧ IF2map snd z = y)
+***  5. ⋀b. b ∈ IF2set IF2wit ⟹ False
+*** At command "apply" (line 3207 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 3188 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (5 subgoals):
+***  1. regularCard IFbd
+***  2. ⋀x. |IF1set x| <o IFbd
+***  3. ⋀R S. IF1rel R OO IF1rel S ≤ IF1rel (R OO S)
+***  4. ⋀R. IF1rel R =
+***         (λx y. ∃z. IF1set z ⊆ {(x, y). R x y} ∧
+***                    IF1map fst z = x ∧ IF1map snd z = y)
+***  5. ⋀b z. b ∈ IF1set (IF1wit z) ⟹ b = z
+*** At command "apply" (line 3188 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F1set1 ?x| <o bd_F1
+***   bd_F1 ≤o dir_image (bd_F1 +c ?r2.1) Abs_bd_type_F
+*** At command "lemmas" (line 939 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/GFP.thy")
+*** Failed to apply proof method (line 163 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Compose.thy"):
+*** goal (5 subgoals):
+***  1. regularCard Hbd
+***  2. ⋀x. |Hset1 x| <o Hbd
+***  3. ⋀x. |Hset2 x| <o Hbd
+***  4. ⋀R1 R2 S1 S2. Hrel R1 R2 OO Hrel S1 S2 ≤ Hrel (R1 OO S1) (R2 OO S2)
+***  5. ⋀R1 R2.
+***        Hrel R1 R2 =
+***        (λx y. ∃z. (Hset1 z ⊆ {(x, y). R1 x y} ∧
+***                    Hset2 z ⊆ {(x, y). R2 x y}) ∧
+***                   Hmap fst fst z = x ∧ Hmap snd snd z = y)
+*** At command "apply" (line 163 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Compose.thy")
+*** Failed to apply proof method (line 400 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F2set3 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 400 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 393 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F2set2 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 393 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 386 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F2set1 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 386 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 379 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F1set3 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 379 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦Card_order ?fbd; ⋀x. |?fset x| ≤o ?fbd; ⋀x. |?gset x| ≤o ?gbd⟧
+***   ⟹ |⋃ (?fset ` ?gset ?x)| ≤o ?gbd *c ?fbd
+***   Card_order bd_F1
+***   |F1set2 ?x| <o bd_F1
+***   |Gset1 ?x| <o bd_G
+*** At command "by" (line 101 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Compose.thy")
+*** Failed to apply proof method (line 372 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F1set2 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 372 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 365 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy"):
+*** goal (2 subgoals):
+***  1. |F1set1 x| ≤o ?r'
+***  2. ?r' ≤o bd_F1 +c bd_F2
+*** At command "apply" (line 365 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦Card_order ?fbd; ⋀x. |?fset x| ≤o ?fbd; ⋀x. |?gset x| ≤o ?gbd⟧
+***   ⟹ |⋃ (?fset ` ?gset ?x)| ≤o ?gbd *c ?fbd
+***   Card_order bd_F1
+***   |F1set1 ?x| <o bd_F1
+***   |Gset1 ?x| <o bd_G
+*** At command "by" (line 94 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Compose.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F2set3 ?x| <o bd_F2
+***   bd_F2 ≤o bd_F2 +c ?p2.0
+*** At command "by" (line 353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F2set2 ?x| <o bd_F2
+***   bd_F2 ≤o bd_F2 +c ?p2.0
+*** At command "by" (line 351 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F2set1 ?x| <o bd_F2
+***   bd_F2 ≤o bd_F2 +c ?p2.0
+*** At command "by" (line 349 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F1set3 ?x| <o bd_F1
+***   bd_F1 ≤o bd_F1 +c ?p2.0
+*** At command "by" (line 340 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F1set2 ?x| <o bd_F1
+***   bd_F1 ≤o bd_F1 +c ?p2.0
+*** At command "by" (line 338 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** exception THM 0 raised (line 312 of "drule.ML"):
+***   OF: no unifiers
+***   ⟦?r ≤o ?r'; ?r' ≤o ?r''⟧ ⟹ ?r ≤o ?r''
+***   |F1set1 ?x| <o bd_F1
+***   bd_F1 ≤o bd_F1 +c ?p2.0
+*** At command "by" (line 336 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/LFP.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Kill.thy"):
+*** goal (4 subgoals):
+***  1. regularCard bd_F
+***  2. ⋀x. |F2set x| <o bd_F
+***  3. ⋀R S. F2rel R OO F2rel S ≤ F2rel (R OO S)
+***  4. ⋀R. F2rel R =
+***         (λx y. ∃z. F2set z ⊆ {(x, y). R x y} ∧
+***                    F2map fst z = x ∧ F2map snd z = y)
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Kill.thy")
+*** Failed to apply proof method (line 104 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy"):
+*** goal (6 subgoals):
+***  1. regularCard F'bd
+***  2. ⋀x. |F'set1 x| <o F'bd
+***  3. ⋀x. |F'set2 x| <o F'bd
+***  4. ⋀x. |F'set3 x| <o F'bd
+***  5. ⋀R1 R2 R3 S1 S2 S3.
+***        F'rel R1 R2 R3 OO F'rel S1 S2 S3
+***        ≤ F'rel (R1 OO S1) (R2 OO S2) (R3 OO S3)
+***  6. ⋀R1 R2 R3.
+***        F'rel R1 R2 R3 =
+***        (λx y. ∃z. (F'set1 z ⊆ {(x, y). R1 x y} ∧
+***                    F'set2 z ⊆ {(x, y). R2 x y} ∧
+***                    F'set3 z ⊆ {(x, y). R3 x y}) ∧
+***                   F'map fst fst fst z = x ∧ F'map snd snd snd z = y)
+*** At command "apply" (line 104 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy")
+*** Failed to apply proof method (line 112 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy"):
+*** goal (11 subgoals):
+***  1. regularCard F'bd
+***  2. ⋀x. |{}| <o F'bd
+***  3. ⋀x. |{}| <o F'bd
+***  4. ⋀x. |F'set3 x| <o F'bd
+***  5. ⋀x. |F'set4 x| <o F'bd
+***  6. ⋀R1 R2 R3 R4 S1 S2 S3 S4.
+***        F'rel R1 R2 R3 R4 OO F'rel S1 S2 S3 S4
+***        ≤ F'rel (R1 OO S1) (R2 OO S2) (R3 OO S3) (R4 OO S4)
+***  7. ⋀R1 R2 R3 R4.
+***        F'rel R1 R2 R3 R4 =
+***        (λx y. ∃z. ({} ⊆ {(x, y). R1 x y} ∧
+***                    {} ⊆ {(x, y). R2 x y} ∧
+***                    F'set3 z ⊆ {(x, y). R3 x y} ∧
+***                    F'set4 z ⊆ {(x, y). R4 x y}) ∧
+***                   Fmap fst fst z = x ∧ Fmap snd snd z = y)
+***  8. ⋀b1 z3 z4. b1 ∈ {} ⟹ False
+***  9. ⋀b2 z3 z4. b2 ∈ {} ⟹ False
+***  10. ⋀b3 z3 z4. b3 ∈ F'set3 (wit_F z3 z4) ⟹ b3 = z3
+*** A total of 11 subgoals...
+*** At command "apply" (line 112 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy")
+*** Failed to apply proof method (line 112 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Kill.thy"):
+*** goal (5 subgoals):
+***  1. regularCard bd_F
+***  2. ⋀x. |F1set1 x| <o bd_F
+***  3. ⋀x. |F2set x| <o bd_F
+***  4. ⋀R1 R2 S1 S2. F1rel R1 R2 OO F1rel S1 S2 ≤ F1rel (R1 OO S1) (R2 OO S2)
+***  5. ⋀R1 R2.
+***        F1rel R1 R2 =
+***        (λx y. ∃z. (F1set1 z ⊆ {(x, y). R1 x y} ∧
+***                    F2set z ⊆ {(x, y). R2 x y}) ∧
+***                   F1map fst fst z = x ∧ F1map snd snd z = y)
+*** At command "apply" (line 112 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Kill.thy")
+*** Failed to apply initial proof method (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy"):
+*** goal (1 subgoal):
+***  1. |F'set4 x| ≤o F'bd
+*** At command "by" (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy")
+*** Failed to apply initial proof method (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy"):
+*** goal (1 subgoal):
+***  1. |F'set3 x| ≤o F'bd
+*** At command "by" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy")
+*** Failed to apply initial proof method (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy"):
+*** goal (1 subgoal):
+***  1. |{}| ≤o F'bd
+*** At command "by" (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy")
+*** Failed to apply initial proof method (line 72 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy"):
+*** goal (1 subgoal):
+***  1. |F'set3 x| ≤o F'bd
+*** At command "by" (line 72 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy")
+*** Failed to apply initial proof method (line 74 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy"):
+*** goal (1 subgoal):
+***  1. |{}| ≤o F'bd
+*** At command "by" (line 74 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Lift.thy")
+*** Failed to apply initial proof method (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy"):
+*** goal (1 subgoal):
+***  1. |F'set2 x| ≤o F'bd
+*** At command "by" (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy")
+*** Failed to apply initial proof method (line 66 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy"):
+*** goal (1 subgoal):
+***  1. |F'set1 x| ≤o F'bd
+*** At command "by" (line 66 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/BNF_Operations/Permute.thy")
+
+==========
+Buffons_Needle
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 465 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buffons_Needle/Buffons_Needle.thy")
+*** At command "by" (line 464 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buffons_Needle/Buffons_Needle.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 396 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buffons_Needle/Buffons_Needle.thy")
+*** At command "by" (line 395 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buffons_Needle/Buffons_Needle.thy")
+
+==========
+Buildings
+*** Failed to finish proof (line 735 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buildings/Algebra.thy"):
+*** goal (1 subgoal):
+***  1. ⟦lconjby (sum_list ss) (fst x) = s;
+***      s + s = (0::'a) ∧ (∀s∈set ss. s + s = (0::'a));
+***      snd (signed_lconjaction s (signed_list_lconjaction ss x)) =
+***      (if even (count_list (lconjseq (rev ss)) (fst x)) then ¬ snd x
+***       else snd x)⟧
+***     ⟹ rconjby (sum_list ss) s = fst x
+*** At command "by" (line 732 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Buildings/Algebra.thy")
+
+==========
+Catalan_Numbers
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 303 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Numbers.thy")
+*** At command "unfolding" (line 303 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Numbers.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 300 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Numbers.thy")
+*** At command "unfolding" (line 300 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Numbers.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 152 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Auxiliary_Integral.thy")
+*** At command "by" (line 151 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Catalan_Numbers/Catalan_Auxiliary_Integral.thy")
+
+==========
+Complete_Non_Orders
+*** Failed to load theory "Complete_Non_Orders.Complete_Relations" (unresolved "Complete_Non_Orders.Binary_Relations")
+*** Failed to load theory "Complete_Non_Orders.Fixed_Points" (unresolved "Complete_Non_Orders.Complete_Relations")
+*** Failed to load theory "Complete_Non_Orders.Kleene_Fixed_Point" (unresolved "Complete_Non_Orders.Complete_Relations")
+*** Bad head of lhs: existing constant "monotone_on"
+*** The error(s) above occurred in definition:
+*** "monotone_on X r s f ≡ ∀x y. x ∈ X ⟶ y ∈ X ⟶ r x y ⟶ s (f x) (f y)"
+*** At command "definition" (line 55 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Complete_Non_Orders/Binary_Relations.thy")
+
+==========
+Complex_Bounded_Operators
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+
+==========
+Conditional_Transfer_Rule
+*** ud: the input term is not a constant
+*** At command "ud" (line 87 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Conditional_Transfer_Rule/CTR/Tests/CTR_Tests.thy")
+
+==========
+Count_Complex_Roots
+*** Undefined fact: "eucl_rel_poly_iff" (line 275 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Winding_Number_Eval/Missing_Algebraic.thy")
+*** At command "unfolding" (line 275 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Winding_Number_Eval/Missing_Algebraic.thy")
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+
+==========
+CryptHOL
+*** Undefined fact: "nat_mod_eq_lemma" (line 73 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/CryptHOL/Cyclic_Group.thy")
+*** At command "by" (line 73 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/CryptHOL/Cyclic_Group.thy")
+
+==========
+Density_Compiler
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   λx. - inverse x :: ??'c ⇒ ??'c
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "have" (line 312 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Density_Compiler/PDF_Transformations.thy")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   ln :: ??'c ⇒ ??'c
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "have" (line 227 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Density_Compiler/PDF_Transformations.thy")
+
+==========
+Deriving
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+Dict_Construction
+*** Undefined constant: "divmod_nat" (line 37 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dict_Construction/Test_Lazy_Case.thy")
+*** At command "text" (line 37 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dict_Construction/Test_Lazy_Case.thy")
+
+==========
+Diophantine_Eqns_Lin_Hom
+*** Undefined fact: "nat_mod_eq_lemma" (line 38 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Diophantine_Eqns_Lin_Hom/List_Vector.thy")
+*** At command "by" (line 37 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Diophantine_Eqns_Lin_Hom/List_Vector.thy")
+
+==========
+Dirichlet_Series
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 878 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** At command "by" (line 877 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 467 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** At command "by" (line 465 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 207 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** At command "by" (line 206 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1562 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "by" (line 1560 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1499 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "qed" (line 1498 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1452 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "by" (line 1450 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1329 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "by" (line 1328 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 833 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "qed" (line 832 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined constant: "Divides.divmod_nat" (line 42 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+*** At command "partial_function" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+
+==========
+DiscretePricing
+*** More instantiations than variables in theorem
+*** At command "using" (line 3051 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/DiscretePricing/Fair_Price.thy")
+*** More instantiations than variables in theorem
+*** At command "using" (line 2950 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/DiscretePricing/Fair_Price.thy")
+*** More instantiations than variables in theorem
+*** At command "using" (line 934 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/DiscretePricing/Disc_Cond_Expect.thy")
+*** Failed to apply initial proof method (line 1146 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/DiscretePricing/Disc_Cond_Expect.thy"):
+*** using this:
+***     ∀w∈space M.
+***        expl_cond_expect M Y X w * indicat_real (Y -` space N ∩ space M) w =
+***        expl_cond_expect M Y X w
+***     integrable M
+***      (λw. expl_cond_expect M Y X w *
+***           indicat_real (Y -` space N ∩ space M) w)
+*** goal (1 subgoal):
+***  1. integrable M (expl_cond_expect M Y X)
+*** At command "by" (line 1146 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/DiscretePricing/Disc_Cond_Expect.thy")
+
+==========
+Ergodic_Theory
+*** Type unification failed: Variable 'a::type not of sort euclidean_space
+*** 
+*** Failed to meet type constraint:
+*** 
+*** Term:  indicat_real (space M - B N K e) :: 'a ⇒ real
+*** Type:  ??'a ⇒ ??'b
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::type not of sort euclidean_space
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** sort mismatch
+*** 
+*** At command "apply" (line 718 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ergodic_Theory/Kingman.thy")
+
+==========
+Error_Function
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 50 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function_Asymptotics.thy")
+*** At command "by" (line 49 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function_Asymptotics.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 150 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function_Asymptotics.thy")
+*** At command "by" (line 150 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function_Asymptotics.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 345 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function.thy")
+*** At command "by" (line 343 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Error_Function/Error_Function.thy")
+
+==========
+Euler_MacLaurin
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1579 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "qed" (line 1578 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1329 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "by" (line 1328 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1499 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "qed" (line 1498 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1452 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "by" (line 1450 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 833 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** At command "qed" (line 832 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+
+==========
+Finite_Fields
+*** Undefined fact: "pzf.is_ring" (line 60 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Isomorphic.thy")
+*** At command "by" (line 60 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Isomorphic.thy")
+*** Failed to finish proof (line 641 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Card_Irreducible_Polynomials_Aux.thy"):
+*** goal (1 subgoal):
+***  1. ⟦length d - Suc 0 = Suc 0;
+***      ∀d. m_i_p K d ⟶
+***          pmult⇘K⇙ d (gauss_poly K (order R ^ (length f - Suc 0))) *
+***          (length d - Suc 0) =
+***          of_bool (length d - Suc 0 = Suc 0);
+***      m_i_p K d⟧
+***     ⟹ pmult⇘K⇙ d (gauss_poly K (order R ^ (length f - Suc 0))) = Suc 0
+*** At command "by" (line 641 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Card_Irreducible_Polynomials_Aux.thy")
+*** Undefined fact: "d.is_ring" (line 35 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Card_Irreducible_Polynomials_Aux.thy")
+*** At command "using" (line 35 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Card_Irreducible_Polynomials_Aux.thy")
+*** Undefined fact: "is_ring" (line 785 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** At command "by" (line 785 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** Undefined fact: "int.is_ring" (line 564 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** At command "by" (line 564 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** Undefined fact: "int.is_ring" (line 378 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** At command "using" (line 378 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Ring_Characteristic.thy")
+*** Undefined fact: "dr.is_ring" (line 665 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+*** At command "using" (line 665 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+*** Undefined fact: "dr.is_ring" (line 429 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+*** At command "using" (line 429 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+*** Undefined fact: "dr.is_ring" (line 623 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+*** At command "using" (line 623 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Finite_Fields/Finite_Fields_Preliminary_Results.thy")
+
+==========
+FO_Theory_Rewriting
+/tmp/isabelle-quiqui/bash_script10263865871330054090: line 2: lualatex: command not found
+*** /tmp/isabelle-quiqui/bash_script10263865871330054090: line 2: lualatex: command not found
+*** Failed to build document "document"
+
+==========
+Fourier
+*** Failed to apply proof method (line 2632 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy"):
+*** goal (1 subgoal):
+***  1. integrable (lebesgue_on {ξ..pi}) ψ
+*** At command "apply" (line 2632 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy")
+*** Failed to apply initial proof method (line 2233 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy"):
+*** using this:
+***   integrable (lebesgue_on {0..d}) (λx. ¦f (t + x) + f (t - x) - 2 * l¦ / x)
+*** goal (1 subgoal):
+***  1. integrable (lebesgue_on {0..d})
+***      (norm ∘ (λx. (f (t + x) + f (t - x) - 2 * l) / x))
+*** At command "by" (line 2233 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 1697 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy")
+*** At command "apply" (line 1697 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Fourier/Fourier.thy")
+
+==========
+Frequency_Moments
+*** Failed to finish proof (line 331 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Frequency_Moments/Frequency_Moment_2.thy"):
+*** goal (1 subgoal):
+***  1. (∑n∈set as.
+***        c n *
+***        (c n * (c n * (c n * (3 * (r (Suc (Suc 0)) * r (Suc (Suc 0)))))))) +
+***     ((∑i1∈set as.
+***         ∑i3∈set as.
+***           c i1 *
+***           (c i1 *
+***            (c i3 *
+***             (c i3 *
+***              (r (Suc (Suc 0)) * (r (Suc (Suc 0)) * of_bool (i1 ≠ i3))))))) +
+***      (∑i1∈set as.
+***         ∑i2∈set as.
+***           c i1 *
+***           (c i1 *
+***            (c i2 *
+***             (c i2 *
+***              (2 *
+***               (r (Suc (Suc 0)) *
+***                (r (Suc (Suc 0)) * of_bool (i1 ≠ i2))))))))) =
+***     (∑n∈set as.
+***        ∑na∈set as.
+***          c n *
+***          (c n *
+***           (c na * (c na * (3 * (r (Suc (Suc 0)) * r (Suc (Suc 0))))))))
+*** At command "by" (line 331 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Frequency_Moments/Frequency_Moment_2.thy")
+*** Type unification failed: Clash of types "_ set" and "_ ⇒ _"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on f :: (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   T :: ??'c set
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "set" and "fun"
+*** At command "lemma" (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Frequency_Moments/K_Smallest.thy")
+*** Failed to finish proof (line 215 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Prefix_Free_Code_Combinators/Prefix_Free_Code_Combinators.thy"):
+*** goal (1 subgoal):
+***  1. (2 ^ l ≤ u) = (2 ^ l ≤ v) ∧
+***     prefix (encode_bounded_nat l (u - of_bool (2 ^ l ≤ u) * 2 ^ l))
+***      (encode_bounded_nat l (v - of_bool (2 ^ l ≤ v) * 2 ^ l)) ⟹
+***     (2 ^ l ≤ v ⟶
+***      prefix (encode_bounded_nat l (u - 2 ^ l))
+***       (encode_bounded_nat l (v - 2 ^ l))) ∧
+***     (¬ 2 ^ l ≤ v ⟶
+***      prefix (encode_bounded_nat l u) (encode_bounded_nat l v))
+*** At command "by" (line 215 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Prefix_Free_Code_Combinators/Prefix_Free_Code_Combinators.thy")
+
+==========
+Functional_Ordered_Resolution_Prover
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+Gale_Shapley
+*** Failed to load theory "Gale_Shapley.Gale_Shapley2" (unresolved "Collections.Diff_Array")
+*** Code check failed for Scala: isabelle_scala scalac $ISABELLE_SCALAC_OPTIONS ROOT.scala
+*** At command "export_code" (line 1067 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Collections/Lib/Diff_Array.thy")
+
+==========
+Gauss_Jordan
+*** Failed to load theory "Gauss_Jordan.Code_Rational" (unresolved "Gauss_Jordan.Code_Real_Approx_By_Float_Haskell")
+*** Failed to load theory "Gauss_Jordan.Code_Generation_IArrays_Haskell" (unresolved "Gauss_Jordan.Code_Rational")
+*** Not a constant: real_of_integer
+*** At command "code_printing" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Gauss_Jordan/Code_Real_Approx_By_Float_Haskell.thy")
+
+==========
+Green
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 2225 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** At command "using" (line 2225 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 2459 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** At command "using" (line 2459 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 122 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** At command "by" (line 122 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Paths.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 838 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Integrals.thy")
+*** At command "apply" (line 838 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Integrals.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 351 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Integrals.thy")
+*** At command "using" (line 351 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Integrals.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 140 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** At command "unfolding" (line 140 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 113 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** At command "unfolding" (line 113 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 90 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** At command "unfolding" (line 90 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 7 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+*** At command "by" (line 7 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Green/Derivs.thy")
+
+==========
+Hello_World
+*** ML error (line 34 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Hello_World/RunningCodeFromIsabelle.thy"):
+*** Type error in function application.
+***    Function:
+***       List.app (fn ([file], content) => File.write (... + ...) content) :
+***       (string list * string) list -> unit
+***    Argument: files : (string list * Bytes.T) list
+***    Reason:
+***       Can't unify string (*In Basis*) with Bytes.T
+***          (Different type constructors)
+*** At command "ML" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Hello_World/RunningCodeFromIsabelle.thy")
+
+==========
+Inductive_Inference
+*** Failed to finish proof (line 1164 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Inductive_Inference/Universal.thy"):
+*** goal (2 subgoals):
+***  1. ⟦hd xs = e_hd (Partial_Recursive.list_encode xs);
+***      c = ((Pr (arity f) f g, xs, ls) # fs, None); ls ≠ [];
+***      length ls = Suc (e_hd (Partial_Recursive.list_encode xs));
+***      ⋀e. estep_Pr e ≡
+***          if e2ls e = 0
+***          then if e2rv e = 0
+***               then prod_encode
+***                     (e_cons
+***                       (triple_encode (pdec122 (e2i e)) (e_tl (e2xs e)) 0)
+***                       (e2stack e),
+***                      0)
+***               else prod_encode
+***                     (e_cons
+***                       (triple_encode (e2i e) (e2xs e)
+***                         (singleton_encode (e2rv e - 1)))
+***                       (e2tail e),
+***                      0)
+***          else if e2lenls e = Suc (e_hd (e2xs e))
+***               then prod_encode (e2tail e, Suc (e_hd (e2ls e)))
+***               else if e2rv e = 0
+***                    then prod_encode
+***                          (e_cons
+***                            (triple_encode (pdec222 (e2i e))
+***                              (e_cons (e2lenls e - 1)
+***                                (e_cons (e_hd (e2ls e)) (e_tl (e2xs e))))
+***                              0)
+***                            (e2stack e),
+***                           0)
+***                    else prod_encode
+***                          (e_cons
+***                            (triple_encode (e2i e) (e2xs e)
+***                              (e_cons (e2rv e - 1) (e2ls e)))
+***                            (e2tail e),
+***                           0);
+***      arity g = Suc (length xs); n = arity f; wellf f; wellf g;
+***      Suc (arity f) = length xs; rv ↑⟧
+***     ⟹ 0 < Partial_Recursive.list_encode ls
+***  2. ⋀y. ⟦hd xs = e_hd (Partial_Recursive.list_encode xs);
+***          c = ((Pr (arity f) f g, xs, ls) # fs, Some y); ls ≠ [];
+***          length ls = Suc (e_hd (Partial_Recursive.list_encode xs));
+***          ⋀e. estep_Pr e ≡
+***              if e2ls e = 0
+***              then if e2rv e = 0
+***                   then prod_encode
+***                         (e_cons
+***                           (triple_encode (pdec122 (e2i e)) (e_tl (e2xs e))
+***                             0)
+***                           (e2stack e),
+***                          0)
+***                   else prod_encode
+***                         (e_cons
+***                           (triple_encode (e2i e) (e2xs e)
+***                             (singleton_encode (e2rv e - 1)))
+***                           (e2tail e),
+***                          0)
+***              else if e2lenls e = Suc (e_hd (e2xs e))
+***                   then prod_encode (e2tail e, Suc (e_hd (e2ls e)))
+***                   else if e2rv e = 0
+***                        then prod_encode
+***                              (e_cons
+***                                (triple_encode (pdec222 (e2i e))
+***                                  (e_cons (e2lenls e - 1)
+***                                    (e_cons (e_hd (e2ls e)) (e_tl (e2xs e))))
+***                                  0)
+***                                (e2stack e),
+***                               0)
+***                        else prod_encode
+***                              (e_cons
+***                                (triple_encode (e2i e) (e2xs e)
+***                                  (e_cons (e2rv e - 1) (e2ls e)))
+***                                (e2tail e),
+***                               0);
+***          arity g = Suc (length xs); n = arity f; wellf f; wellf g;
+***          Suc (arity f) = length xs; rv ↓= y⟧
+***         ⟹ 0 < Partial_Recursive.list_encode ls
+*** At command "by" (line 1164 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Inductive_Inference/Universal.thy")
+*** Failed to finish proof (line 1243 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Inductive_Inference/Universal.thy"):
+*** goal (1 subgoal):
+***  1. ⟦ls ≠ []; rv ↓= 0; c = ((Mn n f, xs, ls) # fs, Some 0);
+***      ⋀e. estep_Mn e ≡
+***          if e2ls e = 0
+***          then prod_encode
+***                (e_cons
+***                  (triple_encode (pdec22 (e2i e)) (e_cons 0 (e2xs e)) 0)
+***                  (e_cons
+***                    (triple_encode (e2i e) (e2xs e) (singleton_encode 0))
+***                    (e2tail e)),
+***                 0)
+***          else if e2rv e = 1 then prod_encode (e2tail e, Suc (e_hd (e2ls e)))
+***               else prod_encode
+***                     (e_cons
+***                       (triple_encode (pdec22 (e2i e))
+***                         (e_cons (Suc (e_hd (e2ls e))) (e2xs e)) 0)
+***                       (e_cons
+***                         (triple_encode (e2i e) (e2xs e)
+***                           (singleton_encode (Suc (e_hd (e2ls e)))))
+***                         (e2tail e)),
+***                      0)⟧
+***     ⟹ 0 < Partial_Recursive.list_encode ls
+*** At command "by" (line 1243 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Inductive_Inference/Universal.thy")
+
+==========
+Isabelle_C
+*** Failed to load theory "Isabelle_C.C_Parser_Annotation" (unresolved "Isabelle_C.C_Lexer_Annotation")
+*** Failed to load theory "Isabelle_C.C_Eval" (unresolved "Isabelle_C.C_Parser_Annotation", "Isabelle_C.C_Parser_Language")
+*** Failed to load theory "Isabelle_C.C_Command" (unresolved "Isabelle_C.C_Eval")
+*** Failed to load theory "Isabelle_C.C_Document" (unresolved "Isabelle_C.C_Command")
+*** Failed to load theory "Isabelle_C.C_Main" (unresolved "Isabelle_C.C_Document")
+*** Failed to load theory "Isabelle_C.C0" (unresolved "Isabelle_C.C_Main")
+*** Failed to load theory "Isabelle_C.C1" (unresolved "Isabelle_C.C_Main")
+*** Failed to load theory "Isabelle_C.C2" (unresolved "Isabelle_C.C_Main")
+*** Failed to load theory "Isabelle_C.C3" (unresolved "Isabelle_C.C_Main")
+*** Failed to load theory "Isabelle_C.C4" (unresolved "Isabelle_C.C_Main")
+*** Failed to load theory "Isabelle_C.C_paper" (unresolved "Isabelle_C.C_Main")
+*** ML error (line 827 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Parser_Language.thy"):
+*** Value or constructor (text_input) has not been declared in structure Args
+*** At command "ML" (line 811 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Parser_Language.thy")
+*** ML error (line 250 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** Constructor (Verbatim) has not been declared in structure Token
+*** ML error (line 250 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** qualified name Token.Verbatim illegal here
+*** ML error (line 418 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** Constructor (Verbatim) has not been declared in structure Token
+*** ML error (line 418 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** qualified name Token.Verbatim illegal here
+*** ML error (line 495 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** Constructor (Verbatim) has not been declared in structure Token
+*** ML error (line 495 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** qualified name Token.Verbatim illegal here
+*** ML error (line 692 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy"):
+*** Value or constructor (Verbatim) has not been declared in structure Token
+*** At command "ML" (line 219 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_C/C11-FrontEnd/src/C_Lexer_Annotation.thy")
+
+==========
+Isabelle_Meta_Model
+*** Failed to load theory "Isabelle_Meta_Model.Isabelle_Main1" (unresolved "Isabelle_Meta_Model.Isabelle_code_runtime", "Isabelle_Meta_Model.Isabelle_code_target")
+*** ML error (line 181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_Meta_Model/isabelle_home/src/Tools/Code/Isabelle_code_target.thy"):
+*** Value or constructor (text) has not been declared in structure Parse
+*** At command "ML" (line 156 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_Meta_Model/isabelle_home/src/Tools/Code/Isabelle_code_target.thy")
+*** ML error (line 87 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_Meta_Model/isabelle_home/src/Tools/Code/Isabelle_code_runtime.thy"):
+*** Type error in function application.
+***    Function: space_implode "\n\n" : string list -> string
+***    Argument: (map snd ml_modules) : Bytes.T list
+***    Reason:
+***       Can't unify string (*In Basis*) with Bytes.T
+***          (Different type constructors)
+*** At command "ML" (line 44 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Isabelle_Meta_Model/isabelle_home/src/Tools/Code/Isabelle_code_runtime.thy")
+
+==========
+JinjaThreads
+*** Failed to finish proof (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. ∀x. bit x 0 = odd x
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Code check failed for Scala: isabelle_scala scalac $ISABELLE_SCALAC_OPTIONS ROOT.scala
+*** At command "export_code" (line 1067 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Collections/Lib/Diff_Array.thy")
+*** Undefined fact: "Orderings.monoI" (line 36 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Refine_Monadic/Refine_Mono_Prover.thy")
+*** At command "declaration" (line 36 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Refine_Monadic/Refine_Mono_Prover.thy")
+
+==========
+Jordan_Normal_Form
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+
+==========
+Khovanskii_Theorem
+*** Failed to refine any pending goal
+*** At command "by" (line 148 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Khovanskii_Theorem/For_2022.thy")
+
+==========
+Lambert_W
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 441 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Stirling_Formula.thy")
+*** At command "by" (line 440 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Stirling_Formula.thy")
+
+==========
+LEM
+*** Failed to finish proof (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. to_bl w ! (LENGTH('a) - Suc 0) = bit w 0 ⟹ odd w = bit w 0
+*** At command "by" (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply proof method (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (2 subgoals):
+***  1. ⋀m w. 0 < m ⟹ bit w 0 = rev (bin_to_bl m w) ! 0
+***  2. ⋀n m w.
+***        ⟦⋀m w. n < m ⟹ bit w n = rev (bin_to_bl m w) ! n; Suc n < m⟧
+***        ⟹ bit w (Suc n) = rev (bin_to_bl m w) ! Suc n
+*** At command "apply" (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply initial proof method (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** using this:
+***     0 ≤ x
+***     x < 2 ^ n
+***     0 < n
+*** goal (1 subgoal):
+***  1. bit x 0 = bit (x - 2 ^ n) 0
+*** At command "by" (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to apply proof method (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** goal (2 subgoals):
+***  1. ⋀w. (b ⟶ bit (1 + 2 * (w div 2)) 0) ∧ (¬ b ⟶ ¬ bit (2 * (w div 2)) 0)
+***  2. ⋀n w m.
+***        (⋀w m. bit (set_bit_class.set_bit w n b) m =
+***               (if m = n then b else bit w m)) ⟹
+***        bit (set_bit_class.set_bit w (Suc n) b) m =
+***        (if m = Suc n then b else bit w m)
+*** At command "apply" (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+
+==========
+List_Update
+*** Failed to finish proof (line 1502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/List_Update/TS.thy"):
+*** goal (1 subgoal):
+***  1. count_list (drop (length cs - i) (rev cs)) x ≤ count_list cs x
+*** At command "by" (line 1502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/List_Update/TS.thy")
+
+==========
+Markov_Models
+*** Failed to finish proof (line 36 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/ex/PGCL.thy"):
+*** goal (7 subgoals):
+***  1. monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (λa b. 0)
+***  2. ⋀x. monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (λa b. a (x b))
+***  3. ⋀c1 c2.
+***        ⟦monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c1);
+***         monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c2)⟧
+***        ⟹ monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x)
+***            (λa. wp c1 (wp c2 a))
+***  4. ⋀c1 c2.
+***        ⟦monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c1);
+***         monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c2)⟧
+***        ⟹ monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x)
+***            (λa b. wp c1 a b ⊓ wp c2 a b)
+***  5. ⋀x1 c1 c2.
+***        ⟦monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c1);
+***         monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c2)⟧
+***        ⟹ monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x)
+***            (λa b. if x1 b then wp c1 a b else wp c2 a b)
+***  6. ⋀x1 c1 c2.
+***        ⟦monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c1);
+***         monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c2)⟧
+***        ⟹ monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x)
+***            (λa b. ennreal (pmf x1 True) * wp c1 a b +
+***                   ennreal (pmf x1 False) * wp c2 a b)
+***  7. ⋀x1 c.
+***        monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x) (wp c) ⟹
+***        monotone (λa b. ∀x. a x ≤ b x) (λa b. ∀x. a x ≤ b x)
+***         (λa. lfp (λX s. if x1 s then wp c X s else a s))
+*** At command "by" (line 34 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/ex/PGCL.thy")
+*** Failed to finish proof (line 735 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/Markov_Decision_Process.thy"):
+*** goal (1 subgoal):
+***  1. (⋀m n. m ≤ n ⟹ ∀x. (Q ^^ n) ⊤ x ⟶ (Q ^^ m) ⊤ x) ⟹
+***     monotone (≤) (λx y. ∀xa. y xa ⟶ x xa) (λi x. (Q ^^ i) ⊤ (f x))
+*** At command "by" (line 735 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/Markov_Decision_Process.thy")
+*** Failed to finish proof (line 714 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/Markov_Decision_Process.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x m n xa.
+***        ⟦monotone (≤) (λx y. ∀xa. y xa ⟶ x xa) P; x ∈ cfg_on s; m ≤ n;
+***         xa ∈ space St; P n xa⟧
+***        ⟹ P m xa
+*** At command "by" (line 714 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/Markov_Decision_Process.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. monotone (≤) (λx y. ∀xa∈y. xa ∈ x)
+***      (λn. {ω ∈ space (stream_space (count_space UNIV)).
+***            enat n ≤ scount (HLD {y}) ω})
+*** At command "done" (line 560 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Markov_Models/Classifying_Markov_Chain_States.thy")
+
+==========
+MDP-Rewards
+*** Failed to apply initial proof method (line 44 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/MDP-Rewards/MDP_disc.thy"):
+*** goal (1 subgoal):
+***  1. integrable (M ⨂⇩M Pi⇩M UNIV (λi. M))
+***      (λX. f (to_stream (case X of (s, ω) ⇒ case_nat s ω))) =
+***     integrable (M ⨂⇩M Pi⇩M UNIV (λi. M))
+***      (λ(x, X). f (to_stream (case_nat x X)))
+*** At command "by" (line 44 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/MDP-Rewards/MDP_disc.thy")
+
+==========
+Mersenne_Primes
+*** Failed to finish proof (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. ∀x. bit x 0 = odd x
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Undefined fact: "eucl_rel_int_iff" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Mersenne_Primes/Lucas_Lehmer_Code.thy")
+*** At command "by" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Mersenne_Primes/Lucas_Lehmer_Code.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+
+==========
+MonoBoolTranAlgebra
+*** Undefined fact: "Lattices.semilattice_sup_class.mono_sup" (line 361 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/MonoBoolTranAlgebra/Mono_Bool_Tran_Algebra.thy")
+*** At command "by" (line 361 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/MonoBoolTranAlgebra/Mono_Bool_Tran_Algebra.thy")
+
+==========
+Nano_JSON
+*** Failed to load theory "Nano_JSON.Nano_JSON_Query" (unresolved "Nano_JSON.Nano_JSON")
+*** Failed to load theory "Nano_JSON.Nano_JSON_Main" (unresolved "Nano_JSON.Nano_JSON_Query")
+*** Failed to load theory "Nano_JSON.Nano_JSON_Manual" (unresolved "Nano_JSON.Nano_JSON_Query")
+*** Failed to load theory "Nano_JSON.Example" (unresolved "Nano_JSON.Nano_JSON_Main")
+*** Failed to load theory "Nano_JSON.Example_Real" (unresolved "Nano_JSON.Nano_JSON_Main")
+*** ML error (line 453 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Nano_JSON/Nano_JSON.thy"):
+*** Type error in function application.
+***    Function: XML.Text : string -> XML.tree
+***    Argument: content : Bytes.T
+***    Reason:
+***       Can't unify string (*In Basis*) with Bytes.T
+***          (Different type constructors)
+*** ML error (line 464 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Nano_JSON/Nano_JSON.thy"):
+*** Type error in function application.
+***    Function:
+***       export (Path.binding (Path.append (... ...) filename, Position.none))
+***       : Bytes.T -> theory -> theory
+***    Argument: json_string : string
+***    Reason:
+***       Can't unify Bytes.T with string (*In Basis*)
+***          (Different type constructors)
+*** At command "ML" (line 445 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Nano_JSON/Nano_JSON.thy")
+
+==========
+Ordinal_Partitions
+*** Failed to load theory "ZFC_in_HOL.ZFC_Cardinals" (unresolved "ZFC_in_HOL.ZFC_in_HOL")
+*** Failed to load theory "ZFC_in_HOL.Kirby" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Failed to load theory "ZFC_in_HOL.Ordinal_Exp" (unresolved "ZFC_in_HOL.Kirby")
+*** Failed to load theory "Ordinal_Partitions.Library_Additions" (unresolved "ZFC_in_HOL.Ordinal_Exp")
+*** Failed to load theory "ZFC_in_HOL.Cantor_NF" (unresolved "ZFC_in_HOL.Ordinal_Exp")
+*** Failed to load theory "ZFC_in_HOL.ZFC_Typeclasses" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Failed to load theory "Ordinal_Partitions.Partitions" (unresolved "Ordinal_Partitions.Library_Additions", "ZFC_in_HOL.Cantor_NF", "ZFC_in_HOL.ZFC_Typeclasses")
+*** Failed to load theory "Ordinal_Partitions.Erdos_Milner" (unresolved "Ordinal_Partitions.Partitions")
+*** Failed to load theory "Ordinal_Partitions.Omega_Omega" (unresolved "Ordinal_Partitions.Erdos_Milner")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   h :: ??'c ⇒ ??'c
+*** 
+*** At command "lemma" (line 1090 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+
+==========
+Ordinary_Differential_Equations
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 176 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/IVP/Upper_Lower_Solution.thy")
+*** At command "by" (line 176 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/IVP/Upper_Lower_Solution.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 66 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Gronwall.thy")
+*** At command "by" (line 64 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Gronwall.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 27 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Gronwall.thy")
+*** At command "by" (line 25 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Gronwall.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 70 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Vector_Derivative_On.thy")
+*** At command "by" (line 70 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Vector_Derivative_On.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Vector_Derivative_On.thy")
+*** At command "by" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Ordinary_Differential_Equations/Library/Vector_Derivative_On.thy")
+
+==========
+Padic_Ints
+*** Undefined fact: "cring" (line 3704 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Padic_Ints/Cring_Poly.thy")
+*** At command "using" (line 3704 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Padic_Ints/Cring_Poly.thy")
+*** Undefined fact: "is_ring" (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Padic_Ints/Cring_Poly.thy")
+*** At command "apply" (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Padic_Ints/Cring_Poly.thy")
+
+==========
+Polynomial_Factorization
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** Undefined constant: "Divides.divmod_nat" (line 42 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+*** At command "partial_function" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Factorization/Prime_Factorization.thy")
+*** Undefined constant: "Divides.divmod_nat" (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Improved_Code_Equations.thy")
+*** At command "subsection" (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Improved_Code_Equations.thy")
+
+==========
+Polynomial_Interpolation
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** Undefined constant: "Divides.divmod_nat" (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Improved_Code_Equations.thy")
+*** At command "subsection" (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Improved_Code_Equations.thy")
+
+==========
+Prefix_Free_Code_Combinators
+*** Failed to finish proof (line 215 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Prefix_Free_Code_Combinators/Prefix_Free_Code_Combinators.thy"):
+*** goal (1 subgoal):
+***  1. (2 ^ l ≤ u) = (2 ^ l ≤ v) ∧
+***     prefix (encode_bounded_nat l (u - of_bool (2 ^ l ≤ u) * 2 ^ l))
+***      (encode_bounded_nat l (v - of_bool (2 ^ l ≤ v) * 2 ^ l)) ⟹
+***     (2 ^ l ≤ v ⟶
+***      prefix (encode_bounded_nat l (u - 2 ^ l))
+***       (encode_bounded_nat l (v - 2 ^ l))) ∧
+***     (¬ 2 ^ l ≤ v ⟶
+***      prefix (encode_bounded_nat l u) (encode_bounded_nat l v))
+*** At command "by" (line 215 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Prefix_Free_Code_Combinators/Prefix_Free_Code_Combinators.thy")
+
+==========
+Probabilistic_System_Zoo
+*** Too many parameters for case "8" (line 91 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Vardi_Counterexample.thy")
+*** At command "case" (line 91 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Vardi_Counterexample.thy")
+*** Failed to refine any pending goal
+*** At command "by" (line 94 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Nonempty_Bounded_Set.thy")
+*** Failed to apply proof method (line 117 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Bool_Bounded_Set.thy"):
+*** goal (1 subgoal):
+***  1. regularCard natLeq
+*** At command "apply" (line 117 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Bool_Bounded_Set.thy")
+*** Failed to apply proof method (line 68 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Finitely_Bounded_Set_Counterexample.thy"):
+*** goal (1 subgoal):
+***  1. regularCard (|UNIV| +c natLeq)
+*** At command "apply" (line 68 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Probabilistic_System_Zoo/Finitely_Bounded_Set_Counterexample.thy")
+
+==========
+Projective_Measurements
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+
+==========
+Proof_Strategy_Language
+*** Failed to load theory "Proof_Strategy_Language.PSL" (unresolved "Proof_Strategy_Language.Try_Hard")
+*** Failed to load theory "Proof_Strategy_Language.Example" (unresolved "Proof_Strategy_Language.PSL")
+*** ML error (line 165 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Proof_Strategy_Language/Subtool.ML"):
+*** Type mismatch in type constraint.
+***    Value: Sledgehammer.run_sledgehammer params Auto_Try NONE 1 fact_override
+***       : Proof.state -> bool * (Sledgehammer.sledgehammer_outcome * string)
+***    Constraint: Proof.state -> bool * (string * string list)
+***    Reason:
+***       Can't unify Sledgehammer.sledgehammer_outcome with string (*In Basis*)
+***          (Different type constructors)
+*** At command "ML_file" (line 18 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Proof_Strategy_Language/Try_Hard.thy")
+
+==========
+QR_Decomposition
+*** Failed to load theory "QR_Decomposition.Examples_QR_Abstract_Float" (unresolved "Gauss_Jordan.Code_Real_Approx_By_Float_Haskell")
+*** Failed to load theory "QR_Decomposition.Examples_QR_IArrays_Float" (unresolved "Gauss_Jordan.Code_Real_Approx_By_Float_Haskell")
+*** Not a constant: real_of_integer
+*** At command "code_printing" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Gauss_Jordan/Code_Real_Approx_By_Float_Haskell.thy")
+
+==========
+Quasi_Borel_Spaces
+*** More instantiations than variables in theorem
+*** At command "using" (line 373 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Quasi_Borel_Spaces/Pair_QuasiBorel_Measure.thy")
+*** More instantiations than variables in theorem
+*** At command "using" (line 816 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Quasi_Borel_Spaces/Probability_Space_QuasiBorel.thy")
+
+==========
+Random_BSTs
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  (∈) x :: ??'a set ⇒ bool
+*** Operand:   A :: ??'b ⇒ ??'c
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "lemma" (line 128 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Random_BSTs/Random_BSTs.thy")
+*** At command "by" (line 118 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Random_BSTs/Random_BSTs.thy")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  (∈) x :: ??'a set ⇒ bool
+*** Operand:   A :: ??'b ⇒ ??'c
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "lemma" (line 128 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Random_BSTs/Random_BSTs.thy")
+
+==========
+Refine_Monadic
+*** Failed to load theory "Refine_Monadic.Refine_Misc" (unresolved "Refine_Monadic.Refine_Mono_Prover")
+*** Failed to load theory "Refine_Monadic.RefineG_Domain" (unresolved "Refine_Monadic.Refine_Misc")
+*** Failed to load theory "Refine_Monadic.RefineG_Transfer" (unresolved "Refine_Monadic.Refine_Misc")
+*** Failed to load theory "Refine_Monadic.RefineG_Assert" (unresolved "Refine_Monadic.RefineG_Transfer")
+*** Failed to load theory "Refine_Monadic.RefineG_Recursion" (unresolved "Refine_Monadic.RefineG_Domain", "Refine_Monadic.RefineG_Transfer", "Refine_Monadic.Refine_Misc")
+*** Failed to load theory "Refine_Monadic.Refine_Basic" (unresolved "Refine_Monadic.RefineG_Assert", "Refine_Monadic.RefineG_Recursion", "Refine_Monadic.Refine_Misc")
+*** Failed to load theory "Refine_Monadic.Refine_Heuristics" (unresolved "Refine_Monadic.Refine_Basic")
+*** Failed to load theory "Refine_Monadic.Refine_Leof" (unresolved "Refine_Monadic.Refine_Basic")
+*** Failed to load theory "Refine_Monadic.Refine_More_Comb" (unresolved "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Heuristics", "Refine_Monadic.Refine_Leof")
+*** Failed to load theory "Refine_Monadic.RefineG_While" (unresolved "Refine_Monadic.RefineG_Recursion")
+*** Failed to load theory "Refine_Monadic.Refine_Det" (unresolved "Refine_Monadic.RefineG_Assert", "Refine_Monadic.RefineG_While")
+*** Failed to load theory "Refine_Monadic.Refine_While" (unresolved "Refine_Monadic.RefineG_While", "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Leof")
+*** Failed to load theory "Refine_Monadic.Refine_Pfun" (unresolved "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Det")
+*** Failed to load theory "Refine_Monadic.Refine_Transfer" (unresolved "Refine_Monadic.RefineG_Transfer", "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Det", "Refine_Monadic.Refine_While")
+*** Failed to load theory "Refine_Monadic.Refine_Automation" (unresolved "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Transfer")
+*** Failed to load theory "Refine_Monadic.Autoref_Monadic" (unresolved "Refine_Monadic.Refine_Transfer")
+*** Failed to load theory "Refine_Monadic.Refine_Foreach" (unresolved "Refine_Monadic.Refine_Heuristics", "Refine_Monadic.Refine_Pfun", "Refine_Monadic.Refine_Transfer", "Refine_Monadic.Refine_While")
+*** Failed to load theory "Refine_Monadic.Refine_Monadic" (unresolved "Refine_Monadic.Autoref_Monadic", "Refine_Monadic.Refine_Automation", "Refine_Monadic.Refine_Basic", "Refine_Monadic.Refine_Foreach", "Refine_Monadic.Refine_Heuristics", "Refine_Monadic.Refine_Leof", "Refine_Monadic.Refine_More_Comb", "Refine_Monadic.Refine_Pfun", "Refine_Monadic.Refine_Transfer", "Refine_Monadic.Refine_While")
+*** Failed to load theory "Refine_Monadic.Breadth_First_Search" (unresolved "Refine_Monadic.Refine_Monadic")
+*** Failed to load theory "Refine_Monadic.WordRefine" (unresolved "Refine_Monadic.Refine_Monadic")
+*** Failed to load theory "Refine_Monadic.Examples" (unresolved "Refine_Monadic.Breadth_First_Search", "Refine_Monadic.WordRefine")
+*** Undefined fact: "Orderings.monoI" (line 36 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Refine_Monadic/Refine_Mono_Prover.thy")
+*** At command "declaration" (line 36 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Refine_Monadic/Refine_Mono_Prover.thy")
+
+==========
+Rep_Fin_Groups
+*** Failed to finish proof (line 8057 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Rep_Fin_Groups/Rep_Fin_Groups.thy"):
+*** goal (1 subgoal):
+***  1. ⟦add_independentS Us; add_independentS Ws; ∀x∈set Us. (0::'a) ∈ x;
+***      ∀x∈sum_list Ws. ∀a∈sum_list Us. a + x = (0::'a) ⟶ a = (0::'a);
+***      ⋀As Bs.
+***         ⟦∀X∈set As. (0::?'a4) ∈ X; add_independentS As; add_independentS Bs;
+***          ∀x∈sum_list Bs + {0::?'a4}.
+***             ∀a∈sum_list As. a + x = (0::?'a4) ⟶ a = (0::?'a4)⟧
+***         ⟹ add_independentS (As @ Bs)⟧
+***     ⟹ add_independentS (Us @ Ws)
+*** At command "by" (line 8057 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Rep_Fin_Groups/Rep_Fin_Groups.thy")
+
+==========
+Safe_Distance
+*** ML error (line 129 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Evaluation.thy"):
+*** Value or constructor (fold_lines) has not been declared in structure File
+*** At command "ML" (line 113 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Evaluation.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 129 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** At command "unfolding" (line 128 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** At command "by" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 39 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** At command "by" (line 39 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance_Reaction.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 481 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 481 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 429 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "unfolding" (line 428 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 451 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 451 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 445 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 445 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 277 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 277 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 222 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 222 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+*** At command "by" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Safe_Distance/Safe_Distance.thy")
+
+==========
+Saturation_Framework_Extensions
+*** Interrupt
+
+==========
+SimplifiedOntologicalArgument
+*** Failed to load theory "SimplifiedOntologicalArgument.SimplifiedOntologicalArgument" (unresolved "SimplifiedOntologicalArgument.DisableKodkodScala")
+*** Failed to load theory "SimplifiedOntologicalArgument.SimpleVariant" (unresolved "SimplifiedOntologicalArgument.DisableKodkodScala")
+*** Failed to load theory "SimplifiedOntologicalArgument.SimpleVariantHF" (unresolved "SimplifiedOntologicalArgument.DisableKodkodScala")
+*** Failed to load theory "SimplifiedOntologicalArgument.SimpleVariantPG" (unresolved "SimplifiedOntologicalArgument.DisableKodkodScala")
+*** Failed to load theory "SimplifiedOntologicalArgument.UFilterVariant" (unresolved "SimplifiedOntologicalArgument.DisableKodkodScala")
+*** ML error (line 11 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/SimplifiedOntologicalArgument/DisableKodkodScala.thy"):
+*** Value or constructor (default_put_bool) has not been declared in structure Options
+*** At command "ML" (line 10 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/SimplifiedOntologicalArgument/DisableKodkodScala.thy")
+
+==========
+Skip_Lists
+*** Failed to load theory "Skip_Lists.Skip_List" (unresolved "Skip_Lists.Misc")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   f :: 'a ⇒ 'b
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "lemma" (line 13 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Skip_Lists/Misc.thy")
+
+==========
+Smith_Normal_Form
+*** Type unification failed: Clash of types "_ set" and "_ ⇒ _"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on g :: (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   {0::??'c..<n} :: ??'c set
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "set" and "fun"
+*** At command "lemma" (line 887 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Smith_Normal_Form/SNF_Missing_Lemmas.thy")
+*** Undefined fact: "pdivmod_pdivmodrel" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+*** At command "from" (line 348 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Polynomial_Interpolation/Ring_Hom_Poly.thy")
+
+==========
+Stable_Matching
+*** Interrupt
+
+==========
+Stirling_Formula
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 919 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** At command "by" (line 918 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 881 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** At command "by" (line 879 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** Failed to finish proof (line 254 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. ⟦0 < a; 0 < b; x ≠ 0; of_bool (0 < x) ≠ of_bool (0 ≤ x)⟧ ⟹ False
+*** At command "by" (line 252 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 395 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** At command "by" (line 393 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Gamma_Asymptotics.thy")
+*** Undefined fact: "has_field_derivative_iff_has_vector_derivative" (line 441 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Stirling_Formula.thy")
+*** At command "by" (line 440 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Stirling_Formula/Stirling_Formula.thy")
+
+==========
+Sunflowers
+*** Failed to apply initial proof method (line 108 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Sunflowers/Erdos_Rado_Sunflower.thy"):
+*** goal (1 subgoal):
+***  1. card (⋃ G) ≤ sum card G
+*** At command "by" (line 108 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Sunflowers/Erdos_Rado_Sunflower.thy")
+
+==========
+TortoiseHare
+*** Undefined fact: "nat_mod_eq_lemma" (line 260 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/TortoiseHare/Basis.thy")
+*** At command "using" (line 260 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/TortoiseHare/Basis.thy")
+
+==========
+Transformer_Semantics
+*** Interrupt
+
+==========
+UpDown_Scheme
+*** Failed to apply initial proof method (line 96 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/UpDown_Scheme/Triangular_Function.thy"):
+*** using this:
+***   integrable lborel
+***    (λx. indicat_real
+***          {real_of_int (i - 1) /
+***           2 ^ (l + 1)..real_of_int (i + 1) / 2 ^ (l + 1)}
+***          x *⇩R
+***         φ (l, i) x)
+*** goal (1 subgoal):
+***  1. integrable lborel (φ (l, i))
+*** At command "by" (line 96 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/UpDown_Scheme/Triangular_Function.thy")
+*** Failed to apply initial proof method (line 106 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/UpDown_Scheme/Triangular_Function.thy"):
+*** using this:
+***   integrable lborel
+***    (λx. indicat_real
+***          {real_of_int (i - 1) /
+***           2 ^ (l + 1)..real_of_int (i + 1) / 2 ^ (l + 1)}
+***          x *⇩R
+***         (φ (l, i) x * φ (l', i') x))
+*** goal (1 subgoal):
+***  1. integrable lborel (λx. φ (l, i) x * φ (l', i') x)
+*** At command "by" (line 106 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/UpDown_Scheme/Triangular_Function.thy")
+
+==========
+Van_Emde_Boas_Trees
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+Virtual_Substitution
+*** Failed to finish proof (line 543 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Virtual_Substitution/OptimizationProofs.thy"):
+*** goal (1 subgoal):
+***  1. ⋀a b. ⟦∀x∈set (chop (to_list v p)). case x of (term, x) ⇒ i ≤ x;
+***            (a, b) ∈ set (chop (to_list v p))⟧
+***           ⟹ f v ^ (b - i) * f v ^ i = f v ^ b
+*** At command "by" (line 543 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Virtual_Substitution/OptimizationProofs.thy")
+
+==========
+WebAssembly
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⟦m ≤ (if nat (of_bool (2 ≤ LENGTH('a)) * 2) * (n div 2 div m) * m ≤ n
+***           then unat (word_of_nat n) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m)
+***           else unat (word_of_nat n) + 2 ^ LENGTH('a) -
+***                unat (2 * word_of_nat (n div 2 div m) * word_of_nat m));
+***      2 * (n div 2 div m) < 2 ^ LENGTH('a); 2 * (n div 2 div m) * m ≤ n;
+***      x = word_of_nat n; n < 2 ^ LENGTH('a); y = word_of_nat m;
+***      m < 2 ^ LENGTH('a)⟧
+***     ⟹ 2 * (n div 2 div m) * m + m ≤ n
+*** At command "done" (line 80 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Native_Word/Code_Target_Word_Base.thy")
+*** Failed to finish proof (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. to_bl w ! (LENGTH('a) - Suc 0) = bit w 0 ⟹ odd w = bit w 0
+*** At command "by" (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply proof method (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (2 subgoals):
+***  1. ⋀m w. 0 < m ⟹ bit w 0 = rev (bin_to_bl m w) ! 0
+***  2. ⋀n m w.
+***        ⟦⋀m w. n < m ⟹ bit w n = rev (bin_to_bl m w) ! n; Suc n < m⟧
+***        ⟹ bit w (Suc n) = rev (bin_to_bl m w) ! Suc n
+*** At command "apply" (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply initial proof method (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** using this:
+***     0 ≤ x
+***     x < 2 ^ n
+***     0 < n
+*** goal (1 subgoal):
+***  1. bit x 0 = bit (x - 2 ^ n) 0
+*** At command "by" (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to apply proof method (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** goal (2 subgoals):
+***  1. ⋀w. (b ⟶ bit (1 + 2 * (w div 2)) 0) ∧ (¬ b ⟶ ¬ bit (2 * (w div 2)) 0)
+***  2. ⋀n w m.
+***        (⋀w m. bit (set_bit_class.set_bit w n b) m =
+***               (if m = n then b else bit w m)) ⟹
+***        bit (set_bit_class.set_bit w (Suc n) b) m =
+***        (if m = Suc n then b else bit w m)
+*** At command "apply" (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+Wetzels_Problem
+*** Failed to load theory "ZFC_in_HOL.ZFC_Cardinals" (unresolved "ZFC_in_HOL.ZFC_in_HOL")
+*** Failed to load theory "ZFC_in_HOL.ZFC_Typeclasses" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Failed to load theory "Wetzels_Problem.Wetzels_Problem" (unresolved "ZFC_in_HOL.ZFC_Typeclasses")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   h :: ??'c ⇒ ??'c
+*** 
+*** At command "lemma" (line 1090 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+
+==========
+Winding_Number_Eval
+*** Undefined fact: "eucl_rel_poly" (line 274 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Winding_Number_Eval/Missing_Algebraic.thy")
+*** At command "by" (line 274 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Winding_Number_Eval/Missing_Algebraic.thy")
+
+==========
+Word_Lib
+*** Failed to finish proof:
+*** goal (1 subgoal):
+***  1. ⋀a b. a sdiv b * b + a smod b = a
+*** At command ".." (line 24 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 227 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy"):
+*** goal (1 subgoal):
+***  1. bit (x BIT b) 0 = b
+*** At command "by" (line 227 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy")
+*** Failed to finish proof (line 169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy"):
+*** goal (2 subgoals):
+***  1. ⟦n = 0; bit (w BIT b) 0⟧ ⟹ b
+***  2. ⟦n = 0; b⟧ ⟹ bit (w BIT True) 0
+*** At command "by" (line 169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy")
+*** Failed to apply initial proof method (line 156 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy"):
+*** goal (1 subgoal):
+***  1. bit (w BIT b) 0 = b
+*** At command "by" (line 156 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Ancient_Numeral.thy")
+*** Failed to finish proof (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. to_bl w ! (LENGTH('a) - Suc 0) = bit w 0 ⟹ odd w = bit w 0
+*** At command "by" (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply proof method (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (2 subgoals):
+***  1. ⋀m w. 0 < m ⟹ bit w 0 = rev (bin_to_bl m w) ! 0
+***  2. ⋀n m w.
+***        ⟦⋀m w. n < m ⟹ bit w n = rev (bin_to_bl m w) ! n; Suc n < m⟧
+***        ⟹ bit w (Suc n) = rev (bin_to_bl m w) ! Suc n
+*** At command "apply" (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply initial proof method (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** using this:
+***     0 ≤ x
+***     x < 2 ^ n
+***     0 < n
+*** goal (1 subgoal):
+***  1. bit x 0 = bit (x - 2 ^ n) 0
+*** At command "by" (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to apply proof method (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** goal (2 subgoals):
+***  1. ⋀w. (b ⟶ bit (1 + 2 * (w div 2)) 0) ∧ (¬ b ⟶ ¬ bit (2 * (w div 2)) 0)
+***  2. ⋀n w m.
+***        (⋀w m. bit (set_bit_class.set_bit w n b) m =
+***               (if m = n then b else bit w m)) ⟹
+***        bit (set_bit_class.set_bit w (Suc n) b) m =
+***        (if m = Suc n then b else bit w m)
+*** At command "apply" (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (2 subgoals):
+***  1. a = - (2 ^ (LENGTH('a) - Suc 0)) ⟶ b ≠ - 1 ⟹
+***     word_of_int (sgn (sint a)) * word_of_int (¦sint a¦ mod ¦sint b¦) =
+***     a - word_of_int (sint a sdiv sint b) * b
+***  2. ¬ (a ≠ - (2 ^ (LENGTH('a) - 1)) ∨ b ≠ - 1) ⟹
+***     a smod b = a - a sdiv b * b
+*** At command "apply" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (4 subgoals):
+***  1. ⟦sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sint a mod sint b) =
+***        a
+***  2. ⟦sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b -
+***        word_of_int (- sint a mod sint b) =
+***        a
+***  3. ⟦¬ sint a < 0; sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod - sint b) =
+***        a
+***  4. ⟦¬ sint a < 0; ¬ sint b < 0⟧
+***     ⟹ word_of_int (sint a sdiv sint b) * b +
+***        word_of_int (sgn (sint a)) * word_of_int (sint a mod sint b) =
+***        a
+*** At command "by" (line 41 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+*** Failed to finish proof (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy"):
+*** goal (1 subgoal):
+***  1. word_of_int (sgn (sint w)) * word_of_int ¦sint w¦ = w
+*** At command "by" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Signed_Division_Word.thy")
+
+==========
+X86_Semantics
+*** Failed to finish proof (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. ∀x. bit x 0 = odd x
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. to_bl w ! (LENGTH('a) - Suc 0) = bit w 0 ⟹ odd w = bit w 0
+*** At command "by" (line 1958 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1899 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to finish proof (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (1 subgoal):
+***  1. (odd x ⟶ of_bl [bit x 0] = 1) ∧ (even x ⟶ of_bl [bit x 0] = 0)
+*** At command "by" (line 1894 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply proof method (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy"):
+*** goal (2 subgoals):
+***  1. ⋀m w. 0 < m ⟹ bit w 0 = rev (bin_to_bl m w) ! 0
+***  2. ⋀n m w.
+***        ⟦⋀m w. n < m ⟹ bit w n = rev (bin_to_bl m w) ! n; Suc n < m⟧
+***        ⟹ bit w (Suc n) = rev (bin_to_bl m w) ! Suc n
+*** At command "apply" (line 502 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Reversed_Bit_Lists.thy")
+*** Failed to apply initial proof method (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** using this:
+***     0 ≤ x
+***     x < 2 ^ n
+***     0 < n
+*** goal (1 subgoal):
+***  1. bit x 0 = bit (x - 2 ^ n) 0
+*** At command "by" (line 1353 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to apply proof method (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy"):
+*** goal (2 subgoals):
+***  1. ⋀w. (b ⟶ bit (1 + 2 * (w div 2)) 0) ∧ (¬ b ⟶ ¬ bit (2 * (w div 2)) 0)
+***  2. ⋀n w m.
+***        (⋀w m. bit (set_bit_class.set_bit w n b) m =
+***               (if m = n then b else bit w m)) ⟹
+***        bit (set_bit_class.set_bit w (Suc n) b) m =
+***        (if m = Suc n then b else bit w m)
+*** At command "apply" (line 817 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bits_Int.thy")
+*** Failed to finish proof (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy"):
+*** goal (1 subgoal):
+***  1. odd w = bit w 0
+*** At command "by" (line 67 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Least_significant_bit.thy")
+*** Failed to finish proof (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x. odd x = bit x 0
+*** At command "by" (line 2184 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ¬ bit (x + 1) 0 ⟹ bit x 0
+*** At command "by" (line 2199 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to finish proof (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal (1 subgoal):
+***  1. ⟦x + 1 = 0; odd x⟧ ⟹ bit x 0
+*** At command "by" (line 2181 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply proof method (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy"):
+*** goal:
+*** No subgoals!
+*** At command "apply" (line 62 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/More_Word.thy")
+*** Failed to apply initial proof method (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy"):
+*** using this:
+***   wf_set_bits_int f
+*** goal (1 subgoal):
+***  1. bit (BITS a. f a) 0 = f 0
+*** At command "by" (line 242 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Word_Lib/Bit_Comprehension.thy")
+
+==========
+XML
+*** Failed to finish proof (line 168 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/XML/Xml.thy"):
+*** goal (1 subgoal):
+***  1. ⋀x1 x2 x3 x4 x5 x6 x7 x8.
+***        c = Char x1 x2 x3 x4 x5 x6 x7 x8 ⟹
+***        (x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8) =
+***        ((x8 ∨ x7 ∧ x6 ∧ (x5 ∨ x4 ∨ x3 ∨ x2 ∨ x1)) ∧
+***         ¬ x8 ∧ (x4 ⟶ x5 ⟶ x6 ⟶ x7 ⟶ ¬ x3 ∧ (x2 ⟶ ¬ x1)) ∨
+***         (x8 ∨ x7 ∧ (x6 ∨ x5 ∨ x4 ∨ x3 ∨ x2 ∨ x1)) ∧
+***         ¬ x8 ∧ (x7 ⟶ ¬ x6 ∧ (x4 ⟶ x5 ⟶ ¬ x3 ∧ (x2 ⟶ ¬ x1))) ∨
+***         (x8 ∨ x7 ∨ x6 ∧ x5) ∧
+***         ¬ x8 ∧ ¬ x7 ∧ (x4 ⟶ x5 ⟶ x6 ⟶ ¬ x3 ∧ ¬ x2) ∨
+***         x1 ∧ x2 ∧ x3 ∧ x4 ∧ x5 ∧ ¬ x6 ∧ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ x3 ∧ ¬ x4 ∧ ¬ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         ¬ x1 ∧ x2 ∧ ¬ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8 ∨
+***         x1 ∧ ¬ x2 ∧ x3 ∧ x4 ∧ ¬ x5 ∧ x6 ∧ ¬ x7 ∧ ¬ x8)
+*** At command "by" (line 168 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/XML/Xml.thy")
+
+==========
+Youngs_Inequality
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   f :: real ⇒ real
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "set"
+*** At command "lemma" (line 87 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/Youngs_Inequality/Youngs.thy")
+
+==========
+ZFC_in_HOL
+*** Failed to load theory "ZFC_in_HOL.ZFC_Cardinals" (unresolved "ZFC_in_HOL.ZFC_in_HOL")
+*** Failed to load theory "ZFC_in_HOL.Kirby" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Failed to load theory "ZFC_in_HOL.Ordinal_Exp" (unresolved "ZFC_in_HOL.Kirby")
+*** Failed to load theory "ZFC_in_HOL.Cantor_NF" (unresolved "ZFC_in_HOL.Ordinal_Exp")
+*** Failed to load theory "ZFC_in_HOL.ZFC_Typeclasses" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   h :: ??'c ⇒ ??'c
+*** 
+*** At command "lemma" (line 1090 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+

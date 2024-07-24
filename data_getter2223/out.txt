@@ -1,0 +1,10 @@
+Running ZFC_in_HOL ...
+ZFC_in_HOL FAILED (see also "isabelle build_log -H Error ZFC_in_HOL")
+*** Undefined fact: "wf_Restr" (line 1560 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_Cardinals.thy")
+*** At command "by" (line 1560 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_Cardinals.thy")
+*** Undefined fact: "asym.intros" (line 874 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_Cardinals.thy")
+*** At command "by" (line 874 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_Cardinals.thy")
+*** Undefined fact: "Cantors_paradox" (line 224 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+*** At command "by" (line 224 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2022/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+Unfinished session(s): ZFC_in_HOL
+0:00:31 elapsed time, 0:02:45 cpu time, factor 5.29

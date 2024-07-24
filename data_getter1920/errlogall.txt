@@ -1,0 +1,3770 @@
+===============
+Adaptive_State_Counting
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Affine_Arithmetic
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Akra_Bazzi
+Running Akra_Bazzi ...
+Akra_Bazzi FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Akra_Bazzi)
+         (term * term list) list ->
+           bool ->
+             int list ->
+               (bool * term list) option * Quickcheck.report option
+    val custom_seed: int Config.T
+    val epsilon: real Config.T
+    val precision: int Config.T
+    val setup: theory -> theory
+  end
+structure Approximation_Generator: APPROXIMATION_GENERATOR
+bundle floatarith_notation
+bundle no_floatarith_notation
+### theory "HOL-Decision_Procs.Approximation"
+### 26.969s elapsed time, 90.934s cpu time, 15.435s GC time
+Loading theory "Akra_Bazzi.Akra_Bazzi_Approximation"
+locale akra_bazzi_params_nonzero
+  fixes k :: "nat"
+    and as :: "real list"
+    and bs :: "real list"
+  assumes "akra_bazzi_params_nonzero k as bs"
+signature AKRA_BAZZI_APPROXIMATION =
+  sig
+    val akra_bazzi_approximate_tac: int -> Proof.context -> int -> tactic
+  end
+structure Akra_Bazzi_Approximation: AKRA_BAZZI_APPROXIMATION
+### theory "Akra_Bazzi.Akra_Bazzi_Approximation"
+### 0.472s elapsed time, 0.625s cpu time, 0.000s GC time
+Loading theory "Akra_Bazzi.Master_Theorem_Examples"
+locale det_select
+  fixes b :: "real"
+  assumes "det_select b"
+### theory "Akra_Bazzi.Master_Theorem_Examples"
+### 1.904s elapsed time, 9.193s cpu time, 0.294s GC time
+*** Failed to apply proof method (line 45 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Akra_Bazzi/Master_Theorem.thy"):
+*** goal (1 subgoal):
+***  1. \<And>a c b f.
+***        \<lbrakk>a \<le> c; c \<le> b; f integrable_on {a..b}\<rbrakk>
+***        \<Longrightarrow> integral {a..c} f + integral {c..b} f =
+***                          integral {a..b} f
+*** At command "apply" (line 45 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Akra_Bazzi/Master_Theorem.thy")
+Unfinished session(s): Akra_Bazzi
+0:00:48 elapsed time, 0:03:14 cpu time, factor 4.02
+
+===============
+Algebraic_Numbers
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Amortized_Complexity
+0:00:02 elapsed time
+
+===============
+Applicative_Lifting
+Running Applicative_Lifting ...
+Applicative_Lifting FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Applicative_Lifting)
+  fixes term_bracket :: "nat \<Rightarrow> dB \<Rightarrow> dB option"
+  assumes "bracket_abstraction term_bracket"
+locale itrm_abstraction
+  fixes extra_rule :: "nat itrm \<Rightarrow> nat itrm \<Rightarrow> bool"
+    and
+    itrm_bracket ::
+      "nat \<Rightarrow> nat itrm \<Rightarrow> nat itrm option"
+  assumes "itrm_abstraction extra_rule itrm_bracket"
+locale lifted_bracket
+  fixes term_bracket :: "nat \<Rightarrow> dB \<Rightarrow> dB option"
+    and extra_rule :: "nat itrm \<Rightarrow> nat itrm \<Rightarrow> bool"
+    and
+    itrm_bracket ::
+      "nat \<Rightarrow> nat itrm \<Rightarrow> nat itrm option"
+  assumes "lifted_bracket term_bracket extra_rule itrm_bracket"
+### theory "Applicative_Lifting.Idiomatic_Terms"
+### 0.902s elapsed time, 4.679s cpu time, 0.198s GC time
+*** Failed to load theory "Applicative_Lifting.Applicative_Environment" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_List" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Monoid" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Open_State" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Option" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Set" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Sum" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Environment_Algebra" (unresolved "Applicative_Lifting.Applicative_Environment")
+*** Failed to load theory "Applicative_Lifting.Applicative_Stream" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Stream_Algebra" (unresolved "Applicative_Lifting.Applicative_Stream")
+*** Failed to load theory "Applicative_Lifting.Applicative_Filter" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Probability_List" (unresolved "Applicative_Lifting.Applicative_List")
+*** Failed to load theory "Applicative_Lifting.Applicative_Vector" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_PMF" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Star" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_DNEList" (unresolved "Applicative_Lifting.Applicative_List")
+*** Failed to load theory "Applicative_Lifting.Applicative_State" (unresolved "Applicative_Lifting.Applicative")
+*** Failed to load theory "Applicative_Lifting.Applicative_Functor" (unresolved "Applicative_Lifting.Applicative_DNEList", "Applicative_Lifting.Applicative_Environment", "Applicative_Lifting.Applicative_Filter", "Applicative_Lifting.Applicative_List", "Applicative_Lifting.Applicative_Monoid", "Applicative_Lifting.Applicative_Open_State", "Applicative_Lifting.Applicative_Option", "Applicative_Lifting.Applicative_PMF", "Applicative_Lifting.Applicative_Probability_List", "Applicative_Lifting.Applicative_Set", "Applicative_Lifting.Applicative_Star", "Applicative_Lifting.Applicative_State", "Applicative_Lifting.Applicative_Stream", "Applicative_Lifting.Applicative_Sum", "Applicative_Lifting.Applicative_Vector")
+*** Failed to load theory "Applicative_Lifting.Tree_Relabelling" (unresolved "Applicative_Lifting.Applicative_Option", "Applicative_Lifting.Applicative_PMF", "Applicative_Lifting.Applicative_State")
+*** Failed to load theory "Applicative_Lifting.Applicative_Examples" (unresolved "Applicative_Lifting.Applicative_Environment_Algebra", "Applicative_Lifting.Stream_Algebra", "Applicative_Lifting.Tree_Relabelling")
+*** ML error (line 968 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Applicative_Lifting/applicative.ML"):
+*** Value or constructor (auto_fixes) has not been declared in structure Variable
+*** At command "ML_file" (line 48 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Applicative_Lifting/Applicative.thy")
+Unfinished session(s): Applicative_Lifting
+0:00:10 elapsed time, 0:00:23 cpu time, factor 2.18
+
+===============
+Arith_Prog_Rel_Primes
+Running Arith_Prog_Rel_Primes ...
+Arith_Prog_Rel_Primes FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Arith_Prog_Rel_Primes)
+Loading theory "Arith_Prog_Rel_Primes.Arith_Prog_Rel_Primes"
+### theory "Arith_Prog_Rel_Primes.Arith_Prog_Rel_Primes"
+### 0.069s elapsed time, 0.212s cpu time, 0.000s GC time
+*** Undefined fact: "linordered_field_class.sign_simps" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Arith_Prog_Rel_Primes/Arith_Prog_Rel_Primes.thy")
+*** At command "using" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Arith_Prog_Rel_Primes/Arith_Prog_Rel_Primes.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Arith_Prog_Rel_Primes/Arith_Prog_Rel_Primes.thy")
+*** At command "using" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Arith_Prog_Rel_Primes/Arith_Prog_Rel_Primes.thy")
+Unfinished session(s): Arith_Prog_Rel_Primes
+0:00:05 elapsed time, 0:00:08 cpu time, factor 1.44
+
+===============
+Auto2_Imperative_HOL
+===============
+AutoFocus-Stream
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Automatic_Refinement
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Berlekamp_Zassenhaus
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Bernoulli
+Running Bernoulli ...
+Bernoulli FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Bernoulli)
+### theory "Bernoulli.Bernoulli_Zeta"
+### 0.378s elapsed time, 2.340s cpu time, 0.128s GC time
+*** Undefined fact: "residue_simple_pole_deriv" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+### Rule already declared as introduction (intro)
+### (\<lambda>_. ?c) has_fps_expansion fps_const ?c
+### Rule already declared as introduction (intro)
+### (\<lambda>_. 0::?'a) has_fps_expansion 0
+### Rule already declared as introduction (intro)
+### (\<lambda>_. 1::?'a) has_fps_expansion 1
+### Rule already declared as introduction (intro)
+### (\<lambda>_. numeral ?n) has_fps_expansion numeral ?n
+*** Undefined fact: "Residue_theorem" (line 187 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** At command "proof" (line 187 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** Undefined fact: "Residue_theorem" (line 187 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** At command "proof" (line 187 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** Undefined fact: "residue_simple_pole_deriv" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** At command "by" (line 28 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Bernoulli_Zeta.thy")
+*** Failed to apply initial proof method (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at x within {0..1}. f x = f (frac x)
+***   (f \<longlongrightarrow> f (frac x)) (at x within {0..1})
+*** goal (1 subgoal):
+***  1. ((\<lambda>x. f (frac x)) \<longlongrightarrow> f (frac x))
+***      (at x within {0..1})
+*** At command "by" (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_right (0::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** At command "by" (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_left (1::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** At command "by" (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+Unfinished session(s): Bernoulli
+0:00:06 elapsed time, 0:00:14 cpu time, factor 2.22
+
+===============
+Bertrands_Postulate
+0:00:02 elapsed time
+
+===============
+Bicategory
+Building Category3 ...
+Category3 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Category3)
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+    and
+    J :: "'j \<Rightarrow> 'j \<Rightarrow> 'j"
+      (infixr \<open>\<cdot>\<^sub>J\<close> 55)
+    and D :: "'j \<Rightarrow> ('a, 'b) A_B.arr"
+  assumes
+    "diagram_in_functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)
+      (\<cdot>\<^sub>J) D"
+locale functor_category
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+  assumes "functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)"
+locale yoneda_functor
+  fixes
+    C :: "'c \<Rightarrow> 'c \<Rightarrow> 'c"
+      (infixr \<open>\<cdot>\<close> 55)
+    and
+    S :: "'s \<Rightarrow> 's \<Rightarrow> 's"
+      (infixr \<open>\<cdot>\<^sub>S\<close> 55)
+    and \<phi> :: "'c \<times> 'c \<Rightarrow> 'c \<Rightarrow> 's"
+  assumes "yoneda_functor (\<cdot>) (\<cdot>\<^sub>S) \<phi>"
+### theory "Category3.Limit"
+### 28.850s elapsed time, 138.426s cpu time, 11.049s GC time
+*** Inner lexical error (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' S'.cod (\<Phi> f)\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** Inner lexical error (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' \<Phi>o a\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+MonoidalCategory CANCELLED
+Bicategory CANCELLED
+Unfinished session(s): Bicategory, Category3, MonoidalCategory
+0:02:45 elapsed time, 0:10:36 cpu time, factor 3.84
+
+===============
+BNF_Operations
+0:00:02 elapsed time
+
+===============
+Buchi_Complementation
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Budan_Fourier
+Running Budan_Fourier ...
+Budan_Fourier FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Budan_Fourier)
+Loading theory "Sturm_Tarski.PolyMisc" (required by "Budan_Fourier.Budan_Fourier" via "Budan_Fourier.BF_Misc" via "Sturm_Tarski.Sturm_Tarski")
+### theory "Sturm_Tarski.PolyMisc"
+### 0.060s elapsed time, 0.155s cpu time, 0.000s GC time
+*** Failed to load theory "Sturm_Tarski.Sturm_Tarski" (unresolved "Sturm_Tarski.PolyMisc")
+*** Failed to load theory "Budan_Fourier.BF_Misc" (unresolved "Sturm_Tarski.Sturm_Tarski")
+*** Failed to load theory "Budan_Fourier.Sturm_Multiple_Roots" (unresolved "Budan_Fourier.BF_Misc")
+*** Failed to load theory "Budan_Fourier.Budan_Fourier" (unresolved "Budan_Fourier.BF_Misc")
+*** Failed to load theory "Budan_Fourier.Descartes_Roots_Test" (unresolved "Budan_Fourier.Budan_Fourier")
+*** Type unification failed: Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  gcd :: ??'a \<Rightarrow> ??'a \<Rightarrow> ??'a
+*** Operand:   p :: 'a poly
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** failed to unify invariant arguments
+*** Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** At command "lemma" (line 148 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Sturm_Tarski/PolyMisc.thy")
+Unfinished session(s): Budan_Fourier
+0:00:03 elapsed time
+
+===============
+Buffons_Needle
+Running Buffons_Needle ...
+Buffons_Needle FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Buffons_Needle)
+### Rule already declared as introduction (intro)
+### \<lbrakk>open ?S; closed ?T\<rbrakk> \<Longrightarrow> open (?S - ?T)
+### Rule already declared as introduction (intro)
+### \<lbrakk>open ?S; closed ?T\<rbrakk> \<Longrightarrow> open (?S - ?T)
+### Rule already declared as introduction (intro)
+### \<lbrakk>closed ?S; open ?T\<rbrakk> \<Longrightarrow> closed (?S - ?T)
+### Rule already declared as introduction (intro)
+### closed ?S \<Longrightarrow> open (- ?S)
+### Rule already declared as introduction (intro)
+### \<lbrakk>closed ?S; open ?T\<rbrakk> \<Longrightarrow> closed (?S - ?T)
+### Rule already declared as introduction (intro)
+### open ?S \<Longrightarrow> closed (- ?S)
+### Rule already declared as introduction (intro)
+### closed ?S \<Longrightarrow> open (- ?S)
+### Rule already declared as introduction (intro)
+### open ?S \<Longrightarrow> closed (- ?S)
+### Rule already declared as introduction (intro)
+### continuous_on ?s (linepath ?a ?b)
+### Rule already declared as introduction (intro)
+### continuous_on ?s (linepath ?a ?b)
+### theory "Buffons_Needle.Buffons_Needle"
+### 0.254s elapsed time, 1.305s cpu time, 0.077s GC time
+*** Failed to apply initial proof method (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Buffons_Needle/Buffons_Needle.thy"):
+*** goal (1 subgoal):
+***  1. integral {0..pi} (\<lambda>x. min (d / 2) (sin x * l / 2)) =
+***     integral {0..pi / 2} (\<lambda>x. min (d / 2) (sin x * l / 2)) +
+***     integral {pi / 2..pi} (\<lambda>x. min (d / 2) (sin x * l / 2))
+*** At command "by" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Buffons_Needle/Buffons_Needle.thy")
+### Rule already declared as introduction (intro)
+### (\<And>x. x \<in> space ?M \<Longrightarrow> ?P x) \<Longrightarrow>
+### almost_everywhere ?M ?P
+### Rule already declared as introduction (intro)
+### (\<And>x. x \<in> space ?M \<Longrightarrow> ?P x) \<Longrightarrow>
+### almost_everywhere ?M ?P
+*** Failed to apply initial proof method (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Buffons_Needle/Buffons_Needle.thy"):
+*** goal (1 subgoal):
+***  1. integral {0..pi} (\<lambda>x. min (d / 2) (sin x * l / 2)) =
+***     integral {0..pi / 2} (\<lambda>x. min (d / 2) (sin x * l / 2)) +
+***     integral {pi / 2..pi} (\<lambda>x. min (d / 2) (sin x * l / 2))
+*** At command "by" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Buffons_Needle/Buffons_Needle.thy")
+Unfinished session(s): Buffons_Needle
+0:00:05 elapsed time, 0:00:07 cpu time, factor 1.28
+
+===============
+CakeML
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+CakeML_Codegen
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Cartan_FP
+Running Cartan_FP ...
+Cartan_FP FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Cartan_FP)
+*** At command "by" (line 95 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+### Ignoring duplicate rewrite rule:
+### (\<lambda>x. x) holomorphic_on ?s1 \<equiv> True
+*** Undefined fact: "holomorphic_higher_deriv" (line 349 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "by" (line 349 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Failed to finish proof (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>Suc 0 < n; (deriv ^^ n) f z = 0\<rbrakk>
+***     \<Longrightarrow> (deriv ^^ n) id z = 0
+*** At command "by" (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Undefined fact: "complex_derivative_chain" (line 463 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "apply" (line 463 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Undefined fact: "complex_derivative_chain" (line 463 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "apply" (line 463 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Failed to finish proof (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>Suc 0 < n; (deriv ^^ n) f z = 0\<rbrakk>
+***     \<Longrightarrow> (deriv ^^ n) id z = 0
+*** At command "by" (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Undefined fact: "holomorphic_higher_deriv" (line 349 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "by" (line 349 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Undefined fact: "holomorphic_deriv" (line 95 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "by" (line 95 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Failed to finish proof (line 186 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>open s; z \<in> s; \<And>m. f ^^ m holomorphic_on s;
+***      f holomorphic_on s; \<And>m. (f ^^ m) ` s \<subseteq> s\<rbrakk>
+***     \<Longrightarrow> deriv f holomorphic_on s
+*** At command "by" (line 186 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Failed to finish proof (line 52 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy"):
+*** goal (1 subgoal):
+***  1. 0 < n \<Longrightarrow> (deriv ^^ n) (\<lambda>w. y) z = 0
+*** At command "by" (line 52 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Undefined fact: "higher_deriv_id" (line 32 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** At command "using" (line 32 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+*** Failed to finish proof (line 147 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>deriv f z = 1; i \<le> n\<rbrakk>
+***     \<Longrightarrow> (deriv ^^ i) (\<lambda>a. a) z = (deriv ^^ i) f z
+*** At command "by" (line 147 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Cartan_FP/Cartan.thy")
+Unfinished session(s): Cartan_FP
+0:00:04 elapsed time
+
+===============
+Catalan_Numbers
+Running Catalan_Numbers ...
+Catalan_Numbers FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Catalan_Numbers)
+### \<forall>S\<in>?K. closed S \<Longrightarrow> closed (\<Inter> ?K)
+### Rule already declared as introduction (intro)
+### \<lbrakk>finite ?S; \<forall>T\<in>?S. closed T\<rbrakk>
+### \<Longrightarrow> closed (\<Union> ?S)
+### Rule already declared as introduction (intro)
+### \<lbrakk>finite ?A; \<forall>x\<in>?A. closed (?B x)\<rbrakk>
+### \<Longrightarrow> closed (\<Union> (?B ` ?A))
+### Rule already declared as introduction (intro)
+### \<lbrakk>open ?S; closed ?T\<rbrakk> \<Longrightarrow> open (?S - ?T)
+### Rule already declared as introduction (intro)
+### \<lbrakk>closed ?S; open ?T\<rbrakk> \<Longrightarrow> closed (?S - ?T)
+### Rule already declared as introduction (intro)
+### closed ?S \<Longrightarrow> open (- ?S)
+### Rule already declared as introduction (intro)
+### open ?S \<Longrightarrow> closed (- ?S)
+### Rule already declared as introduction (intro)
+### continuous_on ?s (linepath ?a ?b)
+consts
+  count_nodes :: "tree \<Rightarrow> nat"
+### Rule already declared as introduction (intro)
+### finite ?F \<Longrightarrow> finite (?h ` ?F)
+### Ignoring duplicate rewrite rule:
+### catalan (Suc ?n1) \<equiv> \<Sum>i\<le>?n1. catalan i * catalan (?n1 - i)
+### Rewrite rule not in simpset:
+### Wellfounded.accp catalan_aux_rel (?n1, ?k1, ?acc1) \<Longrightarrow>
+### catalan_aux ?n1 ?k1 ?acc1 \<equiv>
+### if ?n1 \<le> ?k1 then ?acc1
+### else catalan_aux ?n1 (Suc ?k1) (?acc1 * (2 * (2 * ?k1 + 1)) div (?k1 + 2))
+### theory "Catalan_Numbers.Catalan_Numbers"
+### 0.850s elapsed time, 4.264s cpu time, 0.250s GC time
+*** Failed to apply initial proof method (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Catalan_Numbers/Catalan_Auxiliary_Integral.thy"):
+*** using this:
+***   (F \<longlongrightarrow> - pi) (at_right 0)
+*** goal (1 subgoal):
+***  1. ((\<lambda>x.
+***          if x = 4 then pi
+***          else if x = 0 then - pi else F x) \<longlongrightarrow>
+***      - pi)
+***      (at_right 0)
+*** At command "by" (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Catalan_Numbers/Catalan_Auxiliary_Integral.thy")
+Unfinished session(s): Catalan_Numbers
+0:00:09 elapsed time, 0:00:22 cpu time, factor 2.41
+
+===============
+Category2
+Running Category2 ...
+Category2 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Category2)
+### ("\<^const>HOL.Trueprop"
+###   ("\<^const>MonadicEquationalTheory.Subst" ("_position" e)
+###     ("\<^const>MonadicEquationalTheory.Expression.ExprApp"
+###       ("\<^const>HOL.eq"
+###         ("\<^const>MonadicEquationalTheory.Expression.ExprApp"
+###           ("_position" f)
+###           ("\<^const>MonadicEquationalTheory.Expression.ExprVar"))
+###         ("_position" f))
+###       ("_position" e))))
+### Fortunately, only one parse tree is well-formed and type-correct,
+### but you may still want to disambiguate your grammar or your input.
+*** Failed to load theory "Category2.NatTrans" (unresolved "Category2.Functors")
+*** Failed to load theory "Category2.SetCat" (unresolved "Category2.Functors")
+*** Failed to load theory "Category2.Yoneda" (unresolved "Category2.NatTrans", "Category2.SetCat")
+*** Ambiguous input (line 275 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category2/Functors.thy") produces 2 parse trees:
+*** ("\<^const>Pure.imp"
+***   ("\<^const>HOL.Trueprop"
+***     ("_applC" ("_position" Category) ("_position" C)))
+***   ("\<^const>HOL.Trueprop"
+***     ("_applC" ("_position" Functor)
+***       ("\<^const>Functors.IdentityFunctor'" ("_position" C)))))
+*** ("\<^const>Pure.imp"
+***   ("\<^const>HOL.Trueprop"
+***     ("_applC" ("_position" Category) ("_position" C)))
+***   ("\<^const>HOL.Trueprop"
+***     ("_applC" ("_position" Functor)
+***       ("\<^const>Functors.IdentityFunctor" ("_position" C)))))
+*** Ambiguous input
+*** 2 terms are type correct:
+*** (((Category::<position>) (C::<position>)) \<Longrightarrow>
+***  ((Functor::<position>) FId(C::<position>)))
+*** (((Category::<position>) (C::<position>)) \<Longrightarrow>
+***  ((Functor::<position>) FId (C::<position>)))
+*** Failed to parse prop
+*** At command "lemma" (line 275 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category2/Functors.thy")
+*** Failed to apply initial proof method (line 255 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category2/Functors.thy"):
+*** goal (1 subgoal):
+***  1. FId' C ## id\<^bsub>CatDom (FId' C)\<^esub> X =
+***     id\<^bsub>CatCod (FId' C)\<^esub> X
+*** At command "by" (line 255 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category2/Functors.thy")
+Unfinished session(s): Category2
+0:00:08 elapsed time, 0:00:14 cpu time, factor 1.84
+
+===============
+Category3
+Running Category3 ...
+Category3 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Category3)
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+    and
+    J :: "'j \<Rightarrow> 'j \<Rightarrow> 'j"
+      (infixr \<open>\<cdot>\<^sub>J\<close> 55)
+    and D :: "'j \<Rightarrow> ('a, 'b) A_B.arr"
+  assumes
+    "diagram_in_functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)
+      (\<cdot>\<^sub>J) D"
+locale functor_category
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+  assumes "functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)"
+locale yoneda_functor
+  fixes
+    C :: "'c \<Rightarrow> 'c \<Rightarrow> 'c"
+      (infixr \<open>\<cdot>\<close> 55)
+    and
+    S :: "'s \<Rightarrow> 's \<Rightarrow> 's"
+      (infixr \<open>\<cdot>\<^sub>S\<close> 55)
+    and \<phi> :: "'c \<times> 'c \<Rightarrow> 'c \<Rightarrow> 's"
+  assumes "yoneda_functor (\<cdot>) (\<cdot>\<^sub>S) \<phi>"
+### theory "Category3.Limit"
+### 26.210s elapsed time, 132.544s cpu time, 8.597s GC time
+*** Inner lexical error (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' S'.cod (\<Phi> f)\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** Inner lexical error (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' \<Phi>o a\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+Unfinished session(s): Category3
+0:02:40 elapsed time, 0:10:22 cpu time, factor 3.88
+
+===============
+CAVA_LTL_Modelchecker
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Chord_Segments
+0:00:02 elapsed time
+
+===============
+Clean
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Closest_Pair_Points
+Building Akra_Bazzi ...
+Akra_Bazzi FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Akra_Bazzi)
+         (term * term list) list ->
+           bool ->
+             int list ->
+               (bool * term list) option * Quickcheck.report option
+    val custom_seed: int Config.T
+    val epsilon: real Config.T
+    val precision: int Config.T
+    val setup: theory -> theory
+  end
+structure Approximation_Generator: APPROXIMATION_GENERATOR
+bundle floatarith_notation
+bundle no_floatarith_notation
+### theory "HOL-Decision_Procs.Approximation"
+### 23.826s elapsed time, 86.400s cpu time, 14.404s GC time
+Loading theory "Akra_Bazzi.Akra_Bazzi_Approximation"
+locale akra_bazzi_params_nonzero
+  fixes k :: "nat"
+    and as :: "real list"
+    and bs :: "real list"
+  assumes "akra_bazzi_params_nonzero k as bs"
+signature AKRA_BAZZI_APPROXIMATION =
+  sig
+    val akra_bazzi_approximate_tac: int -> Proof.context -> int -> tactic
+  end
+structure Akra_Bazzi_Approximation: AKRA_BAZZI_APPROXIMATION
+### theory "Akra_Bazzi.Akra_Bazzi_Approximation"
+### 0.409s elapsed time, 0.562s cpu time, 0.000s GC time
+Loading theory "Akra_Bazzi.Master_Theorem_Examples"
+locale det_select
+  fixes b :: "real"
+  assumes "det_select b"
+### theory "Akra_Bazzi.Master_Theorem_Examples"
+### 0.884s elapsed time, 6.101s cpu time, 0.357s GC time
+*** Failed to apply proof method (line 45 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Akra_Bazzi/Master_Theorem.thy"):
+*** goal (1 subgoal):
+***  1. \<And>a c b f.
+***        \<lbrakk>a \<le> c; c \<le> b; f integrable_on {a..b}\<rbrakk>
+***        \<Longrightarrow> integral {a..c} f + integral {c..b} f =
+***                          integral {a..b} f
+*** At command "apply" (line 45 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Akra_Bazzi/Master_Theorem.thy")
+Closest_Pair_Points CANCELLED
+Unfinished session(s): Akra_Bazzi, Closest_Pair_Points
+0:00:48 elapsed time, 0:03:14 cpu time, factor 4.03
+
+===============
+Collections
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Complete_Non_Orders
+0:00:01 elapsed time
+
+===============
+Complex_Geometry
+Running Complex_Geometry ...
+Complex_Geometry FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Complex_Geometry)
+  moebius :: group_add
+  minus_moebius == minus ::
+    moebius \<Rightarrow> moebius \<Rightarrow> moebius
+  uminus_moebius == uminus_class.uminus :: moebius \<Rightarrow> moebius
+  zero_moebius == zero_class.zero :: moebius
+  plus_moebius == plus ::
+    moebius \<Rightarrow> moebius \<Rightarrow> moebius
+### theory "Complex_Geometry.Moebius"
+### 0.963s elapsed time, 6.823s cpu time, 0.323s GC time
+Loading theory "Complex_Geometry.Circlines"
+### theory "Complex_Geometry.Circlines"
+### 1.777s elapsed time, 11.335s cpu time, 0.478s GC time
+Loading theory "Complex_Geometry.Oriented_Circlines"
+Loading theory "Complex_Geometry.Riemann_Sphere"
+Found termination order: "{}"
+### theory "Complex_Geometry.Riemann_Sphere"
+### 0.515s elapsed time, 2.400s cpu time, 0.110s GC time
+### theory "Complex_Geometry.Oriented_Circlines"
+### 0.620s elapsed time, 3.097s cpu time, 0.174s GC time
+Loading theory "Complex_Geometry.Circlines_Angle"
+Loading theory "Complex_Geometry.Unit_Circle_Preserving_Moebius"
+Loading theory "Complex_Geometry.Chordal_Metric"
+Found termination order: "{}"
+### theory "Complex_Geometry.Circlines_Angle"
+### 0.168s elapsed time, 1.298s cpu time, 0.072s GC time
+instantiation
+  complex_homo :: metric_space
+  dist_complex_homo == dist ::
+    complex_homo \<Rightarrow> complex_homo \<Rightarrow> real
+  uniformity_complex_homo == uniformity ::
+    (complex_homo \<times> complex_homo) filter
+  open_complex_homo == open :: complex_homo set \<Rightarrow> bool
+### theory "Complex_Geometry.Chordal_Metric"
+### 0.391s elapsed time, 1.963s cpu time, 0.109s GC time
+### theory "Complex_Geometry.Unit_Circle_Preserving_Moebius"
+### 0.859s elapsed time, 5.090s cpu time, 1.841s GC time
+*** Inner syntax error (line 427 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Complex_Geometry/Chordal_Metric.thy")
+*** at ": { 0 <..} . principal { ( x , y ) . dist_class.dist x y < e } )"
+*** Failed to parse prop
+*** At command "definition" (line 427 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Complex_Geometry/Chordal_Metric.thy")
+Unfinished session(s): Complex_Geometry
+0:00:20 elapsed time, 0:01:37 cpu time, factor 4.74
+
+===============
+Concurrent_Revisions
+0:00:01 elapsed time
+
+===============
+Constructive_Cryptography
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+CoreC++
+Running CoreC++ ...
+CoreC++ FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/CoreC++)
+"{Boolean}"
+  :: "ty set"
+"{}"
+  :: "ty set"
+"{ref (0, [''TopSh'']), ref (0, [''TopSh''])}"
+  :: "expr set"
+"{ref (0, [''Bottom'', ''Left'', ''TopRep'']),
+  ref (0, [''Bottom'', ''Right'', ''TopRep''])}"
+  :: "expr set"
+"{Val (Intg 17)}"
+  :: "expr set"
+"{ref (0, [''Bottom'', ''Left''])}"
+  :: "expr set"
+"{ref (0, [''Bottom'', ''Left''])}"
+  :: "expr set"
+"{null}"
+  :: "expr set"
+"{null}"
+  :: "expr set"
+"{ref (0, [''Right''])}"
+  :: "expr set"
+"{Val (Intg 42)}"
+  :: "expr set"
+*** Inner lexical error (line 96 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** at "' Class C"
+*** Failed to parse prop
+*** At command "inductive" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** Inner lexical error (line 115 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** at "' T'; P \<turnstile> T' \<le> T \<rbrakk> 
+***    \<Longrightarrow> P,E,h \<turnstile> e\<^sub>1\<bullet>F{Cs}:=e\<^sub>2 :' T"
+*** Failed to parse prop
+*** At command "inductive" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** Inner lexical error (line 137 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** at "' T;  P,E,h \<turnstile> es [:'] Ts \<rbrakk> \<Longrightarrow>  P,E,h \<turnstile> e#es [:'] T#Ts"
+*** Failed to parse prop
+*** At command "inductive" (line 89 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/CoreC++/Progress.thy")
+*** Failed to load theory "CoreC++.HeapExtension" (unresolved "CoreC++.Progress")
+*** Failed to load theory "CoreC++.TypeSafe" (unresolved "CoreC++.HeapExtension")
+*** Failed to load theory "CoreC++.Determinism" (unresolved "CoreC++.TypeSafe")
+*** Failed to load theory "CoreC++.CoreC++" (unresolved "CoreC++.Determinism")
+Unfinished session(s): CoreC++
+0:01:06 elapsed time, 0:05:11 cpu time, factor 4.69
+
+===============
+Count_Complex_Roots
+Running Count_Complex_Roots ...
+Count_Complex_Roots FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Count_Complex_Roots)
+*** At command "have" (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+*** Type unification failed
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  (*) c :: complex \<Rightarrow> complex
+*** Operand:   x :: 'b
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Cannot generate coercion from "'b" to "complex"
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** weak unification of subtype constraints fails
+*** 
+*** 
+*** At command "have" (line 61 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+*** Type unification failed: Variable 'a::type not of sort real_normed_vector
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  linepath ::
+***   ??'a \<Rightarrow> ??'a \<Rightarrow> real \<Rightarrow> ??'a
+*** Operand:   st :: 'a
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::type not of sort real_normed_vector
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** weak unification of subtype constraints fails
+*** 
+*** 
+*** At command "obtain" (line 43 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+Unfinished session(s): Count_Complex_Roots
+0:00:24 elapsed time, 0:00:51 cpu time, factor 2.10
+
+===============
+Dict_Construction
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Differential_Dynamic_Logic
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Diophantine_Eqns_Lin_Hom
+Running Diophantine_Eqns_Lin_Hom ...
+Diophantine_Eqns_Lin_Hom FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Diophantine_Eqns_Lin_Hom)
+Found termination order: "{}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+### theory "Diophantine_Eqns_Lin_Hom.Simple_Algorithm"
+### 0.245s elapsed time, 1.935s cpu time, 0.064s GC time
+Loading theory "Diophantine_Eqns_Lin_Hom.Algorithm"
+Found termination order: "(\<lambda>p. size_list size (snd p)) <*mlex*> {}"
+Found termination order: "{}"
+Found termination order: "(\<lambda>p. length (snd p)) <*mlex*> {}"
+locale bounded_gen_check
+  fixes C :: "nat list \<Rightarrow> nat \<Rightarrow> bool"
+    and B :: "nat"
+  assumes "bounded_gen_check C B"
+Found termination order: "size_list size <*mlex*> {}"
+*** Undefined fact: "linorder_antisym_conv2" (line 501 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Diophantine_Eqns_Lin_Hom/Linear_Diophantine_Equations.thy")
+*** At command "by" (line 499 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Diophantine_Eqns_Lin_Hom/Linear_Diophantine_Equations.thy")
+locale bounded_generate_check
+  fixes C\<^sub>2 :: "nat list \<Rightarrow> nat \<Rightarrow> bool"
+    and B\<^sub>2 :: "nat"
+    and
+    C\<^sub>1 ::
+      "nat list
+       \<Rightarrow> nat list
+                     \<Rightarrow> nat list
+                                   \<Rightarrow> nat \<Rightarrow> bool"
+    and B\<^sub>1 :: "nat list \<Rightarrow> nat"
+  assumes "bounded_generate_check C\<^sub>2 B\<^sub>2 C\<^sub>1 B\<^sub>1"
+Found termination order: "{}"
+Found termination order: "{}"
+locale bounded_incs
+  fixes cond :: "nat list \<Rightarrow> nat \<Rightarrow> bool"
+    and B :: "nat"
+  assumes "bounded_incs cond B"
+### Metis: Unused theorems: "Set.mem_Collect_eq", "Product_Type.prod.simps_2"
+### Metis: Unused theorems: "Set.mem_Collect_eq", "Product_Type.prod.simps_2"
+Found termination order:
+  "(\<lambda>p. size_list size (snd (snd p))) <*mlex*> {}"
+### theory "Diophantine_Eqns_Lin_Hom.Algorithm"
+### 1.245s elapsed time, 9.797s cpu time, 0.410s GC time
+*** Undefined fact: "linorder_antisym_conv2" (line 501 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Diophantine_Eqns_Lin_Hom/Linear_Diophantine_Equations.thy")
+*** At command "by" (line 499 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Diophantine_Eqns_Lin_Hom/Linear_Diophantine_Equations.thy")
+Unfinished session(s): Diophantine_Eqns_Lin_Hom
+0:00:07 elapsed time, 0:00:37 cpu time, factor 4.78
+
+===============
+Dirichlet_L
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Dirichlet_Series
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+DiscretePricing
+Running DiscretePricing ...
+DiscretePricing FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/DiscretePricing)
+    and init :: "real"
+    and Mkt :: "(bool stream, 'a) discrete_market"
+    and r :: "real"
+    and risk_free_asset :: "'a"
+    and stk :: "'a"
+    and G :: "nat \<Rightarrow> bool stream measure"
+  assumes
+    "CRR_market_viable p M geom_proc u d init Mkt r risk_free_asset stk G"
+Found termination order:
+  "(\<lambda>p. size (fst (snd (snd (snd p))))) <*mlex*> {}"
+Found termination order: "{}"
+### theory "DiscretePricing.CRR_Model"
+### 4.436s elapsed time, 33.138s cpu time, 4.266s GC time
+Loading theory "DiscretePricing.Option_Price_Examples"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. length (snd p)) <*mlex*> {}"
+Found termination order:
+  "(\<lambda>p. length (snd (snd (snd p)))) <*mlex*> {}"
+Found termination order: "{}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+Found termination order: "{}"
+Found termination order: "{}"
+Found termination order: "{}"
+Found termination order: "{}"
+### theory "DiscretePricing.Option_Price_Examples"
+### 2.342s elapsed time, 12.869s cpu time, 3.586s GC time
+*** Undefined fact: "linordered_field_class.sign_simps" (line 2005 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** At command "by" (line 2005 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 3024 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** At command "by" (line 3024 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+"13345 / 10609"
+  :: "real"
+*** Undefined fact: "linordered_field_class.sign_simps" (line 3024 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** At command "by" (line 3024 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 2005 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** At command "by" (line 2005 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/CRR_Model.thy")
+*** Failed to finish proof (line 316 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/Infinite_Coin_Toss_Space.thy"):
+*** goal (1 subgoal):
+***  1. restrict X {n} = (\<lambda>x\<in>{n}. True) \<Longrightarrow> X n
+*** At command "by" (line 316 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/DiscretePricing/Infinite_Coin_Toss_Space.thy")
+Unfinished session(s): DiscretePricing
+0:00:24 elapsed time, 0:02:15 cpu time, factor 5.62
+
+===============
+Echelon_Form
+
+
+*** Cannot load theory "HOL-Library.Bit"
+*** The error(s) above occurred in session "Gauss_Jordan" (line 3 of "/home/quiqui/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gauss_Jordan/ROOT")
+===============
+Efficient-Mergesort
+0:00:01 elapsed time
+
+===============
+Epistemic_Logic
+0:00:01 elapsed time
+
+===============
+Ergodic_Theory
+Running Ergodic_Theory ...
+Ergodic_Theory FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Ergodic_Theory)
+***      ereal (birkhoff_sum f n x / real n) * ereal (real n) =
+***      ereal (birkhoff_sum f n x)
+***   (\<lambda>n. ereal (birkhoff_sum f n x / real n) * ereal (real n))
+***   \<longlonglongrightarrow> ereal (real_cond_exp M Invariants f x) *
+***                             \<infinity>
+*** goal (1 subgoal):
+***  1. (\<lambda>n. ereal (birkhoff_sum f n x))
+***     \<longlonglongrightarrow> ereal (real_cond_exp M Invariants f x) *
+***                               \<infinity>
+*** At command "by" (line 959 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Invariants.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 1158 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Measure_Preserving_Transformations.thy")
+*** At command "by" (line 1158 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Measure_Preserving_Transformations.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 1140 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Measure_Preserving_Transformations.thy")
+*** At command "by" (line 1140 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Measure_Preserving_Transformations.thy")
+*** exception THM 0 raised (line 309 of "drule.ML"):
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** \<forall>\<^sub>F n in sequentially.
+***    ereal (u n / real n - A + eps i) * ereal (real n) =
+***    ereal (u n - (A - eps i) * real n)
+*** At command "using" (line 158 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Kohlberg_Neyman_Karlsson.thy")
+*** Undefined fact: "tendsto_explicit" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "using" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "by" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 424 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** At command "by" (line 424 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** At command "by" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** exception THM 0 raised (line 309 of "drule.ML"):
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** \<forall>\<^sub>F n in sequentially.
+***    f (n - k) / real (n - k + k) = f (n - k) / real n
+*** (\<lambda>n. f (n - k) / real (n - k + k)) \<longlonglongrightarrow> l
+*** At command "with" (line 343 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+Unfinished session(s): Ergodic_Theory
+0:00:23 elapsed time, 0:02:12 cpu time, factor 5.65
+
+===============
+Error_Function
+Running Error_Function ...
+Error_Function FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Error_Function)
+### 0.437s elapsed time, 1.636s cpu time, 0.914s GC time
+Loading theory "Landau_Symbols.Landau_More" (required by "Error_Function.Error_Function_Asymptotics")
+val it =
+   "(\<lambda>x.
+        5 * (ln (ln x))\<^sup>2 / (2 * x) powr (15 / 10) * inverse 2)
+    \<in> \<omega>(\<lambda>x.
+                      3 * ln x * ln x / x * ln (ln (ln (ln x)))) \<equiv>
+    3 = 0 \<or>
+    5 * inverse (2 powr (15 / 10)) * inverse 2 \<noteq> 0 \<and>
+    pos_primfun_list
+     (group_primfuns
+       [(LnChain 1, - 1), (LnChain 1, - 1), (LnChain 0, 1),
+        (LnChain 4, - 1), (LnChain 2, real 2), (LnChain 0, - (15 / 10))])":
+   thm
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### Ignoring duplicate simplification procedure "Landau_Simprocs.simplify_landau_sum"
+### theory "Landau_Symbols.Landau_More"
+### 0.171s elapsed time, 0.961s cpu time, 0.030s GC time
+*** Failed to load theory "Error_Function.Error_Function_Asymptotics" (unresolved "Error_Function.Error_Function")
+*** Type unification failed: No type arity fun :: banach
+*** 
+*** Type error in application: operator not of function type
+*** 
+*** Operator:  exp (- contour_integrable_on\<^sup>2) :: ??'a
+*** Operand:   linepath ::
+***   ??'b \<Rightarrow> ??'b \<Rightarrow> real \<Rightarrow> ??'b
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operator failed:
+*** No complex coercion from "??'a44" to fun
+*** At command "lemma" (line 130 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Error_Function/Error_Function.thy")
+Unfinished session(s): Error_Function
+0:00:08 elapsed time, 0:00:19 cpu time, factor 2.29
+
+===============
+E_Transcendental
+Running E_Transcendental ...
+E_Transcendental FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/E_Transcendental)
+locale QR
+  fixes p :: "nat"
+    and q :: "nat"
+  assumes "QR p q"
+### Ignoring duplicate rewrite rule:
+### carrier (mult_of ?R1) \<equiv> carrier ?R1 - {\<zero>\<^bsub>?R1\<^esub>}
+### theory "HOL-Number_Theory.Pocklington"
+### 0.306s elapsed time, 2.476s cpu time, 0.261s GC time
+Loading theory "HOL-Number_Theory.Residue_Primitive_Roots" (required by "E_Transcendental.E_Transcendental" via "HOL-Number_Theory.Number_Theory")
+Proofs for inductive predicate(s) "residue_primroot"
+  Proving monotonicity ...
+  Proving the introduction rules ...
+  Proving the elimination rules ...
+  Proving the induction rule ...
+  Proving the simplification rules ...
+### theory "HOL-Number_Theory.Quadratic_Reciprocity"
+### 0.269s elapsed time, 2.139s cpu time, 0.000s GC time
+### theory "HOL-Number_Theory.Residue_Primitive_Roots"
+### 0.189s elapsed time, 1.393s cpu time, 0.000s GC time
+Loading theory "HOL-Number_Theory.Number_Theory" (required by "E_Transcendental.E_Transcendental")
+### Ignoring duplicate rewrite rule:
+### \<Prod>x\<in>?A1. ?y1 \<equiv> ?y1 ^ card ?A1
+### theory "HOL-Number_Theory.Number_Theory"
+### 1.491s elapsed time, 11.403s cpu time, 0.575s GC time
+Loading theory "E_Transcendental.E_Transcendental"
+### theory "E_Transcendental.E_Transcendental"
+### 1.403s elapsed time, 11.169s cpu time, 0.510s GC time
+*** Type unification failed: Clash of types "_ \<Rightarrow> _" and "complex"
+*** 
+*** Type error in application: operator not of function type
+*** 
+*** Operator:  exp (u - has_contour_integral) * poly f has_contour_integral ::
+***   complex
+*** Operand:   I :: ??'a poly \<Rightarrow> ??'a \<Rightarrow> ??'a
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operator failed:
+*** No complex coercion from "complex" to "fun"
+*** At command "lemma" (line 288 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/E_Transcendental/E_Transcendental.thy")
+Unfinished session(s): E_Transcendental
+0:00:35 elapsed time, 0:03:14 cpu time, factor 5.50
+
+===============
+Euler_MacLaurin
+Running Euler_MacLaurin ...
+Euler_MacLaurin FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Euler_MacLaurin)
+***   ((\<lambda>x.
+***        EM_remainder' n (f s) (real_of_int a)
+***         (real (nat x))) \<longlongrightarrow>
+***    lim (\<lambda>x. EM_remainder' n (f s) (real_of_int a) (real x)))
+***    at_top
+*** goal (1 subgoal):
+***  1. ((\<lambda>x.
+***          EM_remainder' n (f s) (real_of_int a)
+***           (real_of_int x)) \<longlongrightarrow>
+***      lim (\<lambda>x. EM_remainder' n (f s) (real_of_int a) (real x)))
+***      at_top
+*** At command "by" (line 435 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Failed to apply initial proof method (line 368 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_MacLaurin/Euler_MacLaurin.thy"):
+*** goal (1 subgoal):
+***  1. integral {a..b} (\<lambda>t. pbernpoly n t *\<^sub>R f t) +
+***     integral {b..c} (\<lambda>t. pbernpoly n t *\<^sub>R f t) =
+***     integral {a..c} (\<lambda>t. pbernpoly n t *\<^sub>R f t)
+*** At command "by" (line 368 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_MacLaurin/Euler_MacLaurin.thy")
+*** Failed to apply initial proof method (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at x within {0..1}. f x = f (frac x)
+***   (f \<longlongrightarrow> f (frac x)) (at x within {0..1})
+*** goal (1 subgoal):
+***  1. ((\<lambda>x. f (frac x)) \<longlongrightarrow> f (frac x))
+***      (at x within {0..1})
+*** At command "by" (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_left (1::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** At command "by" (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_right (0::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** At command "by" (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+Unfinished session(s): Euler_MacLaurin
+0:00:09 elapsed time, 0:00:40 cpu time, factor 4.36
+
+===============
+Euler_Partition
+Running Euler_Partition ...
+Euler_Partition FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Euler_Partition)
+  Proving monotonicity ...
+  Proving the introduction rules ...
+  Proving the elimination rules ...
+  Proving the induction rule ...
+  Proving the simplification rules ...
+### theory "HOL-Library.Multiset"
+### 2.609s elapsed time, 10.476s cpu time, 1.192s GC time
+Loading theory "Card_Number_Partitions.Additions_to_Main" (required by "Euler_Partition.Euler_Partition" via "Card_Number_Partitions.Number_Partition")
+### theory "Card_Number_Partitions.Additions_to_Main"
+### 0.032s elapsed time, 0.268s cpu time, 0.000s GC time
+Loading theory "Card_Number_Partitions.Number_Partition" (required by "Euler_Partition.Euler_Partition")
+### theory "Card_Number_Partitions.Number_Partition"
+### 0.245s elapsed time, 1.726s cpu time, 0.753s GC time
+Loading theory "Euler_Partition.Euler_Partition"
+### theory "Euler_Partition.Euler_Partition"
+### 0.220s elapsed time, 1.726s cpu time, 0.070s GC time
+*** Failed to finish proof (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy"):
+*** goal (1 subgoal):
+***  1. \<And>x.
+***        \<lbrakk>\<And>b a c.
+***                    \<lbrakk>b \<le> a; c \<le> b\<rbrakk>
+***                    \<Longrightarrow> c \<le> a;
+***         2 ^ x \<le> n\<rbrakk>
+***        \<Longrightarrow> x \<le> n
+*** At command "by" (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+### Ignoring duplicate rewrite rule:
+### 0 \<in> Suc ` ?A1 \<equiv> False
+*** Undefined fact: "parity_induct" (line 103 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+*** At command "using" (line 103 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+*** Undefined fact: "parity_induct" (line 103 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+*** At command "using" (line 103 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+*** Failed to finish proof (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy"):
+*** goal (1 subgoal):
+***  1. \<And>x.
+***        \<lbrakk>\<And>b a c.
+***                    \<lbrakk>b \<le> a; c \<le> b\<rbrakk>
+***                    \<Longrightarrow> c \<le> a;
+***         2 ^ x \<le> n\<rbrakk>
+***        \<Longrightarrow> x \<le> n
+*** At command "by" (line 69 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Euler_Partition/Euler_Partition.thy")
+Unfinished session(s): Euler_Partition
+0:00:07 elapsed time, 0:00:19 cpu time, factor 2.84
+
+===============
+Fermat3_4
+Running Fermat3_4 ...
+Fermat3_4 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Fermat3_4)
+Loading theory "Fermat3_4.Quad_Form" (required by "Fermat3_4.Fermat3")
+### theory "Fermat3_4.Fermat4"
+### 0.102s elapsed time, 0.605s cpu time, 0.047s GC time
+*** Failed to finish proof (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. a\<^sup>2 + b\<^sup>2 = c\<^sup>2 \<Longrightarrow> b \<le> c
+*** At command "by" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+*** Failed to finish proof (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>b \<le> a; a * (a - b) = a\<^sup>2 - a * b\<rbrakk>
+***     \<Longrightarrow> a\<^sup>2 - a * b =
+***                       a * b + a\<^sup>2 - b\<^sup>2 + b\<^sup>2 - 2 * a * b
+*** At command "by" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+*** Failed to finish proof (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. \<not> n \<le> m \<Longrightarrow> m\<^sup>2 < n\<^sup>2
+*** At command "by" (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+### theory "Fermat3_4.Quad_Form"
+### 0.329s elapsed time, 2.373s cpu time, 0.125s GC time
+Loading theory "Fermat3_4.Fermat3"
+### theory "Fermat3_4.Fermat3"
+### 0.088s elapsed time, 0.631s cpu time, 0.032s GC time
+### Rule already declared as safe elimination (elim!)
+### \<lbrakk>gcd ?a ?b = (1::?'a);
+###  coprime ?a ?b \<Longrightarrow> PROP ?W\<rbrakk>
+### \<Longrightarrow> PROP ?W
+*** Failed to finish proof (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. \<not> n \<le> m \<Longrightarrow> m\<^sup>2 < n\<^sup>2
+*** At command "by" (line 319 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+*** Failed to finish proof (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>b \<le> a; a * (a - b) = a\<^sup>2 - a * b\<rbrakk>
+***     \<Longrightarrow> a\<^sup>2 - a * b =
+***                       a * b + a\<^sup>2 - b\<^sup>2 + b\<^sup>2 - 2 * a * b
+*** At command "by" (line 88 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+*** Failed to finish proof (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy"):
+*** goal (1 subgoal):
+***  1. a\<^sup>2 + b\<^sup>2 = c\<^sup>2 \<Longrightarrow> b \<le> c
+*** At command "by" (line 136 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fermat3_4/Fermat4.thy")
+Unfinished session(s): Fermat3_4
+0:00:07 elapsed time, 0:00:22 cpu time, factor 2.92
+
+===============
+First_Welfare_Theorem
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Flyspeck-Tame
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+FOL-Fitting
+0:00:01 elapsed time
+
+===============
+FOL_Seq_Calc1
+0:00:01 elapsed time
+
+===============
+Formula_Derivatives
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Fourier
+Running Fourier ...
+Fourier FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Fourier)
+    val expansion_cmd:
+       Proof.context ->
+         (Facts.ref * Token.src list) list list ->
+           bool * int -> string -> string option -> unit
+    val limit:
+       Proof.context ->
+         thm list -> term -> term -> Multiseries_Expansion.limit_result
+    val limit_cmd:
+       Proof.context ->
+         (Facts.ref * Token.src list) list list ->
+           string -> string option -> unit
+    val pretty_limit: Proof.context -> term -> Pretty.T
+  end
+structure Real_Asymp_Diag: REAL_ASYMP_DIAG
+### theory "HOL-Real_Asymp.Real_Asymp"
+### 0.158s elapsed time, 0.440s cpu time, 0.000s GC time
+*** Failed to load theory "Fourier.Fourier_Aux2" (unresolved "Fourier.Fourier_Aux1")
+*** Failed to load theory "Fourier.Periodic" (unresolved "Fourier.Fourier_Aux2")
+*** Failed to load theory "Fourier.Lspace" (unresolved "Fourier.Fourier_Aux1")
+*** Failed to load theory "Fourier.Square_Integrable" (unresolved "Fourier.Fourier_Aux2", "Fourier.Lspace")
+*** Failed to load theory "Fourier.Fourier" (unresolved "Fourier.Periodic", "Fourier.Square_Integrable")
+*** Undefined fact: "Lim_eventually" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** At command "by" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 628 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** At command "using" (line 628 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** Undefined fact: "tendsto_explicit" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "using" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "by" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** Undefined fact: "tendsto_explicit" (line 411 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fourier/Fourier_Aux1.thy")
+*** At command "lemmas" (line 411 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Fourier/Fourier_Aux1.thy")
+*** exception THM 0 raised (line 309 of "drule.ML"):
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** \<forall>\<^sub>F n in sequentially.
+***    f (n - k) / real (n - k + k) = f (n - k) / real n
+*** (\<lambda>n. f (n - k) / real (n - k + k)) \<longlonglongrightarrow> l
+*** At command "with" (line 343 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+Unfinished session(s): Fourier
+0:00:27 elapsed time, 0:01:50 cpu time, factor 4.07
+
+===============
+Functional_Ordered_Resolution_Prover
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Furstenberg_Topology
+0:00:02 elapsed time
+
+===============
+Gabow_SCC
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Gauss_Jordan
+
+
+*** Cannot load theory "HOL-Library.Bit"
+*** The error(s) above occurred in session "Gauss_Jordan" (line 3 of "/home/quiqui/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gauss_Jordan/ROOT")
+===============
+Gauss_Sums
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Generic_Deriving
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Girth_Chromatic
+Running Girth_Chromatic ...
+Girth_Chromatic FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Girth_Chromatic)
+  end
+structure Approximation_Generator: APPROXIMATION_GENERATOR
+bundle floatarith_notation
+bundle no_floatarith_notation
+### theory "HOL-Decision_Procs.Approximation"
+### 17.887s elapsed time, 44.056s cpu time, 9.422s GC time
+Loading theory "Girth_Chromatic.Girth_Chromatic"
+locale edge_space
+  fixes n :: "nat"
+    and p :: "real"
+  assumes "edge_space p"
+locale edge_space
+  fixes n :: "nat"
+    and p :: "real"
+  assumes "edge_space p"
+### Ignoring duplicate rewrite rule:
+### nat \<lceil>?x1\<rceil> \<le> ?a1 \<equiv> ?x1 \<le> real ?a1
+### theory "Girth_Chromatic.Girth_Chromatic"
+### 1.347s elapsed time, 2.439s cpu time, 0.290s GC time
+### Introduced fixed type variable(s): 'a in "xs__"
+### Ignoring duplicate rewrite rule:
+### nat \<lceil>?x1\<rceil> \<le> ?a1 \<equiv> ?x1 \<le> real ?a1
+*** Failed to finish proof (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>0 < \<epsilon>;
+***      \<forall>\<^sup>\<infinity>x.
+***         12 * real k * real x powr - (\<epsilon> / 2) < 1\<rbrakk>
+***     \<Longrightarrow> \<forall>\<^sup>\<infinity>n.
+***                          12 * real k * real n powr - (\<epsilon> / 2)
+***                          \<le> \<epsilon>
+*** At command "by" (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy")
+*** Failed to finish proof (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>0 < \<epsilon>;
+***      \<forall>\<^sup>\<infinity>x.
+***         12 * real k * real x powr - (\<epsilon> / 2) < 1\<rbrakk>
+***     \<Longrightarrow> \<forall>\<^sup>\<infinity>n.
+***                          12 * real k * real n powr - (\<epsilon> / 2)
+***                          \<le> \<epsilon>
+*** At command "by" (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy")
+Unfinished session(s): Girth_Chromatic
+0:00:33 elapsed time, 0:01:38 cpu time, factor 2.94
+
+===============
+Graph_Saturation
+Running Graph_Saturation ...
+Graph_Saturation FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Graph_Saturation)
+*** Extra variables on rhs: "UNION"
+*** The error(s) above occurred in definition:
+*** "the_model C Rs \<equiv>
+*** let L = fst ` UNION Rs (edges \<circ> snd) \<union>
+***         {S_Bot, S_Top, S_Idt} \<union>
+***         S_Const ` C;
+***     Rules = Rs \<union> standard_rules C L;
+***     sel = non_constructive_selector Rules
+*** in the_lcg sel Rules (0, {})"
+*** At command "definition" (line 11 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Graph_Saturation/CombinedCorrectness.thy")
+*** Failed to finish proof (line 514 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Graph_Saturation/GraphRewriting.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>(a, x, y) \<in> edges (snd R); sel G = Some (R, f);
+***      UNION Rules (edges \<circ> snd) \<subseteq> L \<times> UNIV;
+***      R \<in> Rules; graph_homomorphism (fst R) (graph_of G) f;
+***      \<not> extensible R (graph_of G) f;
+***      \<forall>a.
+***         (\<exists>aa b.
+***             (aa, b) \<in> Rules \<and>
+***             (\<exists>ba.
+***                 graph_homomorphism aa (graph_of G) ba \<and>
+***                 a = nextMax (Range ba) \<and>
+***                 \<not> extensible (aa, b) (graph_of G)
+***                         ba)) \<longrightarrow>
+***         nextMax (Range f) \<le> a;
+***      subgraph (fst R) (snd R); graph (snd R); finite (vertices (snd R));
+***      finite (edges (snd R))\<rbrakk>
+***     \<Longrightarrow> a \<in> L
+*** At command "by" (line 514 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Graph_Saturation/GraphRewriting.thy")
+*** exception THM 0 raised (line 310 of "drule.ML"):
+*** OF: multiple unifiers
+*** \<lbrakk>valid_selector ?Rules ?sel;
+***  ?UNION ?Rules (edges \<circ> snd) \<subseteq> ?L \<times> UNIV;
+***  edges (graph_of ?G) \<subseteq> ?L \<times> UNIV\<rbrakk>
+*** \<Longrightarrow> edges (graph_of (mk_chain ?sel ?Rules ?G ?i))
+***                   \<subseteq> ?L \<times> UNIV
+*** valid_selector Rules sel
+*** UNION Rules (edges \<circ> snd) \<subseteq> L \<times> UNIV
+*** edges (graph_of G) \<subseteq> L \<times> UNIV
+*** At command "using" (line 532 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Graph_Saturation/GraphRewriting.thy")
+Unfinished session(s): Graph_Saturation
+0:00:11 elapsed time, 0:00:37 cpu time, factor 3.29
+
+===============
+Green
+Running Green ...
+Green FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Green)
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+### Metis: Unused theorems: "local.neqs2_1"
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+*** SMT: Solver "z3": Timed out (setting the configuration option "smt_timeout" might help)
+*** At command "by" (line 902 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Integrals.thy")
+*** Undefined fact: "sum_not_0" (line 2004 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** At command "using" (line 2004 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.piecewise_C1_differentiable_compose" (line 1448 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** At command "using" (line 1448 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.piecewise_C1_differentiable_compose" (line 705 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** At command "using" (line 705 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.piecewise_C1_differentiable_compose" (line 454 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** At command "using" (line 454 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Green.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.valid_path_imp_reverse" (line 1246 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** At command "using" (line 1246 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.valid_path_imp_reverse" (line 947 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** At command "using" (line 947 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.valid_path_imp_reverse" (line 1388 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** At command "using" (line 1388 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.valid_path_imp_reverse" (line 1045 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** At command "using" (line 1045 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.valid_path_join" (line 839 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** At command "using" (line 839 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Paths.thy")
+*** Undefined fact: "Cauchy_Integral_Theorem.C1_differentiable_on_mult" (line 489 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Derivs.thy")
+*** At command "using" (line 489 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Derivs.thy")
+*** Failed to finish proof (line 695 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Integrals.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>f integrable_on {a..y}; \<not> y < x;
+***      a \<le> x \<and> x \<le> b \<and> x \<notin> s\<rbrakk>
+***     \<Longrightarrow> integral {a..y} f =
+***                       integral {a..x} f + integral {x..y} f
+*** At command "by" (line 695 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Green/Integrals.thy")
+Unfinished session(s): Green
+0:00:36 elapsed time, 0:03:06 cpu time, factor 5.14
+
+===============
+Groebner_Macaulay
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Gromov_Hyperbolicity
+Running Gromov_Hyperbolicity ...
+Gromov_Hyperbolicity FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Gromov_Hyperbolicity)
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** \<forall>\<^sub>F n in sequentially.
+***    additive_strength f xi - 2 * deltaG TYPE('a) * (1 / real n) =
+***    (real n * additive_strength f xi - 2 * deltaG TYPE('a)) / real n
+*** (\<lambda>x. additive_strength f xi - 2 * deltaG TYPE('a) * (1 / real x))
+*** \<longlonglongrightarrow> additive_strength f xi - 2 * deltaG TYPE('a) * 0
+*** At command "using" (line 394 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Isometries_Classification.thy")
+*** Failed to apply proof method (line 627 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Boundary_Extension.thy"):
+*** using this:
+***   (\<lambda>n. from_Gromov_completion (Gromov_extension f (u n)))
+***   \<longlonglongrightarrow> from_Gromov_completion (Gromov_extension f x)
+*** goal (1 subgoal):
+***  1. (\<lambda>n. f (from_Gromov_completion (u n)))
+***     \<longlonglongrightarrow> from_Gromov_completion (Gromov_extension f x)
+*** At command "apply" (line 627 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Boundary_Extension.thy")
+*** Failed to apply proof method (line 409 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Boundary_Extension.thy"):
+*** using this:
+***   (\<lambda>n. from_Gromov_completion (Gromov_extension f (u n)))
+***   \<longlonglongrightarrow> from_Gromov_completion (Gromov_extension f x)
+*** goal (1 subgoal):
+***  1. (\<lambda>n. f (from_Gromov_completion (u n)))
+***     \<longlonglongrightarrow> from_Gromov_completion (Gromov_extension f x)
+*** At command "apply" (line 409 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Boundary_Extension.thy")
+*** Failed to finish proof (line 821 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Morse_Gromov_Theorem.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>real n \<le> log 2 (lambda * (b - a) / (10 * delta));
+***      0 < lambda * (b - a); 0 < delta\<rbrakk>
+***     \<Longrightarrow> 2 ^ n \<le> lambda * (b - a) / (10 * delta)
+*** At command "by" (line 821 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Morse_Gromov_Theorem.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 73 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Metric_Completion.thy")
+*** At command "by" (line 73 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Metric_Completion.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 1819 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Isometries.thy")
+*** At command "by" (line 1819 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Isometries.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 1044 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Isometries.thy")
+*** At command "by" (line 1044 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gromov_Hyperbolicity/Isometries.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 424 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** At command "by" (line 424 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+*** At command "by" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/Fekete.thy")
+Unfinished session(s): Gromov_Hyperbolicity
+0:01:33 elapsed time, 0:06:01 cpu time, factor 3.86
+
+===============
+Group-Ring-Module
+Running Group-Ring-Module ...
+Group-Ring-Module FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Group-Ring-Module)
+###             ("_position" M) ("_position" N) ("_position" MN)))
+###         ("\<^const>Algebra9.tensor_relations4" ("_position" R)
+###           ("_position" M) ("_position" N) ("_position" MN))))))
+### ("\<^const>HOL.Trueprop"
+###   ("\<^fixed>tensor_relations" ("_position" R) ("_position" M)
+###     ("_position" N)
+###     ("\<^const>HOL.eq" ("_position" MN)
+###       ("\<^const>Algebra9.Least_submodule" ("_position" R) ("_position" MN)
+###         ("\<^const>Set.union"
+###           ("\<^const>Set.union"
+###             ("\<^const>Set.union"
+###               ("\<^const>Algebra9.tensor_relations1" ("_position" R)
+###                 ("_position" M) ("_position" N) ("_position" MN))
+###               ("\<^const>Algebra9.tensor_relations2" ("_position" R)
+###                 ("_position" M) ("_position" N) ("_position" MN)))
+###             ("\<^const>Algebra9.tensor_relations3" ("_position" R)
+###               ("_position" M) ("_position" N) ("_position" MN)))
+###           ("\<^const>Algebra9.tensor_relations4" ("_position" R)
+###             ("_position" M) ("_position" N) ("_position" MN)))))))
+### Fortunately, only one parse tree is well-formed and type-correct,
+### but you may still want to disambiguate your grammar or your input.
+### theory "Group-Ring-Module.Algebra9"
+### 5.244s elapsed time, 34.828s cpu time, 8.008s GC time
+\<lbrakk>R module N; R module M; invmfun R M N f \<in> mHom R N M;
+ ?m \<in> carrier N\<rbrakk>
+\<Longrightarrow> invmfun R M N f ?m \<in> carrier M
+\<lbrakk>?R module ?M; ?R module ?N; ?f \<in> mHom ?R ?M ?N\<rbrakk>
+\<Longrightarrow> ?f\<^sup>\<flat>\<^bsub>?R ?M, ?N\<^esub>
+                  \<in> mHom ?R (?M /\<^sub>m (ker\<^bsub>?M,?N\<^esub> ?f))
+                         ?N
+\<lbrakk>?R module ?M; submodule ?R ?M ?H\<rbrakk>
+\<Longrightarrow> mpj ?M ?H \<in> mHom ?R ?M (?M /\<^sub>m ?H)
+\<lbrakk>R module Zm R e; R module M3; R module ?N;
+ z1 \<in> mHom R M3 (Zm R e); ?g \<in> mHom R (Zm R e) ?N\<rbrakk>
+\<Longrightarrow> compos M3 ?g z1 \<in> mHom R M3 ?N
+\<lbrakk>R module M1; R module M2; R module ?L; f \<in> mHom R M1 M2;
+ ?f \<in> mHom R M2 ?L\<rbrakk>
+\<Longrightarrow> sup_sharp R M1 M2 ?L f ?f \<in> mHom R M1 ?L
+*** Undefined fact: "linorder_antisym_conv2" (line 2403 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Group-Ring-Module/Algebra3.thy")
+*** At command "apply" (line 2403 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Group-Ring-Module/Algebra3.thy")
+Unfinished session(s): Group-Ring-Module
+0:01:34 elapsed time, 0:06:40 cpu time, factor 4.24
+
+===============
+Hermite
+
+
+*** Cannot load theory "HOL-Library.Bit"
+*** The error(s) above occurred in session "Gauss_Jordan" (line 3 of "/home/quiqui/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Gauss_Jordan/ROOT")
+===============
+Hoare_Time
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+HOL-CSP
+Running HOL-CSP ...
+HOL-CSP FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/HOL-CSP)
+val method_evaluate = fn: Method.text -> Proof.context -> thm list -> tactic
+### theory "HOL-Eisbach.Eisbach"
+### 0.651s elapsed time, 3.945s cpu time, 0.766s GC time
+instantiation
+  list :: (type) order
+  less_eq_list == less_eq ::
+    'a list \<Rightarrow> 'a list \<Rightarrow> bool
+  less_list == less :: 'a list \<Rightarrow> 'a list \<Rightarrow> bool
+### theory "HOL-CSP.Introduction"
+### 0.680s elapsed time, 4.143s cpu time, 0.752s GC time
+instantiation
+  process :: (type) below
+  below_process == below ::
+    'a process \<Rightarrow> 'a process \<Rightarrow> bool
+### theory "HOL-CSP.Process"
+### 1.152s elapsed time, 6.462s cpu time, 0.883s GC time
+*** Failed to load theory "HOL-CSP.Bot" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Det" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Hide" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Mprefix" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Ndet" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Seq" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Skip" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Stop" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Sync" (unresolved "HOL-CSP.Process")
+*** Failed to load theory "HOL-CSP.Mndet" (unresolved "HOL-CSP.Mprefix", "HOL-CSP.Ndet", "HOL-CSP.Process", "HOL-CSP.Stop")
+*** Failed to load theory "HOL-CSP.CSP" (unresolved "HOL-CSP.Bot", "HOL-CSP.Det", "HOL-CSP.Hide", "HOL-CSP.Mndet", "HOL-CSP.Mprefix", "HOL-CSP.Ndet", "HOL-CSP.Seq", "HOL-CSP.Skip", "HOL-CSP.Stop", "HOL-CSP.Sync")
+*** Failed to load theory "HOL-CSP.Assertions" (unresolved "HOL-CSP.CSP")
+*** Failed to load theory "HOL-CSP.Conclusion" (unresolved "HOL-CSP.Assertions")
+*** Failed to load theory "HOL-CSP.CopyBuffer" (unresolved "HOL-CSP.Assertions")
+*** Type unification failed: Clash of types "_ list" and "_ \<times> _"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  INTER X ::
+***   (??'a process \<Rightarrow> (??'a event list \<times> ??'a event set) set)
+***   \<Rightarrow> ??'b
+*** Operand:   D :: ??'a process \<Rightarrow> ??'a event list set
+*** 
+*** At command "definition" (line 916 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/HOL-CSP/Process.thy")
+Unfinished session(s): HOL-CSP
+0:00:07 elapsed time, 0:00:10 cpu time, factor 1.28
+
+===============
+Hybrid_Logic
+0:00:02 elapsed time
+
+===============
+Hybrid_Systems_VCs
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+IEEE_Floating_Point
+Building Word_Lib ...
+Word_Lib FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Word_Lib)
+  sdiv_int == sdiv :: int \<Rightarrow> int \<Rightarrow> int
+  smod_int == smod :: int \<Rightarrow> int \<Rightarrow> int
+consts
+  suffixes :: "'a list \<Rightarrow> 'a list list"
+instantiation
+  word :: (len) signed_div
+  sdiv_word == sdiv :: 'a word \<Rightarrow> 'a word \<Rightarrow> 'a word
+  smod_word == smod :: 'a word \<Rightarrow> 'a word \<Rightarrow> 'a word
+Proofs for inductive predicate(s) "list_emb"
+  Proving monotonicity ...
+  Proving the introduction rules ...
+  Proving the elimination rules ...
+  Proving the induction rule ...
+  Proving the simplification rules ...
+### theory "Word_Lib.Word_Lib"
+### 0.168s elapsed time, 1.093s cpu time, 0.038s GC time
+consts
+  sublists :: "'a list \<Rightarrow> 'a list list"
+### Ignoring duplicate rewrite rule:
+### list_emb ?P1 [] ?ys1 \<equiv> True
+### Ignoring duplicate rewrite rule:
+### list_emb ?P1 (?x1 # ?xs1) [] \<equiv> False
+### theory "HOL-Library.Sublist"
+### 1.041s elapsed time, 7.232s cpu time, 0.424s GC time
+*** Failed to load theory "Word_Lib.Word_Enum" (unresolved "Word_Lib.Word_Lib")
+*** Failed to load theory "Word_Lib.Word_Setup_32" (unresolved "Word_Lib.Word_Enum")
+*** Failed to load theory "Word_Lib.Word_Setup_64" (unresolved "Word_Lib.Word_Enum")
+*** Failed to load theory "Word_Lib.Aligned" (unresolved "Word_Lib.Word_Lib")
+*** Failed to load theory "Word_Lib.Word_Next" (unresolved "Word_Lib.Aligned")
+*** Failed to load theory "Word_Lib.Word_Lemmas" (unresolved "Word_Lib.Word_Enum", "Word_Lib.Word_Next")
+*** Failed to load theory "Word_Lib.Word_Lemmas_32" (unresolved "Word_Lib.Word_Lemmas", "Word_Lib.Word_Setup_32")
+*** Failed to load theory "Word_Lib.Word_Lemmas_64" (unresolved "Word_Lib.Word_Lemmas", "Word_Lib.Word_Setup_64")
+*** Type unification failed: No type arity fun :: bit_operations
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  NOT :: ??'a \<Rightarrow> ??'a
+*** Operand:   mask :: nat \<Rightarrow> ??'b word
+*** 
+*** At command "lemma" (line 169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Word_Lib/Word_Lib.thy")
+IEEE_Floating_Point CANCELLED
+Unfinished session(s): IEEE_Floating_Point, Word_Lib
+0:00:05 elapsed time, 0:00:08 cpu time, factor 1.59
+
+===============
+IMP2
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Incompleteness
+Running Incompleteness ...
+Incompleteness FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Incompleteness)
+val raw_alpha_bn_rsp = fn: alpha_result -> thm list -> thm list -> thm list
+val define_raw_alpha = fn:
+   raw_dt_info ->
+     bn_info list ->
+       bclause list list list ->
+         term list -> Proof.context -> alpha_result * local_theory
+val raw_prove_alpha_distincts = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val comb_binders = fn:
+   Proof.context -> bmode -> term list -> (term option * int) list -> term
+val raw_prove_equivp = fn:
+   Proof.context ->
+     alpha_result -> thm list -> thm list -> thm list -> thm list * thm list
+val raw_constrs_rsp = fn:
+   Proof.context ->
+     alpha_result -> term list list -> thm list -> thm list list
+val raw_prove_alpha_eq_iff = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val mk_alpha_permute_rsp = fn: Proof.context -> thm -> thm
+val mk_funs_rsp = fn: Proof.context -> thm -> thm
+val raw_prove_bn_imp = fn: Proof.context -> alpha_result -> thm list
+val raw_prove_sym = fn:
+   Proof.context -> alpha_result -> thm list -> thm list
+### theory "Nominal2.Nominal2"
+### 0.741s elapsed time, 1.924s cpu time, 0.087s GC time
+*** Failed to load theory "Incompleteness.SyntaxN" (unresolved "Nominal2.Nominal2")
+*** Failed to load theory "Incompleteness.Coding" (unresolved "Incompleteness.SyntaxN")
+*** Failed to load theory "Incompleteness.Predicates" (unresolved "Incompleteness.SyntaxN")
+*** Failed to load theory "Incompleteness.Sigma" (unresolved "Incompleteness.Predicates")
+*** Failed to load theory "Incompleteness.Coding_Predicates" (unresolved "Incompleteness.Coding", "Incompleteness.Sigma")
+*** Failed to load theory "Incompleteness.Functions" (unresolved "Incompleteness.Coding_Predicates")
+*** Failed to load theory "Incompleteness.Pf_Predicates" (unresolved "Incompleteness.Coding_Predicates")
+*** Failed to load theory "Incompleteness.Goedel_I" (unresolved "Incompleteness.Functions", "Incompleteness.Pf_Predicates")
+*** Failed to load theory "Incompleteness.II_Prelims" (unresolved "Incompleteness.Pf_Predicates")
+*** Failed to load theory "Incompleteness.Pseudo_Coding" (unresolved "Incompleteness.II_Prelims")
+*** Failed to load theory "Incompleteness.Quote" (unresolved "Incompleteness.Pseudo_Coding")
+*** Failed to load theory "Incompleteness.Goedel_II" (unresolved "Incompleteness.Goedel_I", "Incompleteness.Quote")
+*** ML error (line 210 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/nominal_dt_quot.ML"):
+*** Value or constructor (auto_fixes) has not been declared in structure Variable
+*** At command "ML_file" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/Nominal2.thy")
+Unfinished session(s): Incompleteness
+0:00:10 elapsed time, 0:00:19 cpu time, factor 1.81
+
+===============
+IP_Addresses
+
+
+*** Cannot load theory "Automatic_Refinement.Misc"
+*** The error(s) above occurred in session "IP_Addresses" (line 3 of "/home/quiqui/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/IP_Addresses/ROOT")
+===============
+Iptables_Semantics
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Irrationality_J_Hancl
+Running Irrationality_J_Hancl ...
+Irrationality_J_Hancl FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Irrationality_J_Hancl)
+###     ("\<^const>Power.power_class.power"
+###       ("_constrain" ("_Numeral" ("_constify" ("_position" 2)))
+###         ("_type_name" real))
+###       ("\<^const>Groups.plus_class.plus" ("_position" n)
+###         ("\<^const>Groups.one_class.one")))))
+### ("\<^const>HOL.Trueprop"
+###   ("\<^const>Orderings.ord_class.less"
+###     ("_applC" ("_position" sum)
+###       ("_cargs"
+###         ("_applC" ("\<^const>Power.power_class.power")
+###           ("_Numeral" ("_constify" ("_position" 2))))
+###         ("\<^const>Set_Interval.ord_class.atLeastAtMost" ("_position" s)
+###           ("_position" n))))
+###     ("\<^const>Power.power_class.power"
+###       ("_constrain" ("_Numeral" ("_constify" ("_position" 2)))
+###         ("_type_name" real))
+###       ("\<^const>Groups.plus_class.plus" ("_position" n)
+###         ("\<^const>Groups.one_class.one")))))
+### Fortunately, only one parse tree is well-formed and type-correct,
+### but you may still want to disambiguate your grammar or your input.
+*** Undefined fact: "linordered_field_class.sign_simps" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+*** At command "by" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+*** At command "by" (line 438 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+*** Failed to apply initial proof method (line 1041 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy"):
+*** goal:
+*** No subgoals!
+*** At command "by" (line 1041 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+*** Failed to apply proof method (line 791 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy"):
+*** using this:
+***   (\<lambda>n.
+***       real_of_int (b (n + 1)) / real_of_int (a (n + 1)) /
+***       (real_of_int (b n) / real_of_int (a n)))
+***   \<longlonglongrightarrow> 0
+*** goal (1 subgoal):
+***  1. (\<lambda>n.
+***         norm (real_of_int (b (Suc n)) / real_of_int (a (Suc n))) /
+***         norm (real_of_int (b n) / real_of_int (a n)))
+***     \<longlonglongrightarrow> 0
+*** At command "apply" (line 791 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Irrationality_J_Hancl/Irrationality_J_Hancl.thy")
+Unfinished session(s): Irrationality_J_Hancl
+0:00:33 elapsed time, 0:01:42 cpu time, factor 3.06
+
+===============
+Isabelle_C
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Jacobson_Basic_Algebra
+Running Jacobson_Basic_Algebra ...
+Jacobson_Basic_Algebra FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Jacobson_Basic_Algebra)
+    and M :: "'a set"
+    and
+    composition :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixl \<open>\<cdot>\<close> 70)
+    and unit :: "'a"  (\<open>\<one>\<close>)
+    and M' :: "'b set"
+    and
+    composition' :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixl \<open>\<cdot>''\<close> 70)
+    and unit' :: "'b"  (\<open>\<one>''\<close>)
+  assumes
+    "monoid_monomorphism \<eta> M (\<cdot>) \<one> M' (\<cdot>') \<one>'"
+locale monoid_homomorphism
+  fixes \<eta> :: "'a \<Rightarrow> 'b"
+    and M :: "'a set"
+    and
+    composition :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixl \<open>\<cdot>\<close> 70)
+    and unit :: "'a"  (\<open>\<one>\<close>)
+    and M' :: "'b set"
+    and
+    composition' :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixl \<open>\<cdot>''\<close> 70)
+    and unit' :: "'b"  (\<open>\<one>''\<close>)
+  assumes
+    "monoid_homomorphism \<eta> M (\<cdot>) \<one> M' (\<cdot>') \<one>'"
+### theory "Jacobson_Basic_Algebra.Group_Theory"
+### 2.324s elapsed time, 11.517s cpu time, 0.821s GC time
+*** Failed to load theory "Jacobson_Basic_Algebra.Ring_Theory" (unresolved "Jacobson_Basic_Algebra.Group_Theory")
+*** Ambiguous input (line 1347 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Jacobson_Basic_Algebra/Group_Theory.thy") produces 2 parse trees:
+*** ("\<^const>HOL.Trueprop"
+***   ("\<^const>local.source.invertible" ("_position" a)))
+*** ("\<^const>HOL.Trueprop"
+***   ("\<^const>local.target.invertible" ("_position" a)))
+*** Ambiguous input
+*** 2 terms are type correct:
+*** (invertible (a::<position>))
+*** (invertible(a::<position>))
+*** Failed to parse prop
+*** At command "theorem" (line 1346 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Jacobson_Basic_Algebra/Group_Theory.thy")
+Unfinished session(s): Jacobson_Basic_Algebra
+0:00:06 elapsed time, 0:00:16 cpu time, factor 2.56
+
+===============
+Jinja
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+JinjaThreads
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Jordan_Normal_Form
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+KD_Tree
+Running KD_Tree ...
+*** Timeout
+KD_Tree FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/KD_Tree)
+Loading theory "KD_Tree.Range_Search"
+Loading theory "KD_Tree.Balanced"
+Found termination order: "(\<lambda>p. length (snd p)) <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+Found termination order:
+  "(\<lambda>p. size (snd (snd (snd p)))) <*mlex*> {}"
+Found termination order:
+  "(\<lambda>p. size (snd (snd (snd p)))) <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+### theory "KD_Tree.Nearest_Neighbors"
+### 0.396s elapsed time, 2.905s cpu time, 0.598s GC time
+### theory "KD_Tree.Range_Search"
+### 0.409s elapsed time, 2.997s cpu time, 0.598s GC time
+Found termination order:
+  "(\<lambda>p. size_list length (snd (snd p))) <*mlex*> {}"
+### theory "KD_Tree.Balanced"
+### 0.605s elapsed time, 4.553s cpu time, 0.663s GC time
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+### Metis: Unused theorems: "Orderings.order_class.dual_order.refl", "List.in_set_takeD", "List.in_set_dropD", "Balanced.partition_filter_2", "Balanced.partition_filter_3"
+### Metis: Unused theorems: "Orderings.order_class.le_less", "List.in_set_dropD", "Balanced.partition_filter_1", "Balanced.partition_filter_3"
+### Metis: Unused theorems: "Orderings.order_class.le_less", "List.in_set_takeD", "Balanced.partition_filter_1", "Balanced.partition_filter_3"
+### Metis: Unused theorems: "Orderings.order_class.dual_order.refl", "List.in_set_takeD", "List.in_set_dropD", "Balanced.partition_filter_1", "Balanced.partition_filter_2"
+linarith_split_limit exceeded (current value is 9)
+linarith_split_limit exceeded (current value is 9)
+### Metis: Unused theorems: "Orderings.linorder_class.not_le_imp_less"
+### Metis: Unused theorems: "Orderings.linorder_class.not_le_imp_less"
+*** Interrupt
+Unfinished session(s): KD_Tree
+0:10:03 elapsed time, 0:11:02 cpu time, factor 1.10
+
+===============
+Kruskal
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Kuratowski_Closure_Complement
+0:00:02 elapsed time
+
+===============
+LambdaAuth
+Building Nominal2 ...
+Nominal2 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Nominal2)
+val raw_prove_trans = fn:
+   Proof.context -> alpha_result -> thm list -> thm list -> thm list
+val raw_fv_bn_rsp_aux = fn:
+   Proof.context ->
+     alpha_result ->
+       term list -> term list -> term list -> thm list -> thm list
+val raw_perm_bn_rsp = fn:
+   Proof.context -> alpha_result -> term list -> thm list -> thm list
+val alpha_prove = fn:
+   term list ->
+     (term * (term * term -> term)) list ->
+       thm -> (Proof.context -> int -> tactic) -> Proof.context -> thm list
+val raw_alpha_bn_rsp = fn: alpha_result -> thm list -> thm list -> thm list
+val define_raw_alpha = fn:
+   raw_dt_info ->
+     bn_info list ->
+       bclause list list list ->
+         term list -> Proof.context -> alpha_result * local_theory
+val raw_prove_alpha_distincts = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val comb_binders = fn:
+   Proof.context -> bmode -> term list -> (term option * int) list -> term
+val raw_prove_equivp = fn:
+   Proof.context ->
+     alpha_result -> thm list -> thm list -> thm list -> thm list * thm list
+val raw_constrs_rsp = fn:
+   Proof.context ->
+     alpha_result -> term list list -> thm list -> thm list list
+val raw_prove_alpha_eq_iff = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val mk_alpha_permute_rsp = fn: Proof.context -> thm -> thm
+val mk_funs_rsp = fn: Proof.context -> thm -> thm
+val raw_prove_bn_imp = fn: Proof.context -> alpha_result -> thm list
+val raw_prove_sym = fn:
+   Proof.context -> alpha_result -> thm list -> thm list
+### theory "Nominal2.Nominal2"
+### 0.691s elapsed time, 1.735s cpu time, 0.147s GC time
+*** ML error (line 210 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/nominal_dt_quot.ML"):
+*** Value or constructor (auto_fixes) has not been declared in structure Variable
+*** At command "ML_file" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/Nominal2.thy")
+LambdaAuth CANCELLED
+Unfinished session(s): LambdaAuth, Nominal2
+0:00:13 elapsed time, 0:00:52 cpu time, factor 4.01
+
+===============
+Lambda_Free_EPO
+0:00:01 elapsed time
+
+===============
+Lambda_Free_KBOs
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Lambda_Free_RPOs
+0:00:02 elapsed time
+
+===============
+Landau_Symbols
+0:00:02 elapsed time
+
+===============
+Laplace_Transform
+Running Laplace_Transform ...
+Laplace_Transform FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Laplace_Transform)
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** PROP ?psi \<Longrightarrow> PROP ?psi
+*** ((\<lambda>x. ?k) \<longlongrightarrow> ?k) ?F
+*** At command "apply" (line 311 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Existence.thy")
+*** Failed to apply initial proof method (line 160 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Existence.thy"):
+*** using this:
+***   \<forall>\<^sub>F k in at_top.
+***      local.laplace_integrand s t =
+***      indicat_real {A..k} t *\<^sub>R local.laplace_integrand s t
+***   ((\<lambda>x. ?k) \<longlongrightarrow> ?k) ?F
+*** goal (1 subgoal):
+***  1. ((\<lambda>k.
+***          indicat_real {A..k} t *\<^sub>R
+***          local.laplace_integrand s t) \<longlongrightarrow>
+***      local.laplace_integrand s t)
+***      at_top
+*** At command "by" (line 160 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Existence.thy")
+*** Failed to apply initial proof method (line 304 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Piecewise_Continuous.thy"):
+*** using this:
+***   \<lbrakk>a < ?i; ?i \<le> b\<rbrakk>
+***   \<Longrightarrow> \<forall>\<^sub>F x in at_left ?i. f x = g x
+***   \<lbrakk>?i \<in> I; a < ?i; ?i \<le> b\<rbrakk>
+***   \<Longrightarrow> (f \<longlongrightarrow> l ?i) (at_left ?i)
+*** goal (1 subgoal):
+***  1. \<lbrakk>i \<in> I; a < i; i \<le> b\<rbrakk>
+***     \<Longrightarrow> (g \<longlongrightarrow> l i) (at_left i)
+*** At command "by" (line 304 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Piecewise_Continuous.thy")
+*** Undefined fact: "sign_simps" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Laplace_Transform_Library.thy")
+*** At command "apply" (line 211 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Laplace_Transform_Library.thy")
+*** exception THM 0 raised (line 309 of "drule.ML"):
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** PROP ?psi \<Longrightarrow> PROP ?psi
+*** ((\<lambda>x. ?k) \<longlongrightarrow> ?k) ?F
+*** At command "by" (line 165 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Laplace_Transform/Laplace_Transform_Library.thy")
+Unfinished session(s): Laplace_Transform
+0:00:05 elapsed time, 0:00:13 cpu time, factor 2.27
+
+===============
+Linear_Inequalities
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+LinearQuantifierElim
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Linear_Recurrences
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+List_Update
+Running List_Update ...
+List_Update FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/List_Update)
+### \<lbrakk>0 < ?p1; ?p1 < 1\<rbrakk>
+### \<Longrightarrow> set_pmf (bernoulli_pmf ?p1) \<equiv> UNIV
+### Ignoring duplicate rewrite rule:
+### \<lbrakk>0 < ?p1; ?p1 < 1\<rbrakk>
+### \<Longrightarrow> set_pmf (bernoulli_pmf ?p1) \<equiv> UNIV
+### Ignoring duplicate rewrite rule:
+### \<lbrakk>0 < ?p1; ?p1 < 1\<rbrakk>
+### \<Longrightarrow> set_pmf (bernoulli_pmf ?p1) \<equiv> UNIV
+### Ignoring duplicate rewrite rule:
+### \<lbrakk>0 < ?p1; ?p1 < 1\<rbrakk>
+### \<Longrightarrow> set_pmf (bernoulli_pmf ?p1) \<equiv> UNIV
+### Introduced fixed type variable(s): 'a in "addum__"
+### Undeclared classical rule
+### ?x \<notin> set ?xs \<Longrightarrow> count_list ?xs ?x = 0
+"\<lambda>i. ALG'_det Strat (A @ [b]) init i y"
+  :: "nat \<Rightarrow> nat"
+L (concS ?M1.0 ?M2.0) = L ?M1.0 @@ L ?M2.0
+L (set ?rs) = lang (verund ?rs)
+L (substL (lang ?E) ?\<sigma>) = lang (subst ?E ?\<sigma>)
+check_eqv ?r ?s \<Longrightarrow> lang ?r = lang ?s
+lang (subst (w2rexp (?xs @ ?ys)) ?\<sigma>) =
+lang (subst (w2rexp ?xs) ?\<sigma>) @@ lang (subst (w2rexp ?ys) ?\<sigma>)
+check_eqv ?r ?s \<Longrightarrow> lang ?r = lang ?s
+check_eqv ?r ?s \<Longrightarrow> lang ?r = lang ?s
+check_eqv ?r ?s \<Longrightarrow> lang ?r = lang ?s
+check_eqv ?r ?s \<Longrightarrow> lang ?r = lang ?s
+### Introduced fixed type variable(s): 'b in "q__" or "s__"
+### Metis: Falling back on "metis (full_types)"...
+*** Type unification failed: Clash of types "_ \<Rightarrow> _" and "real"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  (=) (T\<^sub>p_on_rand' BIT s qs) :: real \<Rightarrow> bool
+*** Operand:   bit :: ??'a \<Rightarrow> nat \<Rightarrow> bool
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** No coercion known for type constructors: "fun" and "real"
+*** At command "lemma" (line 180 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/List_Update/Comb.thy")
+Unfinished session(s): List_Update
+0:00:34 elapsed time, 0:03:09 cpu time, factor 5.55
+
+===============
+LLL_Basis_Reduction
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+LocalLexing
+0:00:01 elapsed time
+
+===============
+LOFT
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Lower_Semicontinuous
+Running Lower_Semicontinuous ...
+Lower_Semicontinuous FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Lower_Semicontinuous)
+Loading theory "Lower_Semicontinuous.Lower_Semicontinuous"
+### Ignoring duplicate rewrite rule:
+### 0 < dist ?x1 ?y1 \<equiv> ?x1 \<noteq> ?y1
+### Ignoring duplicate rewrite rule:
+### ?x1 \<in> ball ?x1 ?e1 \<equiv> 0 < ?e1
+*** Undefined fact: "tendsto_explicit" (line 78 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+*** At command "using" (line 78 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+### Metis: Unused theorems: "Lower_Semicontinuous.continuous_isCont"
+### Metis: Unused theorems: "Lower_Semicontinuous.lsc_hull_ex_unique"
+### theory "Lower_Semicontinuous.Lower_Semicontinuous"
+### 0.655s elapsed time, 3.851s cpu time, 0.185s GC time
+*** Undefined fact: "fst_linear" (line 1306 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+*** At command "using" (line 1306 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+### Metis: Unused theorems: "Lower_Semicontinuous.convex_on_ereal_univ"
+### Metis: Unused theorems: "local.assms_2", "local.assms_3", "local.assms_4"
+### Metis: Unused theorems: "local.assms_1", "local.assms_3", "local.assms_4"
+### Metis: Unused theorems: "local.assms_3", "local.assms_4"
+### Metis: Unused theorems: "Lower_Semicontinuous.convex_on_ereal_univ"
+*** Undefined fact: "fst_linear" (line 1306 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+*** At command "using" (line 1306 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+*** Undefined fact: "tendsto_explicit" (line 78 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+*** At command "using" (line 78 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lower_Semicontinuous/Lower_Semicontinuous.thy")
+Unfinished session(s): Lower_Semicontinuous
+0:00:05 elapsed time, 0:00:08 cpu time, factor 1.72
+
+===============
+Lp
+Running Lp ...
+Lp FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Lp)
+### ((\<lambda>x. - ?f x) \<longlongrightarrow> - ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>\<bar>?c\<bar> \<noteq> \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?c * ?f x) \<longlongrightarrow> ?c * ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>?x \<noteq> 0; (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?c * ?f x) \<longlongrightarrow> ?c * ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>?y \<noteq> - \<infinity>; ?x \<noteq> - \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?f x + ?y) \<longlongrightarrow> ?x + ?y) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>\<bar>?y\<bar> \<noteq> \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?f x + ?y) \<longlongrightarrow> ?x + ?y) ?F
+### Rule already declared as introduction (intro)
+### (?f \<longlongrightarrow> ?x) ?F \<Longrightarrow>
+### ((\<lambda>x. ennreal (?f x)) \<longlongrightarrow> ennreal ?x) ?F
+### Ignoring duplicate rewrite rule:
+### (?a1 * ?b1) ^ ?n1 \<equiv> ?a1 ^ ?n1 * ?b1 ^ ?n1
+*** Undefined fact: "Lim_eventually" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** At command "by" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** Undefined fact: "Lim_eventually" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** At command "by" (line 2074 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 628 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** At command "using" (line 628 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Lp/Lp.thy")
+*** Undefined fact: "tendsto_explicit" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "using" (line 1169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** Undefined fact: "borel_measurable_continuous_on1" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** At command "by" (line 1034 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+*** exception THM 0 raised (line 309 of "drule.ML"):
+*** OF: no unifiers
+*** \<lbrakk>(?f \<longlongrightarrow> ?l) ?F;
+***  \<forall>\<^sub>F x in ?F. ?f x = ?g x\<rbrakk>
+*** \<Longrightarrow> (?g \<longlongrightarrow> ?l) ?F
+*** \<forall>\<^sub>F n in sequentially.
+***    f (n - k) / real (n - k + k) = f (n - k) / real n
+*** (\<lambda>n. f (n - k) / real (n - k + k)) \<longlonglongrightarrow> l
+*** At command "with" (line 343 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Ergodic_Theory/SG_Library_Complement.thy")
+Unfinished session(s): Lp
+0:00:12 elapsed time, 0:00:47 cpu time, factor 3.91
+
+===============
+LTL
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+LTL_Master_Theorem
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+LTL_to_GBA
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Markov_Models
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Mason_Stothers
+Running Mason_Stothers ...
+Mason_Stothers FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Mason_Stothers)
+Loading theory "Mason_Stothers.Mason_Stothers"
+### Rule already declared as elimination (elim)
+### \<lbrakk>?b dvd ?a; \<And>k. ?a = ?b * k \<Longrightarrow> ?P\<rbrakk>
+### \<Longrightarrow> ?P
+class factorial_semiring = normalization_semidom +
+  assumes
+    "prime_factorization_exists":
+      "\<And>x.
+          x \<noteq> (0::'a) \<Longrightarrow>
+          \<exists>A.
+             (\<forall>x. x \<in># A \<longrightarrow> prime_elem x) \<and>
+             normalize (prod_mset A) = normalize x"
+class factorial_semiring_gcd = factorial_semiring + semiring_Gcd +
+  assumes "gcd_eq_gcd_factorial": "\<And>a b. gcd a b = gcd_factorial a b"
+    and "lcm_eq_lcm_factorial": "\<And>a b. lcm a b = lcm_factorial a b"
+    and "Gcd_eq_Gcd_factorial": "\<And>A. Gcd A = Gcd_factorial A"
+    and "Lcm_eq_Lcm_factorial": "\<And>A. Lcm A = Lcm_factorial A"
+### theory "Mason_Stothers.Mason_Stothers"
+### 0.514s elapsed time, 0.768s cpu time, 0.026s GC time
+*** Type unification failed: Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  multiplicity :: ??'a \<Rightarrow> ??'a \<Rightarrow> nat
+*** Operand:   p :: 'a poly
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** failed to unify invariant arguments
+*** Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** At command "lemma" (line 150 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Mason_Stothers/Mason_Stothers.thy")
+Unfinished session(s): Mason_Stothers
+0:00:04 elapsed time
+
+===============
+MFOTL_Monitor
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Minkowskis_Theorem
+0:00:02 elapsed time
+
+===============
+Monad_Memo_DP
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+MonoidalCategory
+Building Category3 ...
+Category3 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Category3)
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+    and
+    J :: "'j \<Rightarrow> 'j \<Rightarrow> 'j"
+      (infixr \<open>\<cdot>\<^sub>J\<close> 55)
+    and D :: "'j \<Rightarrow> ('a, 'b) A_B.arr"
+  assumes
+    "diagram_in_functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)
+      (\<cdot>\<^sub>J) D"
+locale functor_category
+  fixes
+    A :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+      (infixr \<open>\<cdot>\<^sub>A\<close> 55)
+    and
+    B :: "'b \<Rightarrow> 'b \<Rightarrow> 'b"
+      (infixr \<open>\<cdot>\<^sub>B\<close> 55)
+  assumes "functor_category (\<cdot>\<^sub>A) (\<cdot>\<^sub>B)"
+locale yoneda_functor
+  fixes
+    C :: "'c \<Rightarrow> 'c \<Rightarrow> 'c"
+      (infixr \<open>\<cdot>\<close> 55)
+    and
+    S :: "'s \<Rightarrow> 's \<Rightarrow> 's"
+      (infixr \<open>\<cdot>\<^sub>S\<close> 55)
+    and \<phi> :: "'c \<times> 'c \<Rightarrow> 'c \<Rightarrow> 's"
+  assumes "yoneda_functor (\<cdot>) (\<cdot>\<^sub>S) \<phi>"
+### theory "Category3.Limit"
+### 28.545s elapsed time, 144.270s cpu time, 9.102s GC time
+*** Inner lexical error (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' S'.cod (\<Phi> f)\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 846 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** Inner lexical error (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+*** at "' \<Phi>o a\<guillemotright>"
+*** Failed to parse prop
+*** At command "have" (line 859 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Category3/SetCategory.thy")
+MonoidalCategory CANCELLED
+Unfinished session(s): Category3, MonoidalCategory
+0:02:45 elapsed time, 0:10:33 cpu time, factor 3.83
+
+===============
+Multi_Party_Computation
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Nested_Multisets_Ordinals
+0:00:02 elapsed time
+
+===============
+Network_Security_Policy_Verification
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Neumann_Morgenstern_Utility
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Nominal2
+Running Nominal2 ...
+Nominal2 FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Nominal2)
+val raw_prove_trans = fn:
+   Proof.context -> alpha_result -> thm list -> thm list -> thm list
+val raw_fv_bn_rsp_aux = fn:
+   Proof.context ->
+     alpha_result ->
+       term list -> term list -> term list -> thm list -> thm list
+val raw_perm_bn_rsp = fn:
+   Proof.context -> alpha_result -> term list -> thm list -> thm list
+val alpha_prove = fn:
+   term list ->
+     (term * (term * term -> term)) list ->
+       thm -> (Proof.context -> int -> tactic) -> Proof.context -> thm list
+val raw_alpha_bn_rsp = fn: alpha_result -> thm list -> thm list -> thm list
+val define_raw_alpha = fn:
+   raw_dt_info ->
+     bn_info list ->
+       bclause list list list ->
+         term list -> Proof.context -> alpha_result * local_theory
+val raw_prove_alpha_distincts = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val comb_binders = fn:
+   Proof.context -> bmode -> term list -> (term option * int) list -> term
+val raw_prove_equivp = fn:
+   Proof.context ->
+     alpha_result -> thm list -> thm list -> thm list -> thm list * thm list
+val raw_constrs_rsp = fn:
+   Proof.context ->
+     alpha_result -> term list list -> thm list -> thm list list
+val raw_prove_alpha_eq_iff = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val mk_alpha_permute_rsp = fn: Proof.context -> thm -> thm
+val mk_funs_rsp = fn: Proof.context -> thm -> thm
+val raw_prove_bn_imp = fn: Proof.context -> alpha_result -> thm list
+val raw_prove_sym = fn:
+   Proof.context -> alpha_result -> thm list -> thm list
+### theory "Nominal2.Nominal2"
+### 0.679s elapsed time, 1.874s cpu time, 0.096s GC time
+*** ML error (line 210 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/nominal_dt_quot.ML"):
+*** Value or constructor (auto_fixes) has not been declared in structure Variable
+*** At command "ML_file" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/Nominal2.thy")
+Unfinished session(s): Nominal2
+0:00:13 elapsed time, 0:00:50 cpu time, factor 3.84
+
+===============
+Nullstellensatz
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Octonions
+0:00:02 elapsed time
+
+===============
+Optics
+0:00:02 elapsed time
+
+===============
+Order_Lattice_Props
+Running Order_Lattice_Props ...
+Order_Lattice_Props FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Order_Lattice_Props)
+    "atomicity":
+      "\<And>x.
+          x \<noteq> \<bottom> \<Longrightarrow>
+          \<exists>y. atom y \<and> y \<le> x"
+instantiation
+  atoms :: (complete_boolean_algebra_alt) complete_boolean_algebra_alt
+  Inf_atoms == Inf :: 'a atoms set \<Rightarrow> 'a atoms
+  Sup_atoms == Sup :: 'a atoms set \<Rightarrow> 'a atoms
+### theory "Order_Lattice_Props.Representations"
+### 1.097s elapsed time, 8.705s cpu time, 0.483s GC time
+### Ignoring duplicate rewrite rule:
+### \<partial>\<^sub>F \<circ> \<partial>\<^sub>F \<equiv> id
+instantiation
+  cl_op_im :: (clattice_with_clop) complete_lattice
+  Inf_cl_op_im == Inf :: 'a cl_op_im set \<Rightarrow> 'a cl_op_im
+  Sup_cl_op_im == Sup :: 'a cl_op_im set \<Rightarrow> 'a cl_op_im
+  bot_cl_op_im == bot :: 'a cl_op_im
+  sup_cl_op_im == sup ::
+    'a cl_op_im \<Rightarrow> 'a cl_op_im \<Rightarrow> 'a cl_op_im
+  top_cl_op_im == top :: 'a cl_op_im
+  inf_cl_op_im == inf ::
+    'a cl_op_im \<Rightarrow> 'a cl_op_im \<Rightarrow> 'a cl_op_im
+  less_eq_cl_op_im == less_eq ::
+    'a cl_op_im \<Rightarrow> 'a cl_op_im \<Rightarrow> bool
+  less_cl_op_im == less ::
+    'a cl_op_im \<Rightarrow> 'a cl_op_im \<Rightarrow> bool
+### theory "Order_Lattice_Props.Closure_Operators"
+### 1.221s elapsed time, 9.635s cpu time, 0.549s GC time
+*** Failed to apply initial proof method (line 652 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props.thy"):
+*** goal (1 subgoal):
+***  1. \<Sqinter> (\<Inter>x\<in>X. Collect ((\<le>) x)) = \<Squnion> X
+*** At command "by" (line 652 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props.thy")
+*** Failed to apply initial proof method (line 501 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props.thy"):
+*** goal (1 subgoal):
+***  1. \<Squnion> (\<Inter>x\<in>X. {y. y \<le> x}) = \<Sqinter> X
+*** At command "by" (line 501 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props.thy")
+*** Failed to apply initial proof method (line 320 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props_Loc.thy"):
+*** goal (1 subgoal):
+***  1. \<Squnion> (\<Inter>x\<in>X. {y. y \<le> x}) = \<Sqinter> X
+*** At command "by" (line 320 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Order_Lattice_Props/Order_Lattice_Props_Loc.thy")
+Unfinished session(s): Order_Lattice_Props
+0:00:19 elapsed time, 0:01:03 cpu time, factor 3.26
+
+===============
+Ordinary_Differential_Equations
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Pairing_Heap
+0:00:02 elapsed time
+
+===============
+Partial_Function_MR
+Running Partial_Function_MR ...
+Partial_Function_MR FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Partial_Function_MR)
+***    Function: Spec_Rules.add Spec_Rules.equational_recdef :
+***       Spec_Rules.rough_classification ->
+***         term list -> thm list -> local_theory -> local_theory
+***    Argument: ([f], simps) : term list * 'a
+***    Reason:
+***       Can't unify Spec_Rules.rough_classification to term list * 'a
+***          (Incompatible types)
+*** ML error (line 318 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Partial_Function_MR/partial_function_mr.ML"):
+*** Type error in function application.
+***    Function: #> :
+***       (term list -> thm list -> local_theory -> local_theory) *
+***       ((thm list -> local_theory -> local_theory) -> 'a)
+***         -> term list -> 'a
+***    Argument:
+***       (
+***          Spec_Rules.add Spec_Rules.equational_recdef ([f], simps),
+***          Local_Theory.note ((... ..., ...), simps)
+***          )
+***       : (term list -> thm list -> local_theory -> local_theory) *
+***         (local_theory -> (string * thm list) * local_theory)
+***    Reason:
+***       Can't unify local_theory to thm list -> local_theory -> local_theory
+***          (Incompatible types)
+*** ML error (line 315 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Partial_Function_MR/partial_function_mr.ML"):
+*** Type error in function application.
+***    Function: |-> :
+***       ((string * thm list) * local_theory) *
+***       (string * thm list -> local_theory -> 'a)
+***         -> 'a
+***    Argument:
+***       (
+***          lthy |> Local_Theory.note (eq_abinding, [...]),
+***          (fn (_, ...) => ... #>> ... #>> hd)
+***          )
+***       : ((string * thm list) * local_theory) *
+***         (string * thm list -> term list -> 'a * 'b)
+***    Reason:
+***       Can't unify local_theory = Context.Proof.context with
+***          term list (*In Basis*) (Different type constructors)
+*** At command "ML_file" (line 9 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Partial_Function_MR/Partial_Function_MR.thy")
+Unfinished session(s): Partial_Function_MR
+0:00:03 elapsed time
+
+===============
+Partial_Order_Reduction
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Perron_Frobenius
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+pGCL
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Planarity_Certificates
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Poincare_Bendixson
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Poincare_Disc
+Running Poincare_Disc ...
+Poincare_Disc FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Poincare_Disc)
+### theory "Poincare_Disc.Poincare_Circles"
+### 0.242s elapsed time, 1.865s cpu time, 0.094s GC time
+Loading theory "Poincare_Disc.Poincare"
+### theory "Poincare_Disc.Poincare_Lines_Axis_Intersections"
+### 0.358s elapsed time, 1.886s cpu time, 0.104s GC time
+Loading theory "Poincare_Disc.Poincare_Perpendicular"
+### theory "Poincare_Disc.Poincare_Perpendicular"
+### 0.122s elapsed time, 0.523s cpu time, 0.036s GC time
+instantiation
+  p_point :: metric_space
+  dist_p_point == dist :: p_point \<Rightarrow> p_point \<Rightarrow> real
+  uniformity_p_point == uniformity :: (p_point \<times> p_point) filter
+  open_p_point == open :: p_point set \<Rightarrow> bool
+### theory "Poincare_Disc.Poincare"
+### 0.445s elapsed time, 1.660s cpu time, 0.090s GC time
+*** Undefined fact: "sign_simps" (line 282 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "by" (line 282 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Undefined fact: "sign_simps" (line 248 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "apply" (line 248 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 586 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "by" (line 586 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Circles.thy")
+*** At command "by" (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Circles.thy")
+\<lbrakk>1 \<le> ?x; 1 \<le> ?y\<rbrakk>
+\<Longrightarrow> arcosh ?x + arcosh ?y =
+                  arcosh
+                   (?x * ?y + sqrt ((?x\<^sup>2 - 1) * (?y\<^sup>2 - 1)))
+*** Failed to load theory "Poincare_Disc.Poincare_Tarski" (unresolved "Poincare_Disc.Poincare")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Circles.thy")
+*** At command "by" (line 83 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Circles.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 586 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "by" (line 586 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Undefined fact: "sign_simps" (line 248 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "apply" (line 248 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Undefined fact: "sign_simps" (line 282 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** At command "by" (line 282 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare_Between.thy")
+*** Inner syntax error (line 185 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare.thy")
+*** at ": { 0 <..} . principal { ( x , y ) . dist_class.dist x y < e } )"
+*** Failed to parse prop
+*** At command "definition" (line 185 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Poincare_Disc/Poincare.thy")
+Unfinished session(s): Poincare_Disc
+0:00:33 elapsed time, 0:02:58 cpu time, factor 5.38
+
+===============
+Polynomial_Factorization
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Polynomial_Interpolation
+Running Polynomial_Interpolation ...
+Polynomial_Interpolation FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Polynomial_Interpolation)
+### theory "Polynomial_Interpolation.Ring_Hom"
+### 2.602s elapsed time, 14.231s cpu time, 1.355s GC time
+*** Failed to load theory "Polynomial_Interpolation.Lagrange_Interpolation" (unresolved "Polynomial_Interpolation.Missing_Polynomial")
+*** Failed to load theory "Polynomial_Interpolation.Ring_Hom_Poly" (unresolved "Polynomial_Interpolation.Missing_Polynomial")
+*** Failed to load theory "Polynomial_Interpolation.Newton_Interpolation" (unresolved "Polynomial_Interpolation.Ring_Hom_Poly")
+*** Failed to load theory "Polynomial_Interpolation.Polynomial_Interpolation" (unresolved "Polynomial_Interpolation.Lagrange_Interpolation", "Polynomial_Interpolation.Newton_Interpolation")
+*** Type unification failed: Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  gcd :: ??'a \<Rightarrow> ??'a \<Rightarrow> ??'a
+*** Operand:   p :: 'a poly
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** failed to unify invariant arguments
+*** Variable 'a::{factorial_ring_gcd,field} not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** At command "lemma" (line 246 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Polynomial.thy")
+*** Undefined fact: "sign_simps" (line 176 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy")
+*** At command "by" (line 176 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy")
+*** Failed to finish proof (line 281 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy"):
+*** goal (1 subgoal):
+***  1. xs \<noteq> [] \<longrightarrow>
+***     \<bar>a * Lcm (set xs)\<bar> = \<bar>a\<bar> * Lcm (set xs)
+*** At command "by" (line 281 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy")
+*** Failed to finish proof (line 276 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy"):
+*** goal (1 subgoal):
+***  1. \<bar>k\<bar> * lcm m n = \<bar>k * lcm m n\<bar>
+*** At command "by" (line 276 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy")
+*** Failed to finish proof (line 261 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy"):
+*** goal (1 subgoal):
+***  1. \<bar>a * Gcd (set xs)\<bar> = \<bar>a\<bar> * Gcd (set xs)
+*** At command "by" (line 261 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Polynomial_Interpolation/Missing_Unsorted.thy")
+Unfinished session(s): Polynomial_Interpolation
+0:00:06 elapsed time, 0:00:15 cpu time, factor 2.36
+
+===============
+Polynomials
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Prim_Dijkstra_Simple
+Building Priority_Search_Trees ...
+Priority_Search_Trees FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Priority_Search_Trees)
+  height_tree == height :: 'a tree \<Rightarrow> nat
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Library.Tree"
+### 1.587s elapsed time, 5.860s cpu time, 0.905s GC time
+Loading theory "HOL-Data_Structures.Tree2" (required by "Priority_Search_Trees.PST_RBT" via "HOL-Data_Structures.Isin2")
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Data_Structures.Tree2"
+### 0.188s elapsed time, 1.062s cpu time, 0.039s GC time
+Loading theory "HOL-Data_Structures.Isin2" (required by "Priority_Search_Trees.PST_RBT")
+Loading theory "HOL-Data_Structures.Lookup2" (required by "Priority_Search_Trees.PST_RBT")
+Loading theory "Priority_Search_Trees.PST_General" (required by "Priority_Search_Trees.PST_RBT")
+### theory "Priority_Search_Trees.PST_General"
+### 0.085s elapsed time, 0.264s cpu time, 0.000s GC time
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+### theory "HOL-Data_Structures.Lookup2"
+### 0.242s elapsed time, 0.655s cpu time, 0.050s GC time
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+### theory "HOL-Data_Structures.Isin2"
+### 0.301s elapsed time, 0.779s cpu time, 0.050s GC time
+*** Failed to load theory "Priority_Search_Trees.PST_RBT" (unresolved "Priority_Search_Trees.PST_General")
+*** Type unification failed: Clash of types "_ \<Rightarrow> _" and "_ tree"
+*** 
+*** Type error in application: operator not of function type
+*** 
+*** Operator:  \<langle>l, kp, b\<rangle> :: ??'a tree
+*** Operand:   r :: ??'b
+*** 
+*** At command "text" (line 9 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Priority_Search_Trees/PST_General.thy")
+Prim_Dijkstra_Simple CANCELLED
+Unfinished session(s): Prim_Dijkstra_Simple, Priority_Search_Trees
+0:00:06 elapsed time, 0:00:08 cpu time, factor 1.34
+
+===============
+Prime_Distribution_Elementary
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Prime_Number_Theorem
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Priority_Queue_Braun
+0:00:02 elapsed time
+
+===============
+Priority_Search_Trees
+Running Priority_Search_Trees ...
+Priority_Search_Trees FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Priority_Search_Trees)
+### theory "Priority_Search_Trees.Prio_Map_Specs"
+### 0.056s elapsed time, 0.274s cpu time, 0.000s GC time
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Library.Tree"
+### 1.395s elapsed time, 6.027s cpu time, 0.911s GC time
+Loading theory "HOL-Data_Structures.Tree2" (required by "Priority_Search_Trees.PST_RBT" via "HOL-Data_Structures.Isin2")
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Data_Structures.Tree2"
+### 0.218s elapsed time, 0.839s cpu time, 0.036s GC time
+Loading theory "HOL-Data_Structures.Isin2" (required by "Priority_Search_Trees.PST_RBT")
+Loading theory "HOL-Data_Structures.Lookup2" (required by "Priority_Search_Trees.PST_RBT")
+Loading theory "Priority_Search_Trees.PST_General" (required by "Priority_Search_Trees.PST_RBT")
+### theory "Priority_Search_Trees.PST_General"
+### 0.161s elapsed time, 0.524s cpu time, 0.056s GC time
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+### theory "HOL-Data_Structures.Lookup2"
+### 0.245s elapsed time, 0.718s cpu time, 0.056s GC time
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+### theory "HOL-Data_Structures.Isin2"
+### 0.406s elapsed time, 1.043s cpu time, 0.056s GC time
+*** Failed to load theory "Priority_Search_Trees.PST_RBT" (unresolved "Priority_Search_Trees.PST_General")
+*** Type unification failed: Clash of types "_ \<Rightarrow> _" and "_ tree"
+*** 
+*** Type error in application: operator not of function type
+*** 
+*** Operator:  \<langle>l, kp, b\<rangle> :: ??'a tree
+*** Operand:   r :: ??'b
+*** 
+*** At command "text" (line 9 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Priority_Search_Trees/PST_General.thy")
+Unfinished session(s): Priority_Search_Trees
+0:00:06 elapsed time, 0:00:08 cpu time, factor 1.37
+
+===============
+Probabilistic_Noninterference
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Probabilistic_Prime_Tests
+Running Probabilistic_Prime_Tests ...
+Probabilistic_Prime_Tests FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Probabilistic_Prime_Tests)
+Loading theory "Probabilistic_Prime_Tests.Fermat_Test"
+### theory "Probabilistic_Prime_Tests.Solovay_Strassen_Test"
+### 0.588s elapsed time, 4.598s cpu time, 0.620s GC time
+Loading theory "Probabilistic_Prime_Tests.Miller_Rabin_Test"
+linarith_split_limit exceeded (current value is 9)
+### theory "Probabilistic_Prime_Tests.Miller_Rabin_Test"
+### 1.799s elapsed time, 14.401s cpu time, 0.790s GC time
+locale fermat_test_not_Carmichael_number
+  fixes n :: "nat"
+  assumes "fermat_test_not_Carmichael_number n"
+### theory "Probabilistic_Prime_Tests.Fermat_Test"
+### 2.206s elapsed time, 17.648s cpu time, 0.790s GC time
+### Rule already declared as elimination (elim)
+### \<lbrakk>?b dvd ?a; \<And>k. ?a = ?b * k \<Longrightarrow> ?P\<rbrakk>
+### \<Longrightarrow> ?P
+### Ignoring duplicate rewrite rule:
+### Group.group G \<equiv> True
+### Rule already declared as elimination (elim)
+### \<lbrakk>?b dvd ?a; \<And>k. ?a = ?b * k \<Longrightarrow> ?P\<rbrakk>
+### \<Longrightarrow> ?P
+### Rule already declared as elimination (elim)
+### \<lbrakk>?b dvd ?a; \<And>k. ?a = ?b * k \<Longrightarrow> ?P\<rbrakk>
+### \<Longrightarrow> ?P
+### Ignoring duplicate elimination (elim)
+### \<lbrakk>?b dvd ?a; \<And>k. ?a = ?b * k \<Longrightarrow> ?P\<rbrakk>
+### \<Longrightarrow> ?P
+*** Failed to apply initial proof method (line 470 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy"):
+*** goal (1 subgoal):
+***  1. (\<Prod>p\<in>prime_factors x. p ^ multiplicity p x) = normalize x
+*** At command "by" (line 470 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy")
+*** Failed to apply initial proof method (line 452 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy"):
+*** using this:
+***   card (prime_factors n) = Suc 0
+*** goal (1 subgoal):
+***  1. (\<Prod>p\<in>prime_factors n. p ^ multiplicity p n) = normalize n
+*** At command "by" (line 452 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy")
+*** Failed to apply initial proof method (line 401 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy"):
+*** goal (1 subgoal):
+***  1. n = unit_factor n * prod_mset (prime_factorization n)
+*** At command "by" (line 401 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Probabilistic_Prime_Tests/Algebraic_Auxiliaries.thy")
+Unfinished session(s): Probabilistic_Prime_Tests
+0:02:08 elapsed time, 0:11:31 cpu time, factor 5.38
+
+===============
+Probabilistic_System_Zoo
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Probabilistic_Timed_Automata
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Projective_Geometry
+Running Projective_Geometry ...
+Projective_Geometry FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Projective_Geometry)
+Loading theory "Projective_Geometry.Higher_Projective_Space_Rank_Axioms" (required by "Projective_Geometry.Desargues_2D")
+Loading theory "Projective_Geometry.Higher_Projective_Space_Axioms"
+Loading theory "Projective_Geometry.Projective_Plane_Axioms" (required by "Projective_Geometry.Pappus_Desargues")
+Loading theory "Projective_Geometry.Projective_Space_Axioms"
+### theory "Projective_Geometry.Higher_Projective_Space_Rank_Axioms"
+### 0.041s elapsed time, 0.197s cpu time, 0.000s GC time
+Loading theory "Projective_Geometry.Matroid_Rank_Properties" (required by "Projective_Geometry.Desargues_2D")
+### theory "Projective_Geometry.Projective_Plane_Axioms"
+### 0.055s elapsed time, 0.251s cpu time, 0.000s GC time
+Loading theory "Projective_Geometry.Pappus_Property" (required by "Projective_Geometry.Pappus_Desargues")
+### theory "Projective_Geometry.Projective_Space_Axioms"
+### 0.055s elapsed time, 0.251s cpu time, 0.000s GC time
+### theory "Projective_Geometry.Higher_Projective_Space_Axioms"
+### 0.061s elapsed time, 0.270s cpu time, 0.000s GC time
+### theory "Projective_Geometry.Matroid_Rank_Properties"
+### 0.071s elapsed time, 0.336s cpu time, 0.031s GC time
+Loading theory "Projective_Geometry.Desargues_2D"
+Loading theory "Projective_Geometry.Desargues_3D"
+### theory "Projective_Geometry.Pappus_Property"
+### 0.163s elapsed time, 0.969s cpu time, 0.078s GC time
+Loading theory "Projective_Geometry.Pascal_Property" (required by "Projective_Geometry.Pappus_Desargues")
+### theory "Projective_Geometry.Desargues_3D"
+### 0.131s elapsed time, 0.867s cpu time, 0.047s GC time
+### theory "Projective_Geometry.Pascal_Property"
+### 0.102s elapsed time, 0.639s cpu time, 0.042s GC time
+Loading theory "Projective_Geometry.Desargues_Property" (required by "Projective_Geometry.Pappus_Desargues")
+*** Undefined fact: "linorder_antisym_conv1" (line 158 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Projective_Geometry/Matroid_Rank_Properties.thy")
+*** At command "by" (line 156 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Projective_Geometry/Matroid_Rank_Properties.thy")
+### theory "Projective_Geometry.Desargues_Property"
+### 0.153s elapsed time, 1.161s cpu time, 0.098s GC time
+Loading theory "Projective_Geometry.Pappus_Desargues"
+### theory "Projective_Geometry.Desargues_2D"
+### 0.374s elapsed time, 2.601s cpu time, 0.187s GC time
+### theory "Projective_Geometry.Pappus_Desargues"
+### 0.116s elapsed time, 0.887s cpu time, 0.056s GC time
+*** Undefined fact: "linorder_antisym_conv1" (line 158 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Projective_Geometry/Matroid_Rank_Properties.thy")
+*** At command "by" (line 156 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Projective_Geometry/Matroid_Rank_Properties.thy")
+Unfinished session(s): Projective_Geometry
+0:00:10 elapsed time, 0:00:52 cpu time, factor 5.03
+
+===============
+Promela
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Psi_Calculi
+Running Psi_Calculi ...
+Psi_Calculi FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Psi_Calculi)
+*** Failed to load theory "Psi_Calculi.Bisimulation" (unresolved "Psi_Calculi.Simulation")
+*** Failed to load theory "Psi_Calculi.Sim_Pres" (unresolved "Psi_Calculi.Simulation")
+*** Failed to load theory "Psi_Calculi.Sim_Struct_Cong" (unresolved "Psi_Calculi.Simulation")
+*** Failed to load theory "Psi_Calculi.Tau_Chain" (unresolved "Psi_Calculi.Semantics")
+*** Failed to load theory "Psi_Calculi.Weak_Stat_Imp" (unresolved "Psi_Calculi.Tau_Chain")
+*** Failed to load theory "Psi_Calculi.Weak_Simulation" (unresolved "Psi_Calculi.Simulation", "Psi_Calculi.Tau_Chain")
+*** Failed to load theory "Psi_Calculi.Bisim_Pres" (unresolved "Psi_Calculi.Bisimulation", "Psi_Calculi.Sim_Pres")
+*** Failed to load theory "Psi_Calculi.Weak_Cong_Simulation" (unresolved "Psi_Calculi.Tau_Chain", "Psi_Calculi.Weak_Simulation")
+*** Failed to load theory "Psi_Calculi.Weak_Stat_Imp_Pres" (unresolved "Psi_Calculi.Weak_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Weak_Sim_Pres" (unresolved "Psi_Calculi.Sim_Pres", "Psi_Calculi.Weak_Simulation", "Psi_Calculi.Weak_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Bisim_Struct_Cong" (unresolved "Psi_Calculi.Bisim_Pres", "Psi_Calculi.Sim_Struct_Cong")
+*** Failed to load theory "Psi_Calculi.Bisim_Subst" (unresolved "Psi_Calculi.Bisim_Struct_Cong")
+*** Failed to load theory "Psi_Calculi.Weak_Bisimulation" (unresolved "Psi_Calculi.Bisim_Struct_Cong", "Psi_Calculi.Weak_Simulation", "Psi_Calculi.Weak_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Weak_Cong_Sim_Pres" (unresolved "Psi_Calculi.Weak_Cong_Simulation", "Psi_Calculi.Weak_Sim_Pres")
+*** Failed to load theory "Psi_Calculi.Weak_Bisim_Pres" (unresolved "Psi_Calculi.Weak_Bisimulation", "Psi_Calculi.Weak_Sim_Pres", "Psi_Calculi.Weak_Stat_Imp_Pres")
+*** Failed to load theory "Psi_Calculi.Weak_Psi_Congruence" (unresolved "Psi_Calculi.Weak_Bisimulation", "Psi_Calculi.Weak_Cong_Simulation")
+*** Failed to load theory "Psi_Calculi.Weakening" (unresolved "Psi_Calculi.Weak_Bisimulation")
+*** Failed to load theory "Psi_Calculi.Weaken_Transition" (unresolved "Psi_Calculi.Weakening")
+*** Failed to load theory "Psi_Calculi.Weaken_Stat_Imp" (unresolved "Psi_Calculi.Weaken_Transition")
+*** Failed to load theory "Psi_Calculi.Weak_Bisim_Struct_Cong" (unresolved "Psi_Calculi.Bisim_Struct_Cong", "Psi_Calculi.Weak_Bisim_Pres")
+*** Failed to load theory "Psi_Calculi.Weaken_Simulation" (unresolved "Psi_Calculi.Weaken_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Weak_Bisim_Subst" (unresolved "Psi_Calculi.Bisim_Subst", "Psi_Calculi.Weak_Bisim_Pres", "Psi_Calculi.Weak_Bisim_Struct_Cong")
+*** Failed to load theory "Psi_Calculi.Weaken_Bisimulation" (unresolved "Psi_Calculi.Weaken_Simulation", "Psi_Calculi.Weaken_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Weak_Cong_Pres" (unresolved "Psi_Calculi.Weak_Bisim_Pres", "Psi_Calculi.Weak_Cong_Sim_Pres", "Psi_Calculi.Weak_Psi_Congruence")
+*** Failed to load theory "Psi_Calculi.Weak_Cong_Struct_Cong" (unresolved "Psi_Calculi.Weak_Bisim_Struct_Cong", "Psi_Calculi.Weak_Cong_Pres")
+*** Failed to load theory "Psi_Calculi.Weak_Congruence" (unresolved "Psi_Calculi.Bisim_Subst", "Psi_Calculi.Weak_Cong_Struct_Cong")
+*** Failed to load theory "Psi_Calculi.Tau" (unresolved "Psi_Calculi.Bisim_Struct_Cong", "Psi_Calculi.Weak_Congruence")
+*** Failed to load theory "Psi_Calculi.Tau_Sim" (unresolved "Psi_Calculi.Sum", "Psi_Calculi.Tau")
+*** Failed to load theory "Psi_Calculi.Tau_Stat_Imp" (unresolved "Psi_Calculi.Tau_Sim", "Psi_Calculi.Weaken_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Tau_Laws_No_Weak" (unresolved "Psi_Calculi.Tau_Sim", "Psi_Calculi.Tau_Stat_Imp")
+*** Failed to load theory "Psi_Calculi.Tau_Laws_Weak" (unresolved "Psi_Calculi.Tau_Sim", "Psi_Calculi.Tau_Stat_Imp", "Psi_Calculi.Weak_Congruence", "Psi_Calculi.Weaken_Bisimulation")
+*** Inner lexical error (line 38 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Psi_Calculi/Semantics.thy")
+*** at "' P = N' \<prec>' P') = (xvec = [] \<and> N = N' \<and> P = P')"
+*** Failed to parse prop
+*** At command "lemma" (line 29 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Psi_Calculi/Semantics.thy")
+*** At command "by" (line 27 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Psi_Calculi/Semantics.thy")
+*** Inner lexical error (line 38 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Psi_Calculi/Semantics.thy")
+*** at "' P = N' \<prec>' P') = (xvec = [] \<and> N = N' \<and> P = P')"
+*** Failed to parse prop
+*** At command "lemma" (line 29 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Psi_Calculi/Semantics.thy")
+Unfinished session(s): Psi_Calculi
+0:00:14 elapsed time, 0:00:36 cpu time, factor 2.51
+
+===============
+Ptolemys_Theorem
+0:00:02 elapsed time
+
+===============
+QHLProver
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Quaternions
+0:00:02 elapsed time
+
+===============
+Random_Graph_Subgraph_Threshold
+Building Girth_Chromatic ...
+Girth_Chromatic FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Girth_Chromatic)
+  end
+structure Approximation_Generator: APPROXIMATION_GENERATOR
+bundle floatarith_notation
+bundle no_floatarith_notation
+### theory "HOL-Decision_Procs.Approximation"
+### 17.545s elapsed time, 44.679s cpu time, 8.070s GC time
+Loading theory "Girth_Chromatic.Girth_Chromatic"
+locale edge_space
+  fixes n :: "nat"
+    and p :: "real"
+  assumes "edge_space p"
+locale edge_space
+  fixes n :: "nat"
+    and p :: "real"
+  assumes "edge_space p"
+### Ignoring duplicate rewrite rule:
+### nat \<lceil>?x1\<rceil> \<le> ?a1 \<equiv> ?x1 \<le> real ?a1
+### theory "Girth_Chromatic.Girth_Chromatic"
+### 1.408s elapsed time, 2.446s cpu time, 0.274s GC time
+### Introduced fixed type variable(s): 'a in "xs__"
+### Ignoring duplicate rewrite rule:
+### nat \<lceil>?x1\<rceil> \<le> ?a1 \<equiv> ?x1 \<le> real ?a1
+*** Failed to finish proof (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>0 < \<epsilon>;
+***      \<forall>\<^sup>\<infinity>x.
+***         12 * real k * real x powr - (\<epsilon> / 2) < 1\<rbrakk>
+***     \<Longrightarrow> \<forall>\<^sup>\<infinity>n.
+***                          12 * real k * real n powr - (\<epsilon> / 2)
+***                          \<le> \<epsilon>
+*** At command "by" (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy")
+*** Failed to finish proof (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>0 < \<epsilon>;
+***      \<forall>\<^sup>\<infinity>x.
+***         12 * real k * real x powr - (\<epsilon> / 2) < 1\<rbrakk>
+***     \<Longrightarrow> \<forall>\<^sup>\<infinity>n.
+***                          12 * real k * real n powr - (\<epsilon> / 2)
+***                          \<le> \<epsilon>
+*** At command "by" (line 668 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Girth_Chromatic/Girth_Chromatic.thy")
+Random_Graph_Subgraph_Threshold CANCELLED
+Unfinished session(s): Girth_Chromatic, Random_Graph_Subgraph_Threshold
+0:00:33 elapsed time, 0:01:42 cpu time, factor 3.05
+
+===============
+Refine_Imperative_HOL
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Relation_Algebra
+Running Relation_Algebra ...
+Relation_Algebra FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Relation_Algebra)
+Loading theory "Relation_Algebra.More_Boolean_Algebra"
+class boolean_algebra = minus + uminus + bounded_lattice + distrib_lattice +
+  assumes "inf_compl_bot": "\<And>x. inf x (- x) = bot"
+    and "sup_compl_top": "\<And>x. sup x (- x) = top"
+  assumes "diff_eq": "\<And>x y. x - y = inf x (- y)"
+### theory "Relation_Algebra.More_Boolean_Algebra"
+### 0.443s elapsed time, 1.532s cpu time, 0.088s GC time
+Loading theory "Relation_Algebra.Relation_Algebra"
+### theory "Relation_Algebra.Relation_Algebra"
+### 0.489s elapsed time, 2.290s cpu time, 0.462s GC time
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Models" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_RTC" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Tests" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Vectors" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Functions" (unresolved "Relation_Algebra.Relation_Algebra_Tests", "Relation_Algebra.Relation_Algebra_Vectors")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Direct_Products" (unresolved "Relation_Algebra.Relation_Algebra_Functions")
+*** exception FAIL NONE raised (line 161 of "General/scan.ML")
+*** At command "class" (line 26 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Relation_Algebra/Relation_Algebra.thy")
+Unfinished session(s): Relation_Algebra
+0:00:06 elapsed time, 0:00:08 cpu time, factor 1.35
+
+===============
+Residuated_Lattices
+Building Relation_Algebra ...
+Relation_Algebra FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Relation_Algebra)
+Loading theory "Relation_Algebra.More_Boolean_Algebra"
+class boolean_algebra = minus + uminus + bounded_lattice + distrib_lattice +
+  assumes "inf_compl_bot": "\<And>x. inf x (- x) = bot"
+    and "sup_compl_top": "\<And>x. sup x (- x) = top"
+  assumes "diff_eq": "\<And>x y. x - y = inf x (- y)"
+### theory "Relation_Algebra.More_Boolean_Algebra"
+### 0.410s elapsed time, 1.456s cpu time, 0.086s GC time
+Loading theory "Relation_Algebra.Relation_Algebra"
+### theory "Relation_Algebra.Relation_Algebra"
+### 0.677s elapsed time, 2.845s cpu time, 0.612s GC time
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Models" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_RTC" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Tests" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Vectors" (unresolved "Relation_Algebra.Relation_Algebra")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Functions" (unresolved "Relation_Algebra.Relation_Algebra_Tests", "Relation_Algebra.Relation_Algebra_Vectors")
+*** Failed to load theory "Relation_Algebra.Relation_Algebra_Direct_Products" (unresolved "Relation_Algebra.Relation_Algebra_Functions")
+*** exception FAIL NONE raised (line 161 of "General/scan.ML")
+*** At command "class" (line 26 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Relation_Algebra/Relation_Algebra.thy")
+Residuated_Lattices CANCELLED
+Unfinished session(s): Relation_Algebra, Residuated_Lattices
+0:00:07 elapsed time, 0:00:08 cpu time, factor 1.23
+
+===============
+Root_Balanced_Tree
+Running Root_Balanced_Tree ...
+Root_Balanced_Tree FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Root_Balanced_Tree)
+    val reify_form_tac: Proof.context -> int -> tactic
+    val reorder_bounds_tac: Proof.context -> thm list -> int -> tactic
+    val rewrite_interpret_form_tac:
+       Proof.context ->
+         int ->
+           (string * int) list -> int option -> int -> thm -> thm Seq.seq
+  end
+### ML warning (line 204 of "~~/src/HOL/Decision_Procs/approximation_generator.ML"):
+### Matches are not exhaustive.
+signature APPROXIMATION_GENERATOR =
+  sig
+    val approximation_generator:
+       Proof.context ->
+         (term * term list) list ->
+           bool ->
+             int list ->
+               (bool * term list) option * Quickcheck.report option
+    val custom_seed: int Config.T
+    val epsilon: real Config.T
+    val precision: int Config.T
+    val setup: theory -> theory
+  end
+structure Approximation_Generator: APPROXIMATION_GENERATOR
+bundle floatarith_notation
+bundle no_floatarith_notation
+### theory "HOL-Decision_Procs.Approximation"
+### 36.858s elapsed time, 111.609s cpu time, 15.303s GC time
+Loading theory "Root_Balanced_Tree.Root_Balanced_Tree_Tab"
+locale Min_tab
+  fixes p :: "nat \<Rightarrow> nat \<Rightarrow> bool"
+    and tab :: "nat list"
+  assumes "Min_tab p tab"
+Found termination order: "{}"
+### theory "Root_Balanced_Tree.Root_Balanced_Tree_Tab"
+### 0.501s elapsed time, 0.869s cpu time, 0.075s GC time
+*** Failed to finish proof (line 1809 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Root_Balanced_Tree/Root_Balanced_Tree.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>\<not> bal_d (n - Suc 0) (Suc dl); del x t = Some t'\<rbrakk>
+***     \<Longrightarrow> \<Phi> (Balance.bal_tree (n - Suc 0) t') = 0
+*** At command "by" (line 1809 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Root_Balanced_Tree/Root_Balanced_Tree.thy")
+Unfinished session(s): Root_Balanced_Tree
+0:00:57 elapsed time, 0:02:53 cpu time, factor 3.00
+
+===============
+Safe_OCL
+Running Safe_OCL ...
+Finished Safe_OCL (0:01:27 elapsed time, 0:03:16 cpu time, factor 2.25)
+0:01:29 elapsed time, 0:03:16 cpu time, factor 2.18
+
+===============
+Saturation_Framework
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Shivers-CFA
+Running Shivers-CFA ...
+Finished Shivers-CFA (0:00:11 elapsed time, 0:00:43 cpu time, factor 3.74)
+0:00:14 elapsed time, 0:00:43 cpu time, factor 2.88
+
+===============
+Sigma_Commit_Crypto
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Simpl
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Simplex
+Running Simplex ...
+Finished Simplex (0:00:29 elapsed time, 0:02:23 cpu time, factor 4.80)
+0:00:33 elapsed time, 0:02:23 cpu time, factor 4.33
+
+===============
+Skew_Heap
+Running Skew_Heap ...
+Finished Skew_Heap (0:00:01 elapsed time)
+0:00:05 elapsed time
+
+===============
+Skip_Lists
+Running Skip_Lists ...
+*** Timeout
+Skip_Lists FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Skip_Lists)
+### ((\<lambda>x. ?k) \<longlongrightarrow> ?k) ?F
+### Rule already declared as introduction (intro)
+### (?f \<longlongrightarrow> ?x) ?F \<Longrightarrow>
+### ((\<lambda>x. ereal (?f x)) \<longlongrightarrow> ereal ?x) ?F
+### Rule already declared as introduction (intro)
+### (?f \<longlongrightarrow> ?x) ?F \<Longrightarrow>
+### ((\<lambda>x. - ?f x) \<longlongrightarrow> - ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>\<bar>?c\<bar> \<noteq> \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?c * ?f x) \<longlongrightarrow> ?c * ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>?x \<noteq> 0; (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?c * ?f x) \<longlongrightarrow> ?c * ?x) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>?y \<noteq> - \<infinity>; ?x \<noteq> - \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?f x + ?y) \<longlongrightarrow> ?x + ?y) ?F
+### Rule already declared as introduction (intro)
+### \<lbrakk>\<bar>?y\<bar> \<noteq> \<infinity>;
+###  (?f \<longlongrightarrow> ?x) ?F\<rbrakk>
+### \<Longrightarrow> ((\<lambda>x. ?f x + ?y) \<longlongrightarrow> ?x + ?y) ?F
+### Rule already declared as introduction (intro)
+### (?f \<longlongrightarrow> ?x) ?F \<Longrightarrow>
+### ((\<lambda>x. ennreal (?f x)) \<longlongrightarrow> ennreal ?x) ?F
+### theory "Skip_Lists.Skip_List"
+### 1.135s elapsed time, 6.917s cpu time, 0.357s GC time
+### Ignoring duplicate rewrite rule:
+### lsteps [] ?f1 ?l1 ?up1 ?left1 \<equiv> 0
+### Ignoring duplicate rewrite rule:
+### lsteps [] ?f1 ?l1 ?up1 ?left1 \<equiv> 0
+### Ignoring duplicate rewrite rule:
+### lsteps [] ?f1 ?l1 ?up1 ?left1 \<equiv> 0
+linarith_split_limit exceeded (current value is 9)
+*** Failed to finish proof (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Skip_Lists/Geometric_PMF.thy"):
+*** goal (1 subgoal):
+***  1. \<lbrakk>summable (\<lambda>x. p * (real x * (1 - p) ^ x)); 0 < p;
+***      p \<le> 1\<rbrakk>
+***     \<Longrightarrow> summable (\<lambda>x. real x * (1 - p) ^ x)
+*** At command "by" (line 51 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Skip_Lists/Geometric_PMF.thy")
+Unfinished session(s): Skip_Lists
+0:05:03 elapsed time, 0:05:53 cpu time, factor 1.17
+
+===============
+Smooth_Manifolds
+Running Smooth_Manifolds ...
+Smooth_Manifolds FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Smooth_Manifolds)
+*** At command "by" (line 55 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Bump_Function.thy")
+*** Failed to apply initial proof method (line 86 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Bump_Function.thy"):
+*** using this:
+***   \<forall>\<^sub>F t in at_left 0. 0 = f t
+*** goal (1 subgoal):
+***  1. (f \<longlongrightarrow> 0) (at_left 0)
+*** At command "by" (line 86 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Bump_Function.thy")
+*** Failed to apply initial proof method (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Bump_Function.thy"):
+*** using this:
+***   \<forall>\<^sub>F t in at_right 0. exp (- inverse t) = f t
+***   ((\<lambda>t. exp (- inverse t)) \<longlongrightarrow> 0) (at_right 0)
+*** goal (1 subgoal):
+***  1. (f \<longlongrightarrow> 0) (at_right 0)
+*** At command "by" (line 77 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Bump_Function.thy")
+*** Failed to apply proof method (line 1044 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy"):
+*** goal (2 subgoals):
+***  1. \<lbrakk>f x = g x; \<forall>\<^sub>F x in at x within X. f x = g x;
+***      bounded_linear D;
+***      ((\<lambda>y.
+***           (1 / norm (y - x)) *\<^sub>R
+***           (g y - (g x + D (y - x)))) \<longlongrightarrow>
+***       (0::'b))
+***       (at x within X)\<rbrakk>
+***     \<Longrightarrow> \<forall>\<^sub>F xa in at x within X.
+***                          ?f3 xa =
+***                          (1 / norm (xa - x)) *\<^sub>R
+***                          (f xa - (g x + D (xa - x)))
+***  2. \<lbrakk>f x = g x; \<forall>\<^sub>F x in at x within X. f x = g x;
+***      bounded_linear D;
+***      ((\<lambda>y.
+***           (1 / norm (y - x)) *\<^sub>R
+***           (g y - (g x + D (y - x)))) \<longlongrightarrow>
+***       (0::'b))
+***       (at x within X)\<rbrakk>
+***     \<Longrightarrow> (?f3 \<longlongrightarrow> (0::'b)) (at x within X)
+*** At command "apply" (line 1044 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy")
+*** Undefined fact: "sum_not_0" (line 481 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy")
+*** At command "by" (line 481 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy")
+*** Undefined fact: "sum_not_0" (line 476 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy")
+*** At command "by" (line 476 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Smooth_Manifolds/Analysis_More.thy")
+Unfinished session(s): Smooth_Manifolds
+0:00:18 elapsed time, 0:01:13 cpu time, factor 3.91
+
+===============
+Source_Coding_Theorem
+Running Source_Coding_Theorem ...
+Source_Coding_Theorem FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Source_Coding_Theorem)
+Loading theory "Source_Coding_Theorem.Source_Coding_Theorem"
+locale source_code
+  fixes M :: "'a measure"
+    and b :: "real"
+    and fi :: "'b \<Rightarrow> real"
+    and X :: "'a \<Rightarrow> 'b"
+    and enc :: "'b list \<Rightarrow> bool list"
+    and dec :: "bool list \<Rightarrow> 'b list option"
+  assumes "source_code M b fi X enc dec"
+locale source_code
+  fixes M :: "'a measure"
+    and b :: "real"
+    and fi :: "'b \<Rightarrow> real"
+    and X :: "'a \<Rightarrow> 'b"
+    and enc :: "'b list \<Rightarrow> bool list"
+    and dec :: "bool list \<Rightarrow> 'b list option"
+  assumes "source_code M b fi X enc dec"
+### theory "Source_Coding_Theorem.Source_Coding_Theorem"
+### 0.421s elapsed time, 1.972s cpu time, 0.109s GC time
+*** Undefined fact: "linordered_field_class.sign_simps" (line 533 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Source_Coding_Theorem/Source_Coding_Theorem.thy")
+*** At command "by" (line 533 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Source_Coding_Theorem/Source_Coding_Theorem.thy")
+*** Undefined fact: "linordered_field_class.sign_simps" (line 533 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Source_Coding_Theorem/Source_Coding_Theorem.thy")
+*** At command "by" (line 533 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Source_Coding_Theorem/Source_Coding_Theorem.thy")
+Unfinished session(s): Source_Coding_Theorem
+0:00:05 elapsed time, 0:00:05 cpu time, factor 1.07
+
+===============
+Splay_Tree
+Running Splay_Tree ...
+Finished Splay_Tree (0:00:25 elapsed time, 0:00:51 cpu time, factor 2.04)
+0:00:28 elapsed time, 0:00:51 cpu time, factor 1.82
+
+===============
+Sqrt_Babylonian
+Building Cauchy ...
+Finished Cauchy (0:00:04 elapsed time, 0:00:10 cpu time, factor 2.34)
+Running Sqrt_Babylonian ...
+Finished Sqrt_Babylonian (0:00:04 elapsed time, 0:00:14 cpu time, factor 2.99)
+0:00:12 elapsed time, 0:00:25 cpu time, factor 2.12
+
+===============
+Stellar_Quorums
+Running Stellar_Quorums ...
+Finished Stellar_Quorums (0:00:04 elapsed time, 0:00:09 cpu time, factor 2.24)
+0:00:06 elapsed time, 0:00:09 cpu time, factor 1.42
+
+===============
+Stirling_Formula
+Running Stirling_Formula ...
+Stirling_Formula FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Stirling_Formula)
+*** Failed to apply initial proof method (line 280 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stirling_Formula/Stirling_Formula.thy"):
+*** using this:
+***   \<forall>\<^sub>F n in sequentially.
+***      ln (inverse (1 + x / real n)) + ln x - 1 / (2 * x) - p n x =
+***      ln (real n) - S' n x - 1 / (2 * x)
+***   (\<lambda>n. ln (inverse (1 + x / real n)) + ln x - 1 / (2 * x) - p n x)
+***   \<longlonglongrightarrow> ln x - 1 / (2 * x) - P x
+*** goal (1 subgoal):
+***  1. (\<lambda>n. ln (real n) - S' n x - 1 / (2 * x))
+***     \<longlonglongrightarrow> ln x - 1 / (2 * x) - P x
+*** At command "by" (line 280 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stirling_Formula/Stirling_Formula.thy")
+*** Failed to apply initial proof method (line 252 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stirling_Formula/Stirling_Formula.thy"):
+*** using this:
+***   (\<lambda>n. \<Sum>r<n. D (real r + x)) \<longlonglongrightarrow> P x
+***   \<forall>\<^sub>F n in sequentially. (\<Sum>r<n. D (real r + x)) = p n x
+*** goal (1 subgoal):
+***  1. (\<lambda>n. p n x) \<longlonglongrightarrow> P x
+*** At command "by" (line 252 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stirling_Formula/Stirling_Formula.thy")
+*** Failed to apply initial proof method (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at x within {0..1}. f x = f (frac x)
+***   (f \<longlongrightarrow> f (frac x)) (at x within {0..1})
+*** goal (1 subgoal):
+***  1. ((\<lambda>x. f (frac x)) \<longlongrightarrow> f (frac x))
+***      (at x within {0..1})
+*** At command "by" (line 167 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_left (1::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (1::'a)) (at_left (1::'a))
+*** At command "by" (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+*** Failed to apply initial proof method (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy"):
+*** using this:
+***   \<forall>\<^sub>F x in at_right (0::'a). x = frac x
+***   ((\<lambda>x. x) \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** goal (1 subgoal):
+***  1. (frac \<longlongrightarrow> (0::'a)) (at_right (0::'a))
+*** At command "by" (line 100 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Bernoulli/Periodic_Bernpoly.thy")
+Unfinished session(s): Stirling_Formula
+0:00:11 elapsed time, 0:00:41 cpu time, factor 3.67
+
+===============
+Stone_Algebras
+Running Stone_Algebras ...
+Finished Stone_Algebras (0:00:23 elapsed time, 0:01:01 cpu time, factor 2.60)
+0:00:26 elapsed time, 0:01:01 cpu time, factor 2.35
+
+===============
+Stone_Kleene_Relation_Algebras
+Building Stone_Algebras ...
+Finished Stone_Algebras (0:00:29 elapsed time, 0:01:17 cpu time, factor 2.65)
+Building Stone_Relation_Algebras ...
+Stone_Relation_Algebras FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Stone_Relation_Algebras)
+### semiring.numeral (num.Bit0 ?n) \<equiv>
+### let m = semiring.numeral ?n in m \<squnion> m
+### Partially applied constant "Lattices.sup_class.sup" on left hand side of equation, in theorem:
+### semiring.numeral (num.Bit1 ?n) \<equiv>
+### let m = semiring.numeral ?n in m \<squnion> m \<squnion> (1::?'a)
+class idempotent_semiring = idempotent_left_zero_semiring +
+  assumes "mult_right_zero": "\<And>x. x * bot = bot"
+class bounded_non_associative_left_semiring = top +
+  non_associative_left_semiring +
+  assumes "sup_right_top": "\<And>x. x \<squnion> top = top"
+### theory "Stone_Relation_Algebras.Semirings"
+### 4.011s elapsed time, 10.647s cpu time, 0.571s GC time
+Loading theory "Stone_Relation_Algebras.Relation_Algebras"
+class conv = type +
+  fixes conv :: "'a \<Rightarrow> 'a"
+class bounded_distrib_allegory = one + times + bounded_distrib_lattice +
+  conv +
+  assumes "comp_associative": "\<And>x y z. x * y * z = x * (y * z)"
+  assumes
+    "comp_right_dist_sup":
+      "\<And>x y z. (x \<squnion> y) * z = x * z \<squnion> y * z"
+  assumes "comp_left_zero": "\<And>x. bot * x = bot"
+  assumes "comp_left_one": "\<And>x. (1::'a) * x = x"
+  assumes "conv_involutive": "\<And>x. x\<^sup>T\<^sup>T = x"
+  assumes
+    "conv_dist_sup":
+      "\<And>x y. (x \<squnion> y)\<^sup>T = x\<^sup>T \<squnion> y\<^sup>T"
+  assumes
+    "conv_dist_comp": "\<And>x y. (x * y)\<^sup>T = y\<^sup>T * x\<^sup>T"
+  assumes
+    "dedekind_1":
+      "\<And>x y z.
+          x * y \<sqinter> z \<le> x * (y \<sqinter> x\<^sup>T * z)"
+### theory "Stone_Relation_Algebras.Relation_Algebras"
+### 5.589s elapsed time, 16.729s cpu time, 2.467s GC time
+*** Failed to load theory "Stone_Relation_Algebras.Matrix_Relation_Algebras" (unresolved "Stone_Relation_Algebras.Relation_Algebras")
+*** Failed to load theory "Stone_Relation_Algebras.Linear_Order_Matrices" (unresolved "Stone_Relation_Algebras.Matrix_Relation_Algebras")
+*** Failed to load theory "Stone_Relation_Algebras.Relation_Subalgebras" (unresolved "Stone_Relation_Algebras.Relation_Algebras")
+*** exception FAIL NONE raised (line 161 of "General/scan.ML")
+*** At command "abbreviation" (line 1087 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stone_Relation_Algebras/Relation_Algebras.thy")
+Stone_Kleene_Relation_Algebras CANCELLED
+Unfinished session(s): Stone_Kleene_Relation_Algebras, Stone_Relation_Algebras
+0:00:43 elapsed time, 0:01:49 cpu time, factor 2.53
+
+===============
+Stone_Relation_Algebras
+Running Stone_Relation_Algebras ...
+Stone_Relation_Algebras FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Stone_Relation_Algebras)
+### semiring.numeral (num.Bit0 ?n) \<equiv>
+### let m = semiring.numeral ?n in m \<squnion> m
+### Partially applied constant "Lattices.sup_class.sup" on left hand side of equation, in theorem:
+### semiring.numeral (num.Bit1 ?n) \<equiv>
+### let m = semiring.numeral ?n in m \<squnion> m \<squnion> (1::?'a)
+class idempotent_semiring = idempotent_left_zero_semiring +
+  assumes "mult_right_zero": "\<And>x. x * bot = bot"
+class bounded_non_associative_left_semiring = top +
+  non_associative_left_semiring +
+  assumes "sup_right_top": "\<And>x. x \<squnion> top = top"
+### theory "Stone_Relation_Algebras.Semirings"
+### 4.150s elapsed time, 9.599s cpu time, 0.491s GC time
+Loading theory "Stone_Relation_Algebras.Relation_Algebras"
+class conv = type +
+  fixes conv :: "'a \<Rightarrow> 'a"
+class bounded_distrib_allegory = one + times + bounded_distrib_lattice +
+  conv +
+  assumes "comp_associative": "\<And>x y z. x * y * z = x * (y * z)"
+  assumes
+    "comp_right_dist_sup":
+      "\<And>x y z. (x \<squnion> y) * z = x * z \<squnion> y * z"
+  assumes "comp_left_zero": "\<And>x. bot * x = bot"
+  assumes "comp_left_one": "\<And>x. (1::'a) * x = x"
+  assumes "conv_involutive": "\<And>x. x\<^sup>T\<^sup>T = x"
+  assumes
+    "conv_dist_sup":
+      "\<And>x y. (x \<squnion> y)\<^sup>T = x\<^sup>T \<squnion> y\<^sup>T"
+  assumes
+    "conv_dist_comp": "\<And>x y. (x * y)\<^sup>T = y\<^sup>T * x\<^sup>T"
+  assumes
+    "dedekind_1":
+      "\<And>x y z.
+          x * y \<sqinter> z \<le> x * (y \<sqinter> x\<^sup>T * z)"
+### theory "Stone_Relation_Algebras.Relation_Algebras"
+### 5.876s elapsed time, 16.693s cpu time, 2.401s GC time
+*** Failed to load theory "Stone_Relation_Algebras.Matrix_Relation_Algebras" (unresolved "Stone_Relation_Algebras.Relation_Algebras")
+*** Failed to load theory "Stone_Relation_Algebras.Relation_Subalgebras" (unresolved "Stone_Relation_Algebras.Relation_Algebras")
+*** Failed to load theory "Stone_Relation_Algebras.Linear_Order_Matrices" (unresolved "Stone_Relation_Algebras.Matrix_Relation_Algebras")
+*** exception FAIL NONE raised (line 161 of "General/scan.ML")
+*** At command "abbreviation" (line 1087 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Stone_Relation_Algebras/Relation_Algebras.thy")
+Unfinished session(s): Stone_Relation_Algebras
+0:00:14 elapsed time, 0:00:31 cpu time, factor 2.16
+
+===============
+Sturm_Sequences
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Sturm_Tarski
+Running Sturm_Tarski ...
+Sturm_Tarski FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Sturm_Tarski)
+Loading theory "Sturm_Tarski.PolyMisc" (required by "Sturm_Tarski.Sturm_Tarski")
+### theory "Sturm_Tarski.PolyMisc"
+### 0.060s elapsed time, 0.151s cpu time, 0.000s GC time
+*** Failed to load theory "Sturm_Tarski.Sturm_Tarski" (unresolved "Sturm_Tarski.PolyMisc")
+*** Type unification failed: Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  gcd :: ??'a \<Rightarrow> ??'a \<Rightarrow> ??'a
+*** Operand:   p :: 'a poly
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** failed to unify invariant arguments
+*** Variable 'a::factorial_ring_gcd not of sort {factorial_ring_gcd,semiring_gcd_mult_normalize}
+*** 
+*** At command "lemma" (line 148 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Sturm_Tarski/PolyMisc.thy")
+Unfinished session(s): Sturm_Tarski
+0:00:04 elapsed time
+
+===============
+Stuttering_Equivalence
+
+
+*** Wrong ROOT format
+*** Implicit use of directory
+===============
+Subresultants
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Surprise_Paradox
+Building Incompleteness ...
+Incompleteness FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Incompleteness)
+val raw_alpha_bn_rsp = fn: alpha_result -> thm list -> thm list -> thm list
+val define_raw_alpha = fn:
+   raw_dt_info ->
+     bn_info list ->
+       bclause list list list ->
+         term list -> Proof.context -> alpha_result * local_theory
+val raw_prove_alpha_distincts = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val comb_binders = fn:
+   Proof.context -> bmode -> term list -> (term option * int) list -> term
+val raw_prove_equivp = fn:
+   Proof.context ->
+     alpha_result -> thm list -> thm list -> thm list -> thm list * thm list
+val raw_constrs_rsp = fn:
+   Proof.context ->
+     alpha_result -> term list list -> thm list -> thm list list
+val raw_prove_alpha_eq_iff = fn:
+   Proof.context -> alpha_result -> raw_dt_info -> thm list
+val mk_alpha_permute_rsp = fn: Proof.context -> thm -> thm
+val mk_funs_rsp = fn: Proof.context -> thm -> thm
+val raw_prove_bn_imp = fn: Proof.context -> alpha_result -> thm list
+val raw_prove_sym = fn:
+   Proof.context -> alpha_result -> thm list -> thm list
+### theory "Nominal2.Nominal2"
+### 0.667s elapsed time, 2.330s cpu time, 0.119s GC time
+*** Failed to load theory "Incompleteness.SyntaxN" (unresolved "Nominal2.Nominal2")
+*** Failed to load theory "Incompleteness.Coding" (unresolved "Incompleteness.SyntaxN")
+*** Failed to load theory "Incompleteness.Predicates" (unresolved "Incompleteness.SyntaxN")
+*** Failed to load theory "Incompleteness.Sigma" (unresolved "Incompleteness.Predicates")
+*** Failed to load theory "Incompleteness.Coding_Predicates" (unresolved "Incompleteness.Coding", "Incompleteness.Sigma")
+*** Failed to load theory "Incompleteness.Functions" (unresolved "Incompleteness.Coding_Predicates")
+*** Failed to load theory "Incompleteness.Pf_Predicates" (unresolved "Incompleteness.Coding_Predicates")
+*** Failed to load theory "Incompleteness.Goedel_I" (unresolved "Incompleteness.Functions", "Incompleteness.Pf_Predicates")
+*** Failed to load theory "Incompleteness.II_Prelims" (unresolved "Incompleteness.Pf_Predicates")
+*** Failed to load theory "Incompleteness.Pseudo_Coding" (unresolved "Incompleteness.II_Prelims")
+*** Failed to load theory "Incompleteness.Quote" (unresolved "Incompleteness.Pseudo_Coding")
+*** Failed to load theory "Incompleteness.Goedel_II" (unresolved "Incompleteness.Goedel_I", "Incompleteness.Quote")
+*** ML error (line 210 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/nominal_dt_quot.ML"):
+*** Value or constructor (auto_fixes) has not been declared in structure Variable
+*** At command "ML_file" (line 19 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Nominal2/Nominal2.thy")
+Surprise_Paradox CANCELLED
+Unfinished session(s): Incompleteness, Surprise_Paradox
+0:00:10 elapsed time, 0:00:19 cpu time, factor 1.82
+
+===============
+Tarskis_Geometry
+Running Tarskis_Geometry ...
+Finished Tarskis_Geometry (0:00:12 elapsed time, 0:01:08 cpu time, factor 5.38)
+0:00:16 elapsed time, 0:01:08 cpu time, factor 4.16
+
+===============
+Taylor_Models
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Transcendence_Series_Hancl_Rucki
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Transition_Systems_and_Automata
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Triangle
+Running Triangle ...
+Finished Triangle (0:00:03 elapsed time, 0:00:05 cpu time, factor 1.65)
+0:00:07 elapsed time, 0:00:05 cpu time, factor 0.77
+
+===============
+UpDown_Scheme
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+UTP
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+VerifyThis2018
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+VerifyThis2019
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Weight_Balanced_Trees
+Running Weight_Balanced_Trees ...
+Weight_Balanced_Trees FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Weight_Balanced_Trees)
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "(\<lambda>p. size (snd p)) <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Library.Tree"
+### 1.421s elapsed time, 4.710s cpu time, 0.798s GC time
+Loading theory "HOL-Data_Structures.Tree2" (required by "Weight_Balanced_Trees.Weight_Balanced_Trees" via "HOL-Data_Structures.Isin2")
+Loading theory "Weight_Balanced_Trees.Weight_Balanced_Trees_log"
+Found termination order: "size <*mlex*> {}"
+Found termination order: "size <*mlex*> {}"
+locale WBT0
+  fixes \<alpha> :: "real"
+  assumes "WBT0 \<alpha>"
+Found termination order: "size <*mlex*> {}"
+### theory "HOL-Data_Structures.Tree2"
+### 0.220s elapsed time, 1.159s cpu time, 0.038s GC time
+Loading theory "HOL-Data_Structures.Isin2" (required by "Weight_Balanced_Trees.Weight_Balanced_Trees")
+Found termination order: "size <*mlex*> {}"
+### theory "Weight_Balanced_Trees.Weight_Balanced_Trees_log"
+### 0.252s elapsed time, 1.229s cpu time, 0.038s GC time
+Found termination order: "(\<lambda>p. size (fst p)) <*mlex*> {}"
+### theory "HOL-Data_Structures.Isin2"
+### 0.267s elapsed time, 0.575s cpu time, 0.064s GC time
+Loading theory "Weight_Balanced_Trees.Weight_Balanced_Trees"
+### theory "Weight_Balanced_Trees.Weight_Balanced_Trees"
+### 0.008s elapsed time, 0.024s cpu time, 0.000s GC time
+*** Type unification failed: Clash of types "_ \<Rightarrow> _" and "_ tree"
+*** 
+*** Type error in application: operator not of function type
+*** 
+*** Operator:  \<langle>n, l, a\<rangle> :: ??'a tree
+*** Operand:   r :: ??'b
+*** 
+*** At command "lemma" (line 15 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Weight_Balanced_Trees/Weight_Balanced_Trees.thy")
+Unfinished session(s): Weight_Balanced_Trees
+0:00:05 elapsed time, 0:00:07 cpu time, factor 1.37
+
+===============
+Well_Quasi_Orders
+Running Well_Quasi_Orders ...
+Finished Well_Quasi_Orders (0:00:10 elapsed time, 0:00:39 cpu time, factor 3.82)
+0:00:13 elapsed time, 0:00:39 cpu time, factor 3.02
+
+===============
+Winding_Number_Eval
+Running Winding_Number_Eval ...
+Winding_Number_Eval FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Winding_Number_Eval)
+*** At command "have" (line 110 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+*** Type unification failed
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  (*) c :: complex \<Rightarrow> complex
+*** Operand:   x :: 'b
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Cannot generate coercion from "'b" to "complex"
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** weak unification of subtype constraints fails
+*** 
+*** 
+*** At command "have" (line 61 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+*** Type unification failed: Variable 'a::type not of sort real_normed_vector
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  linepath ::
+***   ??'a \<Rightarrow> ??'a \<Rightarrow> real \<Rightarrow> ??'a
+*** Operand:   st :: 'a
+*** 
+*** Coercion Inference:
+*** 
+*** Local coercion insertion on the operand failed:
+*** Variable 'a::type not of sort real_normed_vector
+*** 
+*** Now trying to infer coercions globally.
+*** 
+*** Coercion inference failed:
+*** weak unification of subtype constraints fails
+*** 
+*** 
+*** At command "obtain" (line 43 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Winding_Number_Eval/Missing_Analysis.thy")
+Unfinished session(s): Winding_Number_Eval
+0:00:26 elapsed time, 0:00:56 cpu time, factor 2.14
+
+===============
+Word_Lib
+Running Word_Lib ...
+Word_Lib FAILED
+(see also /home/quiqui/.isabelle/Isabelle2020/heaps/polyml-5.8.1_x86_64_32-linux/log/Word_Lib)
+### theory "Word_Lib.Word_Syntax"
+### 0.436s elapsed time, 3.221s cpu time, 0.197s GC time
+Loading theory "Word_Lib.Word_Lib" (required by "Word_Lib.Word_Lemmas_32" via "Word_Lib.Word_Lemmas" via "Word_Lib.Word_Next" via "Word_Lib.Aligned")
+class signed_div = type +
+  fixes sdiv :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+    and smod :: "'a \<Rightarrow> 'a \<Rightarrow> 'a"
+instantiation
+  int :: signed_div
+  sdiv_int == sdiv :: int \<Rightarrow> int \<Rightarrow> int
+  smod_int == smod :: int \<Rightarrow> int \<Rightarrow> int
+instantiation
+  word :: (len) signed_div
+  sdiv_word == sdiv :: 'a word \<Rightarrow> 'a word \<Rightarrow> 'a word
+  smod_word == smod :: 'a word \<Rightarrow> 'a word \<Rightarrow> 'a word
+consts
+  sublists :: "'a list \<Rightarrow> 'a list list"
+### theory "Word_Lib.Word_Lib"
+### 0.202s elapsed time, 1.438s cpu time, 0.104s GC time
+### Ignoring duplicate rewrite rule:
+### list_emb ?P1 [] ?ys1 \<equiv> True
+### Ignoring duplicate rewrite rule:
+### list_emb ?P1 (?x1 # ?xs1) [] \<equiv> False
+### theory "HOL-Library.Sublist"
+### 0.955s elapsed time, 7.146s cpu time, 0.436s GC time
+*** Failed to load theory "Word_Lib.Word_Enum" (unresolved "Word_Lib.Word_Lib")
+*** Failed to load theory "Word_Lib.Word_Setup_32" (unresolved "Word_Lib.Word_Enum")
+*** Failed to load theory "Word_Lib.Word_Setup_64" (unresolved "Word_Lib.Word_Enum")
+*** Failed to load theory "Word_Lib.Aligned" (unresolved "Word_Lib.Word_Lib")
+*** Failed to load theory "Word_Lib.Word_Next" (unresolved "Word_Lib.Aligned")
+*** Failed to load theory "Word_Lib.Word_Lemmas" (unresolved "Word_Lib.Word_Enum", "Word_Lib.Word_Next")
+*** Failed to load theory "Word_Lib.Word_Lemmas_32" (unresolved "Word_Lib.Word_Lemmas", "Word_Lib.Word_Setup_32")
+*** Failed to load theory "Word_Lib.Word_Lemmas_64" (unresolved "Word_Lib.Word_Lemmas", "Word_Lib.Word_Setup_64")
+*** Type unification failed: No type arity fun :: bit_operations
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  NOT :: ??'a \<Rightarrow> ??'a
+*** Operand:   mask :: nat \<Rightarrow> ??'b word
+*** 
+*** At command "lemma" (line 169 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2019/thys/Word_Lib/Word_Lib.thy")
+Unfinished session(s): Word_Lib
+0:00:05 elapsed time, 0:00:08 cpu time, factor 1.61
+
+===============
+Zeta_3_Irrational
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+Zeta_Function
+
+
+*** Wrong ROOT format
+*** Duplicate use of directory
+===============
+ZFC_in_HOL
+Running ZFC_in_HOL ...
+Finished ZFC_in_HOL (0:00:12 elapsed time, 0:01:23 cpu time, factor 6.73)
+0:00:15 elapsed time, 0:01:23 cpu time, factor 5.27
+

@@ -1,0 +1,28 @@
+ML_errors = [ # - 188
+	("type_error_function_application", r'Type error in function application'), # - 175
+	("undeclared_value", r'Value or constructor \(([^\)]+)\) has not been declared'), # - 1
+	("undeclared_value_in_structure", r'Value or constructor \(([^\)]+)\) has not been declared in structure (.+)'), # - 8
+	("undeclared_type_constructor", r'Type constructor \(([^\)]+)\) has not been declared'), # - 4
+	("type_clause_unmatch_previous_clause", r'Type of clause does not match the type of previous clauses'), # - 2
+	("structure_unmatch_signature", r'Structure does not match signature'), # - 3
+	("function_type_unmatch_recursive_application", r'Type of function does not match type of recursive application') # - 1
+]
+
+type_error_function_application_type = [ # - 175
+	"Local_Theory.declaration": 53,
+	"Local_Theory.note": 1,
+	"Attrib.internal": 2,
+	"Proof_Display.print_results": 6,
+	"Morphism.morphism": 1,
+	"Context.theory_name": 33,
+	"Long_Name.qualify": 3,
+	"|>": 2,
+	"#>": 2,
+	"Path.basic": 1,
+	"^": 44,
+	"theory_name": 14,
+	"IConst": 1,
+	"`|=>": 2,
+	"imp_monad_bind": 1
+	"Element.Assumes": 1
+]

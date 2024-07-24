@@ -1,0 +1,149 @@
+==========
+{session_name}
+{"\n"}
+{text - not starting with "Build errors" + "\n"}*
+{"Build errors:"}
+{"\n"}
+
+|
+{error_detail}*
+	{bibtex_error}
+		{"*** Bad bibtex entry "}
+		{"\"{entry_name}\""}
+		{"(line "}
+		{"{line_number}"}
+		{"of \"{path_to_file}\"):"}
+	|
+	{file_error}
+		{failed_to_load_theory}* # non existent?
+			{"*** Failed to load theory \"{theory_name}\" "}
+			("(unresolved {unresolved_theory_name}")
+	|
+	{specific_error}
+		{goal_refining_error}
+			{"*** Failed to refine any pending goal"}
+		|
+		{proof_failed}
+			{"*** Failed to apply initial proof method "} | {"*** Failed to apply proof method "} | {"*** Failed to finish proof "} | ("*** Failed to apply terminal proof method")
+
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\"):"}
+
+			{proof_tool_used}?
+				{"*** using this:\n"}
+				{method_used_lines}*
+
+			{goals}
+				{"*** goal "}
+				{"({num_subgoal} subgoal):"}?
+				{"\n"}
+				{subgoal}*
+					{"*** "}
+					{ordinal}{". "}
+					{props}*
+				|
+				{"*** No subgoals!\n"}
+
+		|
+		{ML_error}
+			{error_block}*
+				{"*** ML error "}
+
+				{"(line "}
+				{"{line_number}"}
+				{"of \"{path_to_file}\"):"}
+
+				{error_details}
+					{undeclared_value_error}
+						{"*** Value of constructor ({value_constructor_name}) has not been declared in structure {structure_name}\n"}
+						|
+						{"*** Type constructor (declaration) has not been declared\n"}
+					| 
+					{type_error_function}
+						{"*** Type error in function application.\n"}
+						{function}
+							{"*** Function: {function_name} :\n"}
+							{function_structure}*
+								{"*** {structure}\n"}
+					|
+					{clause_type_error}
+						{"*** Type of clause does not match the type of previous clauses\n"}
+						{clause_detail}
+							{"*** Clause:\n"}
+							{clause}*
+
+
+		|
+		{undefined_fact_error}
+			{"*** Undefined fact/constant: \"{fact_name}\" "}
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\"):"}
+			{end_of_error}
+		|
+		{ambiguous_input}
+			{"*** Ambiguous input "}
+
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\")"}
+
+			{"produce {num_parse_tree} parse trees:\n"}
+			{parse_tree}*
+
+			{"*** Ambiguous input\n"}
+			("*** {num_type_correct} term(s) are type correct")
+				{term}*
+			{"*** Failed to parse prop"}
+		|
+		{inner_syntax_error}
+			{"*** Inner syntax error "}
+
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\"):"}
+			{"\n"}
+
+			{"*** at \"{prop \n}*\""}
+			{"\n"}
+
+			{"*** Failed to parse prop"}
+			{"\n"}
+		|
+		{exception}
+			{"*** exception {exception_name} raised"}
+
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\"):"
+		|
+		{proof_failed_specific}
+			{"*** Proof failed.\n"}
+			{proof_failed_specific_detailed_line}*
+		|
+		{lifting_error}
+			{"*** Lifting failed for the following types:\n"}
+			{type}*
+				{"*** Raw type: {type}\n"}
+				{"*** Abstract type: {type}\n"}
+				{"\n"}
+				{"*** Reason: {reason}"}
+		|
+		{constant_or_not}
+			{"*** Not a constant {term}\n"}
+		|
+		{type_unification_failed}
+
+		{end_of_error}
+			{"*** At command \"{command_name}\""}
+			{"(line "}
+			{"{line_number}"}
+			{"of \"{path_to_file}\"):"}
+
+sssswswwfferq
+{timeout}?
+	{"*** Timeout\n"}
+{"\n\n"}
+{return_code}
+	{"Return code: {code} ({description})"}

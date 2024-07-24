@@ -1,0 +1,9 @@
+Running ZFC_in_HOL ...
+ZFC_in_HOL FAILED
+(see also /home/quiqui/.isabelle/Isabelle2021-1/heaps/polyml-5.9_x86_64_32-linux/log/ZFC_in_HOL)
+*** Undefined fact: "strict_sorted.cases" (line 455 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021/thys/ZFC_in_HOL/Cantor_NF.thy")
+*** At command "using" (line 455 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021/thys/ZFC_in_HOL/Cantor_NF.thy")
+*** "hide_lams" has been renamed "opaque_lifting"
+*** At command "by" (line 102 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+Unfinished session(s): ZFC_in_HOL
+0:00:29 elapsed time, 0:02:35 cpu time, factor 5.28

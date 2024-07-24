@@ -1,0 +1,18 @@
+Running ZFC_in_HOL ...
+ZFC_in_HOL FAILED
+(see also /home/quiqui/.isabelle/Isabelle2022/heaps/polyml-5.9_x86_64_32-linux/log/ZFC_in_HOL)
+*** Failed to load theory "ZFC_in_HOL.ZFC_Cardinals" (unresolved "ZFC_in_HOL.ZFC_in_HOL")
+*** Failed to load theory "ZFC_in_HOL.Kirby" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Failed to load theory "ZFC_in_HOL.Ordinal_Exp" (unresolved "ZFC_in_HOL.Kirby")
+*** Failed to load theory "ZFC_in_HOL.Cantor_NF" (unresolved "ZFC_in_HOL.Ordinal_Exp")
+*** Failed to load theory "ZFC_in_HOL.ZFC_Typeclasses" (unresolved "ZFC_in_HOL.ZFC_Cardinals")
+*** Type unification failed: Clash of types "_ ⇒ _" and "_ set"
+*** 
+*** Type error in application: incompatible operand type
+*** 
+*** Operator:  strict_mono_on :: ??'a set ⇒ (??'a ⇒ ??'b) ⇒ bool
+*** Operand:   h :: ??'c ⇒ ??'c
+*** 
+*** At command "lemma" (line 1090 of "~/Desktop/2024_sem1/AutomaticProofRepair/AFPs/afp-2021-1/thys/ZFC_in_HOL/ZFC_in_HOL.thy")
+Unfinished session(s): ZFC_in_HOL
+0:00:12 elapsed time, 0:01:00 cpu time, factor 4.86
